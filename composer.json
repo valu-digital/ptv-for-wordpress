@@ -1,0 +1,14 @@
+{
+  "name": "valudigital/ptv-for-wordpress",
+  "version": "0.8",
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/valu-digital/ptv-client-for-wordpress.git"
+    }
+  ],
+  "require": {
+    "valu-digital/ptv-client-for-wordpress": "0.8",
+    "htmlburger/carbon-fields": "2.0.0-beta.11"
+  }
+}

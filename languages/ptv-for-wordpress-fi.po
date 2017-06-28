@@ -1,0 +1,2037 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Valu PTV Integration\n"
+"POT-Creation-Date: 2017-06-28 21:58+0200\n"
+"PO-Revision-Date: 2017-06-28 21:58+0200\n"
+"Last-Translator: Mikko Virenius <mikko.virenius@valu.fi>\n"
+"Language-Team: Mikko Virenius <mikko.virenius@valu.fi>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: vendor\n"
+
+#: core/class-ptv-admin-page.php:37
+msgid "PTV settings"
+msgstr "PTV-asetukset"
+
+#: core/class-ptv-admin-page.php:53
+msgid "PTV Settings"
+msgstr "PTV-asetukset"
+
+#: core/class-ptv-admin-page.php:79
+msgid "General settings"
+msgstr "Yleiset asetukset"
+
+#: core/class-ptv-admin-page.php:86 core/custom-fields.php:329
+msgid "Organization ID"
+msgstr "Organisaation ID"
+
+#: core/class-ptv-admin-page.php:94
+msgid "Primary language"
+msgstr "﻿Ensisijainen kieli"
+
+#: core/class-ptv-admin-page.php:144
+msgid "Finnish"
+msgstr "Suomi"
+
+#: core/class-ptv-admin-page.php:145
+msgid "Swedish"
+msgstr "Ruotsi"
+
+#: core/class-ptv-admin-page.php:146
+msgid "English"
+msgstr "Englanti"
+
+#: core/custom-fields.php:21
+msgid "Monday"
+msgstr "﻿Maanantai"
+
+#: core/custom-fields.php:22
+msgid "Tuesday"
+msgstr "Tiistai"
+
+#: core/custom-fields.php:23
+msgid "Wednesday"
+msgstr "Keskiviikko"
+
+#: core/custom-fields.php:24
+msgid "Thursday"
+msgstr "﻿Torstai"
+
+#: core/custom-fields.php:25
+msgid "Friday"
+msgstr "﻿Perjantai"
+
+#: core/custom-fields.php:26
+msgid "Saturday"
+msgstr "﻿Lauantai"
+
+#: core/custom-fields.php:27
+msgid "Sunday"
+msgstr "Sunnuntai"
+
+#: core/custom-fields.php:44
+msgid "Standard"
+msgstr "Normaalit palveluajat"
+
+#: core/custom-fields.php:45
+msgid "Special"
+msgstr "Vuorokauden yli menevät palveluajat"
+
+#: core/custom-fields.php:46
+msgid "Exception"
+msgstr "Poikkeavat palveluajat"
+
+#: core/custom-fields.php:50
+msgid "State"
+msgstr "Valtio"
+
+#: core/custom-fields.php:51 core/custom-fields.php:94
+msgid "Municipality"
+msgstr "Kunta"
+
+#: core/custom-fields.php:52
+msgid "RegionalOrganization"
+msgstr "Organisaatio"
+
+#: core/custom-fields.php:53 core/custom-fields.php:99
+#: core/custom-fields.php:617 core/custom-fields.php:1121
+#: core/custom-fields.php:1306 core/custom-fields.php:1356
+#: core/post-types.php:66 core/post-types.php:93
+msgid "Organization"
+msgstr "﻿Organisaatio"
+
+#: core/custom-fields.php:54
+msgid "Company"
+msgstr "Yritys"
+
+#: core/custom-fields.php:58
+msgid "Published"
+msgstr "﻿Julkaistu"
+
+#: core/custom-fields.php:59
+msgid "Draft"
+msgstr "﻿Luonnos"
+
+#: core/custom-fields.php:60
+msgid "Archived"
+msgstr "Arkistoitu"
+
+#: core/custom-fields.php:64 core/custom-fields.php:491
+#: core/custom-fields.php:1288
+msgid "Name"
+msgstr "Nimi"
+
+#: core/custom-fields.php:65
+msgid "AlternateName"
+msgstr "Vaihtoehtoinen nimi"
+
+#: core/custom-fields.php:69
+msgid "Attachment"
+msgstr "Liite"
+
+#: core/custom-fields.php:70
+msgid "Form"
+msgstr "Lomake"
+
+#: core/custom-fields.php:74
+msgid "Phone"
+msgstr "Puhelin"
+
+#: core/custom-fields.php:75
+msgid "Sms"
+msgstr "Tekstiviesti"
+
+#: core/custom-fields.php:76
+msgid "Fax"
+msgstr "Faksi"
+
+#: core/custom-fields.php:80
+msgid "pdf"
+msgstr "pdf"
+
+#: core/custom-fields.php:81
+msgid "doc/docx"
+msgstr "doc/docx"
+
+#: core/custom-fields.php:82
+msgid "xls/xlsx"
+msgstr "xls/xlsx"
+
+#: core/custom-fields.php:83
+msgid "rtf"
+msgstr "rtf"
+
+#: core/custom-fields.php:84
+msgid "odt"
+msgstr "odt"
+
+#: core/custom-fields.php:88
+msgid "Whole country"
+msgstr "﻿Koko maa"
+
+#: core/custom-fields.php:89
+msgid "Whole country except Aland Islands"
+msgstr "﻿Koko maa lukuun ottamatta Ahvenanmaata"
+
+#: core/custom-fields.php:90
+msgid "Restricted area"
+msgstr "﻿Rajoitettu alue"
+
+#: core/custom-fields.php:101 core/custom-fields.php:359
+#: core/custom-fields.php:857 core/custom-fields.php:1137
+#: core/custom-fields.php:1321
+msgid "General"
+msgstr "Yleiset"
+
+#: core/custom-fields.php:103 core/custom-fields.php:230
+#: core/custom-fields.php:361 core/custom-fields.php:634
+#: core/custom-fields.php:859
+msgid "Service Name"
+msgstr "﻿Palvelun nimi"
+
+#: core/custom-fields.php:107 core/custom-fields.php:234
+#: core/custom-fields.php:238 core/custom-fields.php:365
+#: core/custom-fields.php:484 core/custom-fields.php:494
+#: core/custom-fields.php:521 core/custom-fields.php:638
+#: core/custom-fields.php:649 core/custom-fields.php:749
+#: core/custom-fields.php:863 core/custom-fields.php:867
+#: core/custom-fields.php:891 core/custom-fields.php:955
+#: core/custom-fields.php:1114 core/custom-fields.php:1143
+#: core/custom-fields.php:1147 core/custom-fields.php:1180
+#: core/custom-fields.php:1186 core/custom-fields.php:1194
+#: core/custom-fields.php:1253 core/custom-fields.php:1291
+#: core/custom-fields.php:1328
+msgid "Max length 100 characters. "
+msgstr "Maksimipituus 100 merkkiä. "
+
+#: core/custom-fields.php:108
+msgid "Alternate Name"
+msgstr "Vaihtoehtoinen nimi"
+
+#: core/custom-fields.php:111
+msgid "Display Name"
+msgstr "﻿Näytä nimi"
+
+#: core/custom-fields.php:116 core/custom-fields.php:243
+#: core/custom-fields.php:370 core/custom-fields.php:500
+#: core/custom-fields.php:643 core/custom-fields.php:872
+#: core/custom-fields.php:1152 core/custom-fields.php:1297
+#: core/custom-fields.php:1334
+msgid "Description"
+msgstr "Kuvaus"
+
+#: core/custom-fields.php:119 core/custom-fields.php:246
+#: core/custom-fields.php:249 core/custom-fields.php:252
+#: core/custom-fields.php:373 core/custom-fields.php:646
+#: core/custom-fields.php:875 core/custom-fields.php:1155
+#: core/custom-fields.php:1338
+msgid "Max length 2500 characters. "
+msgstr "Maksimipituus 2500 merkkiä. "
+
+#: core/custom-fields.php:120
+msgid "Business code"
+msgstr "Y-tunnus"
+
+#: core/custom-fields.php:124 core/custom-fields.php:126
+#: core/custom-fields.php:658 core/custom-fields.php:1050
+msgid "Phone Numbers"
+msgstr "﻿Puhelinnumerot"
+
+#: core/custom-fields.php:128 core/custom-fields.php:441
+#: core/custom-fields.php:660 core/custom-fields.php:1052
+#: core/custom-fields.php:1210
+msgid "Is Finnish service number?"
+msgstr "Palvelunumero, johon ei voi soittaa ulkomailta."
+
+#: core/custom-fields.php:129 core/custom-fields.php:442
+#: core/custom-fields.php:661 core/custom-fields.php:1053
+#: core/custom-fields.php:1211
+msgid "Prefix Number"
+msgstr "Suuntanumero"
+
+#: core/custom-fields.php:140 core/custom-fields.php:455
+#: core/custom-fields.php:672 core/custom-fields.php:1064
+#: core/custom-fields.php:1224
+msgid "Number"
+msgstr "﻿Numero"
+
+#: core/custom-fields.php:142 core/custom-fields.php:257
+#: core/custom-fields.php:458 core/custom-fields.php:675
+#: core/custom-fields.php:1067 core/custom-fields.php:1227
+msgid "Service Charge Type"
+msgstr "Palvelun maksullisuus"
+
+#: core/custom-fields.php:144 core/custom-fields.php:259
+#: core/custom-fields.php:460 core/custom-fields.php:677
+#: core/custom-fields.php:1069 core/custom-fields.php:1229
+msgid "Charged"
+msgstr "Maksullinen"
+
+#: core/custom-fields.php:145 core/custom-fields.php:260
+#: core/custom-fields.php:461 core/custom-fields.php:678
+#: core/custom-fields.php:1070 core/custom-fields.php:1230
+msgid "Free"
+msgstr "Maksuton"
+
+#: core/custom-fields.php:146 core/custom-fields.php:326
+#: core/custom-fields.php:462 core/custom-fields.php:679
+#: core/custom-fields.php:1071 core/custom-fields.php:1231
+msgid "Other"
+msgstr "Muu"
+
+#: core/custom-fields.php:149 core/custom-fields.php:465
+#: core/custom-fields.php:682 core/custom-fields.php:1074
+#: core/custom-fields.php:1234
+msgid "Service charge details"
+msgstr "Maksullisuuden lisätiedot"
+
+#: core/custom-fields.php:162 core/custom-fields.php:242
+#: core/custom-fields.php:337 core/custom-fields.php:369
+#: core/custom-fields.php:478 core/custom-fields.php:502
+#: core/custom-fields.php:642 core/custom-fields.php:695
+#: core/custom-fields.php:871 core/custom-fields.php:904
+#: core/custom-fields.php:1087 core/custom-fields.php:1151
+#: core/custom-fields.php:1200 core/custom-fields.php:1247
+#: core/custom-fields.php:1299 core/custom-fields.php:1333
+msgid "Max length 150 characters. "
+msgstr "Maksimipituus 150 merkkiä. "
+
+#: core/custom-fields.php:163 core/custom-fields.php:696
+#: core/custom-fields.php:1088
+msgid "Channel Type"
+msgstr "Kanavan tyyppi"
+
+#: core/custom-fields.php:169 core/custom-fields.php:171
+#: core/custom-fields.php:1096
+msgid "Web Pages"
+msgstr "﻿Verkkosivut"
+
+#: core/custom-fields.php:174 core/custom-fields.php:1099
+msgid "URL address"
+msgstr "URL-osoite"
+
+#: core/custom-fields.php:179 core/custom-fields.php:377
+#: core/custom-fields.php:499 core/custom-fields.php:653
+#: core/custom-fields.php:1104 core/custom-fields.php:1170
+#: core/custom-fields.php:1295 core/custom-fields.php:1343
+msgid "Max length 500 characters. "
+msgstr "Maksimipituus 500 merkkiä. "
+
+#: core/custom-fields.php:179 core/custom-fields.php:377
+#: core/custom-fields.php:499 core/custom-fields.php:653
+#: core/custom-fields.php:1104 core/custom-fields.php:1170
+#: core/custom-fields.php:1295 core/custom-fields.php:1343
+msgid "Please start URL address with http:// or https://."
+msgstr "Huolehdi, että verkko-osoitteen alussa on http:// tai https://."
+
+#: core/custom-fields.php:185 core/custom-fields.php:187
+#: core/custom-fields.php:878 core/custom-fields.php:880
+msgid "Addresses"
+msgstr "Osoitteet"
+
+#: core/custom-fields.php:189 core/custom-fields.php:280
+#: core/custom-fields.php:417 core/custom-fields.php:503
+#: core/custom-fields.php:719 core/custom-fields.php:882
+#: core/custom-fields.php:925 core/custom-fields.php:1264
+msgid "Type"
+msgstr "﻿Tyyppi"
+
+#: core/custom-fields.php:191 core/custom-fields.php:884
+msgid "Mailing Address"
+msgstr "Postiosoite"
+
+#: core/custom-fields.php:192 core/custom-fields.php:885
+msgid "Visiting Address"
+msgstr "Käyntiosoite"
+
+#: core/custom-fields.php:194 core/custom-fields.php:887
+#: core/custom-fields.php:1183
+msgid "Street Address"
+msgstr "Katuosoite"
+
+#: core/custom-fields.php:197 core/custom-fields.php:892
+#: core/custom-fields.php:1187
+msgid "Street Number"
+msgstr "Osoitenumero"
+
+#: core/custom-fields.php:199 core/custom-fields.php:896
+#: core/custom-fields.php:1195
+msgid "Postal Code"
+msgstr "Postinumero"
+
+#: core/custom-fields.php:202 core/custom-fields.php:1191
+msgid "Post Office Box"
+msgstr "Postilokero-osoite"
+
+#: core/custom-fields.php:204 core/custom-fields.php:899
+msgid "Country"
+msgstr "Maa"
+
+#: core/custom-fields.php:206 core/custom-fields.php:901
+msgid "Additional Informations"
+msgstr "Lisätiedot"
+
+#: core/custom-fields.php:209 core/custom-fields.php:907
+msgid ""
+"Addresses are common to all translations. Add equal number of addresses to "
+"each translation."
+msgstr ""
+"Osoitteet ovat yhteisiä kaikille kieliversioille. Lisää sama määrä "
+"osoitteita kaikkiin kieliversioihin."
+
+#: core/custom-fields.php:212 core/custom-fields.php:342
+#: core/custom-fields.php:614 core/custom-fields.php:842
+#: core/custom-fields.php:1117 core/custom-fields.php:1303
+#: core/custom-fields.php:1353
+msgid "Meta"
+msgstr "Metatiedot"
+
+#: core/custom-fields.php:213 core/custom-fields.php:343
+#: core/custom-fields.php:615 core/custom-fields.php:843
+#: core/custom-fields.php:1119 core/custom-fields.php:1304
+#: core/custom-fields.php:1354
+msgid "PTV ID"
+msgstr "PTV ID"
+
+#: core/custom-fields.php:215
+msgid "Organization type"
+msgstr "Organisaation tyyppi"
+
+#: core/custom-fields.php:219 core/custom-fields.php:345
+#: core/custom-fields.php:623 core/custom-fields.php:845
+#: core/custom-fields.php:1127 core/custom-fields.php:1312
+#: core/custom-fields.php:1362
+msgid "Publishing status"
+msgstr "Julkaisun tila"
+
+#: core/custom-fields.php:221 core/custom-fields.php:347
+#: core/custom-fields.php:625 core/custom-fields.php:847
+#: core/custom-fields.php:1129 core/custom-fields.php:1314
+msgid ""
+"Changing publishing status affects all language versions. After publishing "
+"status can be set only as archived."
+msgstr ""
+"Julkaisutilan muuttaminen vaikuttaa kaikkiin kieliversioihin. Julkaisun "
+"jälkeen tila voidaan asettaa ainoastaan arkistoiduksi."
+
+#: core/custom-fields.php:226 core/custom-fields.php:350
+#: core/post-types.php:16 core/post-types.php:43
+msgid "Service"
+msgstr "﻿Palvelu"
+
+#: core/custom-fields.php:228 core/custom-fields.php:632
+msgid "General Information"
+msgstr "Perustiedot"
+
+#: core/custom-fields.php:235 core/custom-fields.php:864
+msgid "Service Alternate Name"
+msgstr "﻿Vaihtoehtoinen nimi"
+
+#: core/custom-fields.php:239 core/custom-fields.php:366
+#: core/custom-fields.php:639 core/custom-fields.php:868
+#: core/custom-fields.php:1148 core/custom-fields.php:1329
+msgid "Short Description"
+msgstr "Tiivistelmä"
+
+#: core/custom-fields.php:247
+msgid "Requirements"
+msgstr "Ehdot ja kriteerit"
+
+#: core/custom-fields.php:250
+msgid "User Instructions"
+msgstr "Toimintaohjeet"
+
+#: core/custom-fields.php:255
+msgid "Service Charge Details"
+msgstr "Maksullisuuden tiedot"
+
+#: core/custom-fields.php:265 core/custom-fields.php:704
+#: core/custom-fields.php:910 core/custom-fields.php:1346
+msgid "Languages"
+msgstr "Kielet"
+
+#: core/custom-fields.php:267 core/custom-fields.php:706
+#: core/custom-fields.php:912 core/custom-fields.php:1348
+msgid "Service is available in following languages"
+msgstr "Kielet, joilla palvelu on saatavilla"
+
+#: core/custom-fields.php:272 core/custom-fields.php:277
+#: core/custom-fields.php:409 core/custom-fields.php:414
+#: core/custom-fields.php:711 core/custom-fields.php:716
+#: core/custom-fields.php:917 core/custom-fields.php:922
+#: core/custom-fields.php:1256 core/custom-fields.php:1261
+msgid "Areas"
+msgstr "Alueet"
+
+#: core/custom-fields.php:274 core/custom-fields.php:411
+#: core/custom-fields.php:713 core/custom-fields.php:919
+#: core/custom-fields.php:1258
+msgid "Area type"
+msgstr "﻿Alueen tyyppi"
+
+#: core/custom-fields.php:282 core/custom-fields.php:419
+#: core/custom-fields.php:721 core/custom-fields.php:927
+#: core/custom-fields.php:1266
+msgid "Select municipalities"
+msgstr "Valitse kunnat"
+
+#: core/custom-fields.php:300
+msgid "Service Channels"
+msgstr "Asiointikanavat"
+
+#: core/custom-fields.php:302
+msgid "Service Channel IDs"
+msgstr "Palvelukanavien tunnukset"
+
+#: core/custom-fields.php:305
+msgid "Service Channel ID"
+msgstr "Palvelukanavan tunnus"
+
+#: core/custom-fields.php:311 core/custom-fields.php:312
+#: core/post-types.php:65 core/post-types.php:70
+msgid "Organizations"
+msgstr "﻿Organisaatiot"
+
+#: core/custom-fields.php:315
+msgid "Organization Role"
+msgstr "Organisaation rooli"
+
+#: core/custom-fields.php:317
+msgid "Responsible"
+msgstr "Palvelun vastuutaho"
+
+#: core/custom-fields.php:318
+msgid "Producer"
+msgstr "﻿Tuottaja"
+
+#: core/custom-fields.php:321
+msgid "Provision Type"
+msgstr "Palvelun tyyppi"
+
+#: core/custom-fields.php:323
+msgid "Self Produced Services"
+msgstr "﻿Itse tuotetut palvelut"
+
+#: core/custom-fields.php:324
+msgid "Voucher Services"
+msgstr "Palvelusetelipalvelut"
+
+#: core/custom-fields.php:325
+msgid "Purchase Services"
+msgstr "Ostopalvelut"
+
+#: core/custom-fields.php:334 core/custom-fields.php:518
+#: core/custom-fields.php:746 core/custom-fields.php:952
+msgid "Additional Information"
+msgstr "﻿Lisätiedot"
+
+#: core/custom-fields.php:348
+msgid "Service type"
+msgstr "Palvelun tyyppi"
+
+#: core/custom-fields.php:351
+msgid "Permission and Obligation"
+msgstr "Lupa tai muu velvoite"
+
+#: core/custom-fields.php:374 core/custom-fields.php:495
+#: core/custom-fields.php:650 core/custom-fields.php:1166
+#: core/custom-fields.php:1292 core/custom-fields.php:1339
+msgid "Url"
+msgstr "﻿URL-osoite"
+
+#: core/custom-fields.php:380
+msgid "Signatures and authentication"
+msgstr "Sähköinen tunnistus ja allekirjoitus"
+
+#: core/custom-fields.php:382
+msgid "Requires authentication"
+msgstr "Edellyttää sähköistä tunnistusta"
+
+#: core/custom-fields.php:384
+msgid "- Select -"
+msgstr "- Valitse -"
+
+#: core/custom-fields.php:385 core/custom-fields.php:391
+#: core/custom-fields.php:524 core/custom-fields.php:581
+#: core/custom-fields.php:598 core/custom-fields.php:752
+#: core/custom-fields.php:809 core/custom-fields.php:826
+#: core/custom-fields.php:958 core/custom-fields.php:1015
+#: core/custom-fields.php:1032
+msgid "No"
+msgstr "Ei"
+
+#: core/custom-fields.php:386 core/custom-fields.php:392
+#: core/custom-fields.php:525 core/custom-fields.php:582
+#: core/custom-fields.php:599 core/custom-fields.php:753
+#: core/custom-fields.php:810 core/custom-fields.php:827
+#: core/custom-fields.php:959 core/custom-fields.php:1016
+#: core/custom-fields.php:1033
+msgid "Yes"
+msgstr "Kyllä"
+
+#: core/custom-fields.php:389
+msgid "Requires signature"
+msgstr "﻿Edellyttää allekirjoitusta"
+
+#: core/custom-fields.php:395
+msgid "Signature quantity"
+msgstr "Allekirjoitusten lukumäärä"
+
+#: core/custom-fields.php:437 core/custom-fields.php:1206
+msgid "Support"
+msgstr "﻿Tuki"
+
+#: core/custom-fields.php:439 core/custom-fields.php:1208
+msgid "Support Phones"
+msgstr "Tuen puhelinnumerot"
+
+#: core/custom-fields.php:481 core/custom-fields.php:1250
+msgid "Email"
+msgstr "﻿Sähköposti"
+
+#: core/custom-fields.php:487 core/custom-fields.php:489
+#: core/custom-fields.php:1284 core/custom-fields.php:1286
+msgid "Attachments"
+msgstr "Liitteet"
+
+#: core/custom-fields.php:511 core/custom-fields.php:513
+#: core/custom-fields.php:739 core/custom-fields.php:741
+#: core/custom-fields.php:945 core/custom-fields.php:947
+msgid "Service Hours"
+msgstr "Palveluajat"
+
+#: core/custom-fields.php:515 core/custom-fields.php:743
+#: core/custom-fields.php:949
+msgid "Service Hour type"
+msgstr "Palveluajan tyyppi"
+
+#: core/custom-fields.php:522 core/custom-fields.php:750
+#: core/custom-fields.php:956
+msgid "Valid for now"
+msgstr "﻿Voimassa toistaiseksi"
+
+#: core/custom-fields.php:527 core/custom-fields.php:755
+#: core/custom-fields.php:961
+msgid "Valid From"
+msgstr "Voimassaolo alkaa"
+
+#: core/custom-fields.php:539 core/custom-fields.php:767
+#: core/custom-fields.php:973
+msgid "Valid To"
+msgstr "Voimassaolo päättyy"
+
+#: core/custom-fields.php:551 core/custom-fields.php:779
+#: core/custom-fields.php:985
+msgid "Opening Hours"
+msgstr "Palveluajat"
+
+#: core/custom-fields.php:554 core/custom-fields.php:782
+#: core/custom-fields.php:988
+msgid "Day From"
+msgstr "Alkupäivä"
+
+#: core/custom-fields.php:557 core/custom-fields.php:785
+#: core/custom-fields.php:991
+msgid "Day To"
+msgstr "Päätöspäivä"
+
+#: core/custom-fields.php:569 core/custom-fields.php:797
+#: core/custom-fields.php:1003
+msgid "Time From"
+msgstr "Alkuaika"
+
+#: core/custom-fields.php:574 core/custom-fields.php:802
+#: core/custom-fields.php:1008
+msgid "Time To"
+msgstr "Päätösaika"
+
+#: core/custom-fields.php:579 core/custom-fields.php:807
+#: core/custom-fields.php:1013
+msgid "Is extra?"
+msgstr "Onko lisäaika?"
+
+#: core/custom-fields.php:596 core/custom-fields.php:824
+#: core/custom-fields.php:1030
+msgid "Is closed"
+msgstr "Suljettu koko ajanjakson"
+
+#: core/custom-fields.php:621 core/custom-fields.php:848
+#: core/custom-fields.php:1125 core/custom-fields.php:1310
+#: core/custom-fields.php:1360
+msgid "Service channel type"
+msgstr "Palvelukanavan tyyppi"
+
+#: core/custom-fields.php:630 core/post-types.php:166 core/post-types.php:193
+msgid "Phone Channel"
+msgstr "Puhelinasionti"
+
+#: core/custom-fields.php:647
+msgid "Support Email"
+msgstr "Tuen sähköposti"
+
+#: core/custom-fields.php:656
+msgid "Phone Number"
+msgstr "﻿Puhelinnumero"
+
+#: core/custom-fields.php:855 core/post-types.php:266 core/post-types.php:293
+msgid "Service Location Channel"
+msgstr "Palvelupiste"
+
+#: core/custom-fields.php:895 core/custom-fields.php:1190
+msgid "Max length 30 characters. "
+msgstr "Maksimipituus 30 merkkiä. "
+
+#: core/custom-fields.php:1048
+msgid "Phones and faxes"
+msgstr "Puhelimet ja faxit"
+
+#: core/custom-fields.php:1094
+msgid "Contact"
+msgstr "﻿Yhteystiedot"
+
+#: core/custom-fields.php:1105
+msgid "Web Page Name"
+msgstr "Verkkosivun nimi"
+
+#: core/custom-fields.php:1111
+msgid "Emails"
+msgstr "Sähköpostit"
+
+#: core/custom-fields.php:1139
+msgid "Form Name"
+msgstr "Lomakkeen nimi"
+
+#: core/custom-fields.php:1144
+msgid "Form Identifier"
+msgstr "﻿Lomakkeen tunnus"
+
+#: core/custom-fields.php:1158
+msgid "Files"
+msgstr "﻿Tiedostot"
+
+#: core/custom-fields.php:1160
+msgid "Document details"
+msgstr "Dokumenttien tiedot"
+
+#: core/custom-fields.php:1162
+msgid "Document Type"
+msgstr "Tiedostomuoto"
+
+#: core/custom-fields.php:1176 core/custom-fields.php:1181
+msgid "Delivery Address"
+msgstr "Toimitusosoite"
+
+#: core/custom-fields.php:1178
+msgid "Form Receiver"
+msgstr "Lomakkeen vastaanottaja"
+
+#: core/custom-fields.php:1198
+msgid "Delivery informations"
+msgstr "Toimitustieto sanallisesti"
+
+#: core/custom-fields.php:1323
+msgid "Service Channel Name"
+msgstr "Palvelukanavan nimi"
+
+#: core/custom-fields.php:1364
+msgid "Changing publishing status affects all translations."
+msgstr "Julkaisun tilan muuttaminen vaikuttaa kaikkiin kieliversioihin."
+
+#: core/functions.php:154 core/functions.php:193
+msgid "Select one"
+msgstr "﻿Valitse yksi"
+
+#: core/post-types.php:13
+msgctxt "Post Type General Name"
+msgid "Services"
+msgstr "﻿Palvelut"
+
+#: core/post-types.php:14
+msgctxt "Post Type Singular Name"
+msgid "Service"
+msgstr "Palvelu"
+
+#: core/post-types.php:15 core/post-types.php:20
+msgid "Services"
+msgstr "﻿Palvelut"
+
+#: core/post-types.php:17
+msgid "Service Archives"
+msgstr "Arkisto: Palvelut"
+
+#: core/post-types.php:18
+msgid "Service Attributes"
+msgstr "Palvelun ominaisuudet"
+
+#: core/post-types.php:19
+msgid "Parent Service:"
+msgstr "Pääpalvelu:"
+
+#: core/post-types.php:21
+msgid "Add New Service"
+msgstr "Lisää uusi palvelu"
+
+#: core/post-types.php:22 core/post-types.php:72 core/post-types.php:122
+#: core/post-types.php:172 core/post-types.php:222 core/post-types.php:272
+#: core/post-types.php:322
+msgid "Add New"
+msgstr "﻿Lisää uusi"
+
+#: core/post-types.php:23
+msgid "New Service"
+msgstr "﻿Uusi palvelu"
+
+#: core/post-types.php:24
+msgid "Edit Service"
+msgstr "Muokkaa palvelua"
+
+#: core/post-types.php:25
+msgid "Update Service"
+msgstr "Päivitä palvelu"
+
+#: core/post-types.php:26
+msgid "View Service"
+msgstr "Näytä palvelu"
+
+#: core/post-types.php:27
+msgid "View Services"
+msgstr "﻿Näytä palvelut"
+
+#: core/post-types.php:28
+msgid "Search Service"
+msgstr "﻿Etsi palveluista"
+
+#: core/post-types.php:29 core/post-types.php:79 core/post-types.php:129
+#: core/post-types.php:179 core/post-types.php:229 core/post-types.php:279
+#: core/post-types.php:329
+msgid "Not found"
+msgstr "﻿Ei tuloksia"
+
+#: core/post-types.php:30 core/post-types.php:80 core/post-types.php:130
+#: core/post-types.php:180 core/post-types.php:230 core/post-types.php:280
+#: core/post-types.php:330
+msgid "Not found in Trash"
+msgstr "Ei tuloksia roskakorissa"
+
+#: core/post-types.php:31 core/post-types.php:81 core/post-types.php:131
+#: core/post-types.php:181 core/post-types.php:231 core/post-types.php:281
+#: core/post-types.php:331
+msgid "Featured Image"
+msgstr "﻿Artikkelikuva"
+
+#: core/post-types.php:32 core/post-types.php:82 core/post-types.php:132
+#: core/post-types.php:182 core/post-types.php:232 core/post-types.php:282
+#: core/post-types.php:332
+msgid "Set featured image"
+msgstr "Aseta artikkelikuva"
+
+#: core/post-types.php:33 core/post-types.php:83 core/post-types.php:133
+#: core/post-types.php:183 core/post-types.php:233 core/post-types.php:283
+#: core/post-types.php:333
+msgid "Remove featured image"
+msgstr "Poista artikkelikuva"
+
+#: core/post-types.php:34 core/post-types.php:84 core/post-types.php:134
+#: core/post-types.php:184 core/post-types.php:234 core/post-types.php:284
+#: core/post-types.php:334
+msgid "Use as featured image"
+msgstr "﻿Käytä artikkelikuvana"
+
+#: core/post-types.php:35
+msgid "Insert into service"
+msgstr "Lisää palveluun"
+
+#: core/post-types.php:36 core/post-types.php:86 core/post-types.php:136
+#: core/post-types.php:186 core/post-types.php:236 core/post-types.php:286
+#: core/post-types.php:336
+msgid "Uploaded to this item"
+msgstr "﻿Ladattu tähän kohteeseen"
+
+#: core/post-types.php:37
+msgid "Services list"
+msgstr "Palveluluettelo"
+
+#: core/post-types.php:38
+msgid "Services list navigation"
+msgstr "Palveluluettelon navigaatio"
+
+#: core/post-types.php:39 core/post-types.php:89 core/post-types.php:139
+#: core/post-types.php:189 core/post-types.php:239 core/post-types.php:289
+#: core/post-types.php:339
+msgid "Filter services list"
+msgstr "Suodata palveluluetteloa"
+
+#: core/post-types.php:63
+msgctxt "Post Type General Name"
+msgid "Organizations"
+msgstr "﻿Organisaatiot"
+
+#: core/post-types.php:64
+msgctxt "Post Type Singular Name"
+msgid "Organization"
+msgstr "﻿Organisaatio"
+
+#: core/post-types.php:67
+msgid "Organization Archives"
+msgstr "Arkisto: organisaatiot"
+
+#: core/post-types.php:68
+msgid "Organization Attributes"
+msgstr "Organisaation ominaisuudet"
+
+#: core/post-types.php:69
+msgid "Parent Organization:"
+msgstr "Yläorganisaatio:"
+
+#: core/post-types.php:71
+msgid "Add New Organization"
+msgstr "﻿Lisää uusi organisaatio"
+
+#: core/post-types.php:73
+msgid "New Organization"
+msgstr "Uusi organisaatio"
+
+#: core/post-types.php:74
+msgid "Edit Organization"
+msgstr "Muokkaa organisaatiota"
+
+#: core/post-types.php:75
+msgid "Update Organization"
+msgstr "Päivitä organisaatio"
+
+#: core/post-types.php:76
+msgid "View Organization"
+msgstr "Näytä organisaatio"
+
+#: core/post-types.php:77
+msgid "View Organizations"
+msgstr "Näytä organisaatiot"
+
+#: core/post-types.php:78
+msgid "Search Organization"
+msgstr "Etsi organisaatioista"
+
+#: core/post-types.php:85
+msgid "Insert into Organization"
+msgstr "Lisää organisaatioon"
+
+#: core/post-types.php:87
+msgid "Organizations list"
+msgstr "Organisaatioluettelo"
+
+#: core/post-types.php:88
+msgid "Organizations list navigation"
+msgstr "Organisaatioluettelon navigaatio"
+
+#: core/post-types.php:113
+msgctxt "Post Type General Name"
+msgid "Electronic Channels"
+msgstr "Verkkoasiointikanavat"
+
+#: core/post-types.php:114
+msgctxt "Post Type Singular Name"
+msgid "Electronic Channel"
+msgstr "Verkkoasiointi"
+
+#: core/post-types.php:115 core/post-types.php:120
+msgid "Electronic Channels"
+msgstr "Verkkoasiointikanavat"
+
+#: core/post-types.php:116 core/post-types.php:143
+msgid "Electronic Channel"
+msgstr "Verkkoasiointi"
+
+#: core/post-types.php:117
+msgid "Electronic Channel Archives"
+msgstr "Arkisto: verkkoasiointikanavat"
+
+#: core/post-types.php:118
+msgid "Electronic Channel Attributes"
+msgstr "Verkkoasiointikanavan ominaisyydet"
+
+#: core/post-types.php:119
+msgid "Parent Electronic Channel:"
+msgstr "Yläkanava:"
+
+#: core/post-types.php:121
+msgid "Add New Electronic Channel"
+msgstr "Lisää uusi verkkoasiointi"
+
+#: core/post-types.php:123
+msgid "New Electronic Channel"
+msgstr "Uusi verkkoasiointi"
+
+#: core/post-types.php:124
+msgid "Edit Electronic Channel"
+msgstr "Muokkaa verkkoasiointikanavaa"
+
+#: core/post-types.php:125
+msgid "Update Electronic Channel"
+msgstr "Päivitä verkkoasiointi"
+
+#: core/post-types.php:126
+msgid "View Electronic Channel"
+msgstr "Näytä verkkoasiointi"
+
+#: core/post-types.php:127
+msgid "View Electronic Channels"
+msgstr "Näytä verkkoasiointikanavat"
+
+#: core/post-types.php:128
+msgid "Search Electronic Channel"
+msgstr "Etsi verkkoasiointikanavista"
+
+#: core/post-types.php:135
+msgid "Insert into Electronic Channel"
+msgstr "Lisää verkkoasioinkanavaan"
+
+#: core/post-types.php:137
+msgid "Electronic Channels list"
+msgstr "Verkkoasiointikanavien luettelo"
+
+#: core/post-types.php:138
+msgid "Electronic Channels list navigation"
+msgstr "Verkkoasiointiluettelon navigaatio"
+
+#: core/post-types.php:163
+msgctxt "Post Type General Name"
+msgid "Phone Channels"
+msgstr "Puhelinasiontikanavat"
+
+#: core/post-types.php:164
+msgctxt "Post Type Singular Name"
+msgid "Phone Channel"
+msgstr "Puhelinasionti"
+
+#: core/post-types.php:165 core/post-types.php:170
+msgid "Phone Channels"
+msgstr "Puhelinasiontikanavat"
+
+#: core/post-types.php:167
+msgid "Phone Channel Archives"
+msgstr "Arkisto: Puhelinasiointikanavat"
+
+#: core/post-types.php:168
+msgid "Phone Channel Attributes"
+msgstr "Puhelinasiontikanavan ominaisuudet"
+
+#: core/post-types.php:169
+msgid "Parent Phone Channel:"
+msgstr "Yläkohde:"
+
+#: core/post-types.php:171
+msgid "Add New Phone Channel"
+msgstr "Lisää uusi puhelinasiointi"
+
+#: core/post-types.php:173
+msgid "New Phone Channel"
+msgstr "Uusi puhelinasiointi"
+
+#: core/post-types.php:174
+msgid "Edit Phone Channel"
+msgstr "Muokkaa puhelinasiointikanavaa"
+
+#: core/post-types.php:175
+msgid "Update Phone Channel"
+msgstr "Päivitä puhelinasiointi"
+
+#: core/post-types.php:176
+msgid "View Phone Channel"
+msgstr "Näytä puhelinasiointi"
+
+#: core/post-types.php:177
+msgid "View Phone Channels"
+msgstr "Näytä puhelinasiointikanavat"
+
+#: core/post-types.php:178
+msgid "Search Phone Channel"
+msgstr "Etsi puhelinasiointikanavista"
+
+#: core/post-types.php:185
+msgid "Insert into Phone Channel"
+msgstr "Lisää puhelinasiointikanavaan"
+
+#: core/post-types.php:187
+msgid "Phone Channels list"
+msgstr "Puhelinasiointikanavien luettelo"
+
+#: core/post-types.php:188
+msgid "Phone Channels list navigation"
+msgstr "Puhelinasiointikanavien navigaatio"
+
+#: core/post-types.php:213
+msgctxt "Post Type General Name"
+msgid "Printable Form Channels"
+msgstr "Tulostettavat lomakkeet"
+
+#: core/post-types.php:214
+msgctxt "Post Type Singular Name"
+msgid "Printable Form Channel"
+msgstr "Tulostettava lomake"
+
+#: core/post-types.php:215 core/post-types.php:220
+msgid "Printable Form Channels"
+msgstr "Tulostettavat lomakkeet"
+
+#: core/post-types.php:216 core/post-types.php:243
+msgid "Printable Form Channel"
+msgstr "Tulostettava lomake"
+
+#: core/post-types.php:217
+msgid "Printable Form Channel Archives"
+msgstr "Arkisto: Tulostettavat lomakkeet"
+
+#: core/post-types.php:218
+msgid "Printable Form Channel Attributes"
+msgstr "Tulostettavan lomakkeen ominaisuudet"
+
+#: core/post-types.php:219
+msgid "Parent Printable Form Channel:"
+msgstr "Ylälomake:"
+
+#: core/post-types.php:221
+msgid "Add New Printable Form Channel"
+msgstr "Lisää uusi tulostettava lomake"
+
+#: core/post-types.php:223
+msgid "New Printable Form Channel"
+msgstr "Uusi tulostettava lomake"
+
+#: core/post-types.php:224
+msgid "Edit Printable Form Channel"
+msgstr "Muokkaa tulostettavaa lomaketta"
+
+#: core/post-types.php:225
+msgid "Update Printable Form Channel"
+msgstr "Päivitä tulostettava lomake"
+
+#: core/post-types.php:226
+msgid "View Printable Form Channel"
+msgstr "Näytä tulostettava lomake"
+
+#: core/post-types.php:227
+msgid "View Printable Form Channels"
+msgstr "Näytä tulostettavat lomakkeet"
+
+#: core/post-types.php:228
+msgid "Search Printable Form Channel"
+msgstr "Etsi tulostettavista lomakkeista"
+
+#: core/post-types.php:235
+msgid "Insert into Printable Form Channel"
+msgstr "Lisää tulostettavaan lomakkeeseen"
+
+#: core/post-types.php:237
+msgid "Printable Form Channels list"
+msgstr "Tulostettavien lomakkeiden luettelo"
+
+#: core/post-types.php:238
+msgid "Printable Form Channels list navigation"
+msgstr "Tulostettavien lomakkeiden luettelon navigaatio"
+
+#: core/post-types.php:263
+msgctxt "Post Type General Name"
+msgid "Service Location Channels"
+msgstr "Palvelupisteet"
+
+#: core/post-types.php:264
+msgctxt "Post Type Singular Name"
+msgid "Service Location Channel"
+msgstr "Palvelupiste"
+
+#: core/post-types.php:265 core/post-types.php:270
+msgid "Service Location Channels"
+msgstr "Palvelupisteet"
+
+#: core/post-types.php:267
+msgid "Service Location Channel Archives"
+msgstr "Arkisto: Palvelupisteet"
+
+#: core/post-types.php:268
+msgid "Service Location Channel Attributes"
+msgstr "Palvelupisteen ominaisuudet"
+
+#: core/post-types.php:269
+msgid "Parent Service Location Channel:"
+msgstr "Yläpalvelupiste:"
+
+#: core/post-types.php:271
+msgid "Add New Service Location Channel"
+msgstr "Lisää uusi palvelupiste"
+
+#: core/post-types.php:273
+msgid "New Service Location Channel"
+msgstr "Uusi palvelupiste"
+
+#: core/post-types.php:274
+msgid "Edit Service Location Channel"
+msgstr "Muokkaa palvelupistettä"
+
+#: core/post-types.php:275
+msgid "Update Service Location Channel"
+msgstr "Päivitä palvelupiste"
+
+#: core/post-types.php:276
+msgid "View Service Location Channel"
+msgstr "Näytä palvelupiste"
+
+#: core/post-types.php:277
+msgid "View Service Location Channels"
+msgstr "Näytä palvelupisteet"
+
+#: core/post-types.php:278
+msgid "Search Service Location Channel"
+msgstr "Etsi palvelupisteistä"
+
+#: core/post-types.php:285
+msgid "Insert into Service Location Channel"
+msgstr "Lisää palvelupisteeseen"
+
+#: core/post-types.php:287
+msgid "Service Location Channels list"
+msgstr "Palvelupisteluettelo"
+
+#: core/post-types.php:288
+msgid "Service Location Channels list navigation"
+msgstr "Palvelupisteiden "
+
+#: core/post-types.php:313
+msgctxt "Post Type General Name"
+msgid "Webpage Channels"
+msgstr "Verkkosivut"
+
+#: core/post-types.php:314
+msgctxt "Post Type Singular Name"
+msgid "Webpage Channel"
+msgstr "Verkkosivu"
+
+#: core/post-types.php:315 core/post-types.php:320
+msgid "Webpage Channels"
+msgstr "Verkkosivut"
+
+#: core/post-types.php:316 core/post-types.php:343
+msgid "Webpage Channel"
+msgstr "Verkkosivu"
+
+#: core/post-types.php:317
+msgid "Webpage Channel Archives"
+msgstr "Arkisto: Verkkosivut"
+
+#: core/post-types.php:318
+msgid "Webpage Channel Attributes"
+msgstr "Verkkosivun ominaisuudet"
+
+#: core/post-types.php:319
+msgid "Parent Webpage Channel:"
+msgstr "Yläverkkosivu:"
+
+#: core/post-types.php:321
+msgid "Add New Webpage Channel"
+msgstr "Lisää uus verkkosivu"
+
+#: core/post-types.php:323
+msgid "New Webpage Channel"
+msgstr "Uusi verkkosivu"
+
+#: core/post-types.php:324
+msgid "Edit Webpage Channel"
+msgstr "Muokkaa verkkosivua"
+
+#: core/post-types.php:325
+msgid "Update Webpage Channel"
+msgstr "Päivitä verkkosivu"
+
+#: core/post-types.php:326
+msgid "View Webpage Channel"
+msgstr "Näytä verkkosivu"
+
+#: core/post-types.php:327
+msgid "View Webpage Channels"
+msgstr "Näytä verkkosivut"
+
+#: core/post-types.php:328
+msgid "Search Webpage Channel"
+msgstr "Etsi verkkosivuista"
+
+#: core/post-types.php:335
+msgid "Insert into Webpage Channel"
+msgstr "Lisää verkkosivuun"
+
+#: core/post-types.php:337
+msgid "Webpage Channels list"
+msgstr "Verkkosivuluettelo"
+
+#: core/post-types.php:338
+msgid "Webpage Channels list navigation"
+msgstr "Verkkosivuluettelon navigaatio"
+
+#: core/post-types.php:372
+msgctxt "Taxonomy General Name"
+msgid "Service classes"
+msgstr "Palveluluokat"
+
+#: core/post-types.php:373
+msgctxt "Taxonomy Singular Name"
+msgid "Service class"
+msgstr "Palveluluokka"
+
+#: core/post-types.php:374
+msgid "Service classes"
+msgstr "Palveluluokat"
+
+#: core/post-types.php:375
+msgid "All Service classes"
+msgstr "Kaikki palveluluokat"
+
+#: core/post-types.php:376
+msgid "Parent Service class"
+msgstr "Pääpalveluluokka"
+
+#: core/post-types.php:377
+msgid "Parent Service class:"
+msgstr "Pääpalveluluokka:"
+
+#: core/post-types.php:378
+msgid "New Service class Name"
+msgstr "Uuden palveluluokan nimi"
+
+#: core/post-types.php:379
+msgid "Add New Service class"
+msgstr "Lisää uusi palveluluokka"
+
+#: core/post-types.php:380
+msgid "Edit Service class"
+msgstr "Muokkaa palveluluokkaa"
+
+#: core/post-types.php:381
+msgid "Update Service class"
+msgstr "Päivitä palveluluokka"
+
+#: core/post-types.php:382
+msgid "View Service class"
+msgstr "Näytä palveluluokka"
+
+#: core/post-types.php:383 core/post-types.php:419 core/post-types.php:455
+#: core/post-types.php:491 core/post-types.php:527
+msgid "Separate items with commas"
+msgstr "Erottele kohteet pilkulla"
+
+#: core/post-types.php:384 core/post-types.php:420 core/post-types.php:456
+#: core/post-types.php:492 core/post-types.php:528
+msgid "Add or remove items"
+msgstr "Lisää tai poista kohteita"
+
+#: core/post-types.php:385 core/post-types.php:421 core/post-types.php:457
+#: core/post-types.php:493 core/post-types.php:529
+msgid "Choose from the most used"
+msgstr "﻿Valitse käytetyimmistä"
+
+#: core/post-types.php:386
+msgid "Popular Service classes"
+msgstr "Suosituimmat palveluluokat"
+
+#: core/post-types.php:387
+msgid "Search Service classes"
+msgstr "Etsi palveluluokista"
+
+#: core/post-types.php:388 core/post-types.php:424 core/post-types.php:460
+#: core/post-types.php:496 core/post-types.php:532
+msgid "Not Found"
+msgstr "Ei tuloksia"
+
+#: core/post-types.php:389 core/post-types.php:425 core/post-types.php:461
+#: core/post-types.php:497 core/post-types.php:533
+msgid "No items"
+msgstr "﻿Ei kohteita"
+
+#: core/post-types.php:390
+msgid "Service classes list"
+msgstr "Paveluluokkien luettelo"
+
+#: core/post-types.php:391
+msgid "Service classes list navigation"
+msgstr "Palveluluokkien luettelon navigaatio"
+
+#: core/post-types.php:408
+msgctxt "Taxonomy General Name"
+msgid "Ontology terms"
+msgstr "Asiasanat"
+
+#: core/post-types.php:409
+msgctxt "Taxonomy Singular Name"
+msgid "Ontology term"
+msgstr "Asiasana"
+
+#: core/post-types.php:410
+msgid "Ontology terms"
+msgstr "Asiasanat"
+
+#: core/post-types.php:411
+msgid "All Ontology terms"
+msgstr "Kaikki asiasanat"
+
+#: core/post-types.php:412
+msgid "Parent Ontology term"
+msgstr "Yläasiasana"
+
+#: core/post-types.php:413
+msgid "Parent Ontology term:"
+msgstr "Yläasiasana:"
+
+#: core/post-types.php:414
+msgid "New Ontology term Name"
+msgstr "Uusi asiasana"
+
+#: core/post-types.php:415
+msgid "Add New Ontology term"
+msgstr "Lisää uusi asiasana"
+
+#: core/post-types.php:416
+msgid "Edit Ontology term"
+msgstr "Muokkaa asiasanaa"
+
+#: core/post-types.php:417
+msgid "Update Ontology term"
+msgstr "Päivitä asiasana"
+
+#: core/post-types.php:418
+msgid "View Ontology term"
+msgstr "Näytä asiasana"
+
+#: core/post-types.php:422
+msgid "Popular Ontology terms"
+msgstr "Suosituimmat asiasanat"
+
+#: core/post-types.php:423
+msgid "Search Ontology terms"
+msgstr "Etsi asiasanoista"
+
+#: core/post-types.php:426
+msgid "Ontology terms list"
+msgstr "Asiasanaluettelo"
+
+#: core/post-types.php:427
+msgid "Ontology terms list navigation"
+msgstr "Asiasanaluettelon navigaatio"
+
+#: core/post-types.php:444
+msgctxt "Taxonomy General Name"
+msgid "Target groups"
+msgstr "Kohderyhmät"
+
+#: core/post-types.php:445
+msgctxt "Taxonomy Singular Name"
+msgid "Target group"
+msgstr "Kohderyhmä"
+
+#: core/post-types.php:446
+msgid "Target groups"
+msgstr "Kohderyhmät"
+
+#: core/post-types.php:447
+msgid "All Target groups"
+msgstr "Kaikki kohderyhmät"
+
+#: core/post-types.php:448
+msgid "Parent Target group"
+msgstr "Yläkohderyhmä"
+
+#: core/post-types.php:449
+msgid "Parent Target group:"
+msgstr "Yläkohderyhmä:"
+
+#: core/post-types.php:450
+msgid "New Target group Name"
+msgstr "Uuden kohderyhmän nimi"
+
+#: core/post-types.php:451
+msgid "Add New Target group"
+msgstr "Lisää uusi kohderyhmä"
+
+#: core/post-types.php:452
+msgid "Edit Target group"
+msgstr "Muokkaa kohderyhmää"
+
+#: core/post-types.php:453
+msgid "Update Target group"
+msgstr "Päivitä kohderyhmä"
+
+#: core/post-types.php:454
+msgid "View Target group"
+msgstr "Näytä kohderyhmä"
+
+#: core/post-types.php:458
+msgid "Popular Target groups"
+msgstr "Suositummat kohderyhmät"
+
+#: core/post-types.php:459
+msgid "Search Target groups"
+msgstr "Etsi kohderyhmistä"
+
+#: core/post-types.php:462
+msgid "Target groups list"
+msgstr "Kohderyhmäluettelo"
+
+#: core/post-types.php:463
+msgid "Target groups list navigation"
+msgstr "Kohderyhmäluettelon navigaatio"
+
+#: core/post-types.php:480
+msgctxt "Taxonomy General Name"
+msgid "Life Events"
+msgstr "Elämäntilanteet"
+
+#: core/post-types.php:481
+msgctxt "Taxonomy Singular Name"
+msgid "Life Event"
+msgstr "Elämäntilanne"
+
+#: core/post-types.php:482
+msgid "Life Events"
+msgstr "Elämäntilanteet"
+
+#: core/post-types.php:483
+msgid "All Life Events"
+msgstr "Kaikki elämäntilanteet"
+
+#: core/post-types.php:484
+msgid "Parent Life Event"
+msgstr "Yläkohde:"
+
+#: core/post-types.php:485
+msgid "Parent Life Event:"
+msgstr "Yläkohde:"
+
+#: core/post-types.php:486
+msgid "New Life Event Name"
+msgstr "Uuden elämäntilanteen nimi"
+
+#: core/post-types.php:487
+msgid "Add New Life Event"
+msgstr "Lisää uusi elämäntilanne"
+
+#: core/post-types.php:488
+msgid "Edit Life Event"
+msgstr "Muokkaa elämäntilannetta"
+
+#: core/post-types.php:489
+msgid "Update Life Event"
+msgstr "Päivitä elämäntilanne"
+
+#: core/post-types.php:490
+msgid "View Life Event"
+msgstr "Näytä elämäntilanne"
+
+#: core/post-types.php:494
+msgid "Popular Life Events"
+msgstr "Käytetyimmät elämäntilanteet"
+
+#: core/post-types.php:495
+msgid "Search Life Events"
+msgstr "Hae elämäntilanteista"
+
+#: core/post-types.php:498
+msgid "Life Events list"
+msgstr "Elämäntilanneluetteo"
+
+#: core/post-types.php:499
+msgid "Life Events list navigation"
+msgstr "Elämäntilanneluettelon navigaatio"
+
+#: core/post-types.php:516
+msgctxt "Taxonomy General Name"
+msgid "Industrial classes"
+msgstr "Toimialat"
+
+#: core/post-types.php:517
+msgctxt "Taxonomy Singular Name"
+msgid "Industrial class"
+msgstr "Toimiala"
+
+#: core/post-types.php:518
+msgid "Industrial classes"
+msgstr "Toimialat"
+
+#: core/post-types.php:519
+msgid "All Industrial classes"
+msgstr "Kaikki toimialat"
+
+#: core/post-types.php:520
+msgid "Parent Industrial class"
+msgstr "Päätoimiala"
+
+#: core/post-types.php:521
+msgid "Parent Industrial class:"
+msgstr "Päätoimiala"
+
+#: core/post-types.php:522
+msgid "New Industrial class Name"
+msgstr "Uuden toimialan nimi"
+
+#: core/post-types.php:523
+msgid "Add New Industrial class"
+msgstr "Lisää uusi toimiala"
+
+#: core/post-types.php:524
+msgid "Edit Industrial class"
+msgstr "Muokkaa toimialaa"
+
+#: core/post-types.php:525
+msgid "Update Industrial class"
+msgstr "Päivitä toimiala"
+
+#: core/post-types.php:526
+msgid "View Industrial class"
+msgstr "Näytä toimialat"
+
+#: core/post-types.php:530
+msgid "Popular Industrial classes"
+msgstr "Käytetyimmät toimialat"
+
+#: core/post-types.php:531
+msgid "Search Industrial classes"
+msgstr "Etsi toimialoista"
+
+#: core/post-types.php:534
+msgid "Industrial classes list"
+msgstr "Toimialaluettelo"
+
+#: core/post-types.php:535
+msgid "Industrial classes list navigation"
+msgstr "Toimialaluettelon navigaatio"
+
+#: lib/class-ptv-in-module.php:128
+msgid "Error details:"
+msgstr "Virheen yksityiskohdat:"
+
+#: lib/in/class-ptv-echannel-in-controller.php:40
+#: lib/in/class-ptv-echannel-in-controller.php:78
+#: lib/in/class-ptv-phone-channel-in-controller.php:40
+#: lib/in/class-ptv-phone-channel-in-controller.php:78
+#: lib/in/class-ptv-printable-form-channel-in-controller.php:40
+#: lib/in/class-ptv-printable-form-channel-in-controller.php:82
+#: lib/in/class-ptv-service-in-controller.php:40
+#: lib/in/class-ptv-service-in-controller.php:78
+#: lib/in/class-ptv-service-location-channel-in-controller.php:40
+#: lib/in/class-ptv-service-location-channel-in-controller.php:78
+#: lib/in/class-ptv-web-page-channel-in-controller.php:40
+#: lib/in/class-ptv-web-page-channel-in-controller.php:78
+msgid "Request contains invalid properties."
+msgstr "Pyyntö sisältää "
+
+#: lib/in/class-ptv-echannel-in-controller.php:49
+#: lib/in/class-ptv-phone-channel-in-controller.php:49
+#: lib/in/class-ptv-printable-form-channel-in-controller.php:49
+#: lib/in/class-ptv-service-in-controller.php:49
+#: lib/in/class-ptv-service-location-channel-in-controller.php:49
+#: lib/in/class-ptv-web-page-channel-in-controller.php:49
+msgid "Failed to create the item to the PTV."
+msgstr "Kohteen luonti PTV:hen epäonnistui."
+
+#: lib/in/class-ptv-echannel-in-controller.php:87
+#: lib/in/class-ptv-phone-channel-in-controller.php:87
+#: lib/in/class-ptv-printable-form-channel-in-controller.php:91
+#: lib/in/class-ptv-service-in-controller.php:86
+#: lib/in/class-ptv-service-location-channel-in-controller.php:87
+#: lib/in/class-ptv-web-page-channel-in-controller.php:87
+msgid "Failed to update the item to the PTV."
+msgstr "Kohteen tallennus PTV:hen epäonnistui."
+
+#: lib/in/class-ptv-echannel-in-controller.php:296
+#: lib/in/class-ptv-phone-channel-in-controller.php:205
+#: lib/in/class-ptv-printable-form-channel-in-controller.php:450
+#: lib/in/class-ptv-service-in-controller.php:693
+#: lib/in/class-ptv-service-location-channel-in-controller.php:377
+#: lib/in/class-ptv-web-page-channel-in-controller.php:142
+msgid "Post id or object missing."
+msgstr "Kohteen ID tai päivitettävä kohde puuttuu."
+
+#: lib/in/class-ptv-echannel-in-controller.php:305
+#: lib/in/class-ptv-phone-channel-in-controller.php:214
+#: lib/in/class-ptv-printable-form-channel-in-controller.php:460
+#: lib/in/class-ptv-service-in-controller.php:702
+#: lib/in/class-ptv-service-location-channel-in-controller.php:386
+#: lib/in/class-ptv-web-page-channel-in-controller.php:151
+msgid ""
+"Item was saved to the PTV, but synchronization of unique ids to translations "
+"failed."
+msgstr ""
+"Kohde tallennettiin PTV:hen, mutta yksiköllisten tunnisteiden synkronointi "
+"kieliversioihin epäonnistui."
+
+#: lib/in/class-ptv-echannel-in-controller.php:312
+msgid ""
+"Item was saved to the PTV, but synchronization of authentication and "
+"signature fields to translations failed."
+msgstr ""
+"Kohde tallennettiin PTV:hen, mutta todennus- ja allekirjoituskenttien "
+"synkronointi kieliversioihin epäonnistui."
+
+#: lib/in/class-ptv-echannel-in-controller.php:319
+#: lib/in/class-ptv-phone-channel-in-controller.php:221
+#: lib/in/class-ptv-service-location-channel-in-controller.php:400
+msgid ""
+"Item was saved to the PTV, but synchronization of service hours to "
+"translations failed."
+msgstr ""
+"Kohde tallennettiin PTV:hen, mutta palveluaikojen synkronointi "
+"kieliversioihin epäonnistui."
+
+#: lib/in/class-ptv-echannel-in-controller.php:326
+#: lib/in/class-ptv-phone-channel-in-controller.php:235
+#: lib/in/class-ptv-printable-form-channel-in-controller.php:481
+#: lib/in/class-ptv-service-in-controller.php:737
+#: lib/in/class-ptv-service-location-channel-in-controller.php:414
+msgid ""
+"Item was saved to the PTV, but synchronization of areas to translations "
+"failed."
+msgstr ""
+"Kohde tallennettiin PTV:hen, mutta alueiden synkronointi kieliversioihin "
+"epäonnistui."
+
+#: lib/in/class-ptv-in-controller.php:76
+msgid ""
+"New items can only be created in the primary language. Please attach "
+"translation to an item created in the primary language."
+msgstr ""
+"Uusia kohteita voi tehdä ainoastaan oletuskielellä. Liitä käännös "
+"oletuskielellä tehtyyn kohteeseen."
+
+#: lib/in/class-ptv-phone-channel-in-controller.php:228
+#: lib/in/class-ptv-printable-form-channel-in-controller.php:474
+#: lib/in/class-ptv-service-in-controller.php:730
+#: lib/in/class-ptv-service-location-channel-in-controller.php:407
+#: lib/in/class-ptv-web-page-channel-in-controller.php:158
+msgid ""
+"Item was saved to the PTV, but synchronization of languages to translations "
+"failed."
+msgstr ""
+"Kohde tallennettiin PTV:hen, mutta kielien synkronointi kieliversioihin "
+"epäonnistui."
+
+#: lib/in/class-ptv-printable-form-channel-in-controller.php:467
+msgid ""
+"Item was saved to the PTV, but synchronization of delivery address to "
+"translations failed."
+msgstr ""
+"Kohde tallennettiin PTV:hen, mutta jakeluosoitteen synkronointi "
+"kieliversioihin epäonnistui."
+
+#: lib/in/class-ptv-service-in-controller.php:709
+msgid ""
+"Item was saved to the PTV, but synchronization of service and channel "
+"relations to translations failed."
+msgstr ""
+"Kohde tallennettiin PTV:hen, mutta palveluiden ja asiointikanavien suhteiden "
+"synkronointi epäonnistui."
+
+#: lib/in/class-ptv-service-in-controller.php:716
+msgid ""
+"Item was saved to the PTV, but synchronization of organizations to "
+"translations failed."
+msgstr ""
+"Kohde tallennettiin PTV:hen, mutta organisaatioiden synkronointi "
+"kieliversioihin epäonnistui."
+
+#: lib/in/class-ptv-service-in-controller.php:723
+msgid ""
+"Item was saved to the PTV, but synchronization of service charge type to "
+"translations failed."
+msgstr ""
+"Kohde tallennettiin PTV:hen, mutta maksullisuuden tilan synkronointi "
+"kieliversioihin epäonnistui."
+
+#: lib/in/class-ptv-service-location-channel-in-controller.php:393
+msgid ""
+"Item was saved to the PTV, but synchronization of addresses to translations "
+"failed."
+msgstr ""
+"Kohde tallennettiin PTV:hen, mutta osoitteiden synkronointi kieliversioihin "
+"epäonnistui."
+
+#: lib/out/class-ptv-background-process.php:48
+msgid "Item type is invalid"
+msgstr "﻿Kohteen tyyppi ei kelpaa"
+
+#: lib/out/class-wp-background-process.php:425
+#, php-format
+msgid "Every %d Minutes"
+msgstr "joka %d minuutti"
+
+#: ptv-for-wordpress.php:187
+msgid "Define API constants in the wp-config.php and enable Polylang plugin."
+msgstr ""
+"Määritä lisäosan tarvitsemat muuttujat wp-config.php -tiedostossa ja ota "
+"Polylang-lisäosa käyttöön."
+
+#~ msgid "Settings saved."
+#~ msgstr "Asetukset tallennettu."
+
+#~ msgid "Select File"
+#~ msgstr "Valitse tiedosto"
+
+#~ msgid ""
+#~ "If you need to add scripts to your footer (like Google Analytics tracking "
+#~ "code), you should enter them in this box."
+#~ msgstr ""
+#~ "Jos haluat lisätä skriptin footeriin (esim. Google Analyticsin tracking "
+#~ "coden), lisää se tähän laatikkoon."
+
+#~ msgid "No form"
+#~ msgstr "Ei lomaketta"
+
+#~ msgid ""
+#~ "If you need to add scripts to your header, you should enter them here."
+#~ msgstr "Jos haluat lisätä skriptin headeriin, lisää se tähän."
+
+#~ msgid "Select Image"
+#~ msgstr "Valitse kuva"
+
+#~ msgid "Images"
+#~ msgstr "Kuvat"
+
+#~ msgctxt "sidebar"
+#~ msgid "Add New"
+#~ msgstr "Lisää uusi"
+
+#~ msgid "Please pass a name for the sidebar."
+#~ msgstr "Anna sivupalkin nimi."
+
+#~ msgid "Unknown action attempted."
+#~ msgstr "Tuntematonta toimintaa yritetty"
+
+#~ msgid "Sidebar with the same ID is already registered."
+#~ msgstr "Sivupalkki samalla ID:llä on jo olemassa."
+
+#~ msgid "Sidebar not found."
+#~ msgstr "Sivupalkkia ei löydy."
+
+#~ msgid "Add Sidebar"
+#~ msgstr "Lisää sivupalkki"
+
+#~ msgid "Please enter the name of the new sidebar:"
+#~ msgstr "Syötä uuden sivupalkin nimi:"
+
+#~ msgid "Are you sure you wish to remove this sidebar?"
+#~ msgstr "Oletko varma, että haluat poistaa tämän sivupalkin?"
+
+#~ msgid "Please fill out all required fields highlighted below."
+#~ msgstr ""
+#~ "Täytäthän kaikki pakolliset kentät, jotka löytyvät korostettuna alla."
+
+#~ msgid ""
+#~ "The changes you made will be lost if you navigate away from this page."
+#~ msgstr "Tekemäsi muutokset poistetaan mikäli poistut tältä sivulta."
+
+#~ msgid "The address could not be found. "
+#~ msgstr "Osoitetta ei löydy."
+
+#~ msgid "Geocode was not successful for the following reason: "
+#~ msgstr "Geocode ei toiminut seuraavasta syystä:"
+
+#~ msgid "Locate address on the map:"
+#~ msgstr "Sijainti kartalla"
+
+#~ msgid "Minimum number of items not reached (%s items)"
+#~ msgstr "Minimimäärää ei ole saavutettu (%s kpl)"
+
+#~ msgid "Maximum number of items reached (%s items)"
+#~ msgstr "Maksimimäärä saavutettu (%s kpl)"
+
+#~ msgid "There are no %s yet. Click <a href=\"#\">here</a> to add one."
+#~ msgstr "%s ei ole vielä. Klikkaa <a href=“#”>tästä</a> lisätäksesi yhden."
+
+#~ msgid "Minimum number of rows not reached (%1$d %2$s)"
+#~ msgstr "Minimirivimäärää ei ole saavutettu (%1$d %2$s)"
+
+#~ msgid "Maximum number of rows exceeded (%1$d %2$s)"
+#~ msgstr "Maksimirivimäärä saavutettu (%1$d %2$s)"
+
+#~ msgid "Add %s"
+#~ msgstr "Lisää %s"
+
+#~ msgid "Clone"
+#~ msgstr "Kopioi"
+
+#~ msgid "Remove"
+#~ msgstr "Poista"
+
+#~ msgid "Collapse/Expand"
+#~ msgstr "Pienennä/Laajenna"
+
+#~ msgid "Please fill out all fields correctly. "
+#~ msgstr "Täytä kaikki kentät oikein."
+
+#~ msgid "This field is required. "
+#~ msgstr "Tämä kenttä on pakollinen."
+
+#~ msgid "Please choose an option. "
+#~ msgstr "Valitse vaihtoehto."
+
+#~ msgid "Select Time"
+#~ msgstr "Valitse aika"
+
+#~ msgid "Select Date"
+#~ msgstr "Valitse päivämäärä"
+
+#, fuzzy
+#~ msgid "out of"
+#~ msgstr "Kirjaudu ulos"
+
+#~ msgid "selected item"
+#~ msgstr "Valittu kohde"
+
+#~ msgid "selected items"
+#~ msgstr "Valitut kappaleet"
+
+#~ msgid "Select a color"
+#~ msgstr "Valitse väri"
+
+#~ msgid "No options."
+#~ msgstr "Ei valintoja."
+
+#~ msgid "Show all options"
+#~ msgstr "Näytä kaikki vaihtoehdot"
+
+#~ msgid "No option names provided"
+#~ msgstr "Ei annettuja vaihtoehtoja"
+
+#~ msgid "Theme Options updated."
+#~ msgstr "Teeman asetukset päivitetty."
+
+#~ msgid "Actions"
+#~ msgstr "Toiminnot"
+
+#~ msgid "Save Changes"
+#~ msgstr "Tallenna muutokset"
+
+#~ msgid "No options are available for this widget."
+#~ msgstr "Tälle vimpaimelle ei ole asetuksia saatavilla."
+
+#~ msgid "Wrong index!"
+#~ msgstr "Väärä indeksi!"
+
+#~ msgid "Wrong length!"
+#~ msgstr "Väärä pituus!"
+
+#~ msgid "Wrong offset!"
+#~ msgstr "Väärä offset!"
+
+#~ msgid "propTypes"
+#~ msgstr "Tyyppi"
+
+#~ msgid "displayName"
+#~ msgstr "Näytä nimi"
+
+#~ msgid "Deleted"
+#~ msgstr "Poistettu"
+
+#~ msgid "Modified"
+#~ msgstr "Muokattu"
+
+#~ msgid "Service Coverage"
+#~ msgstr "Alue, jolla palvelu on saatavilla"
+
+#~ msgid "Service is available nationwide"
+#~ msgstr "Palvelu on saatavilla koko maassa"
+
+#~ msgid ""
+#~ "Service is available in a selected municipalities (Select municipalities)"
+#~ msgstr "Palvelu on saatavilla seuraavissa kunnissa: (Valitse kunnat)"
+
+#~ msgid "Street address"
+#~ msgstr "Katuosoite"
+
+#~ msgid "Post office box"
+#~ msgstr "Postilokero-osoite"
+
+#~ msgctxt "Post Type General Name"
+#~ msgid "General Descriptions"
+#~ msgstr "Pohjakuvaukset"
+
+#~ msgctxt "Post Type Singular Name"
+#~ msgid "General Description"
+#~ msgstr "Pohjakuvaus"
+
+#~ msgid "General Descriptions"
+#~ msgstr "Pohjakuvaukset"
+
+#~ msgid "General Description"
+#~ msgstr "Pohjakuvaus"
+
+#~ msgid "General Description Archives"
+#~ msgstr "Arkisto: Pohjakuvaukset"
+
+#~ msgid "General Description Attributes"
+#~ msgstr "Pohjakuvauksen ominaisuudet"
+
+#~ msgid "Parent General Description:"
+#~ msgstr "Pääkuvaus:"
+
+#~ msgid "Add New General Description"
+#~ msgstr "Lisää uusi pohjakuvaus"
+
+#~ msgid "New General Description"
+#~ msgstr "Uutis pohjakuvaus"
+
+#~ msgid "Edit General Description"
+#~ msgstr "Muokkaa pohjakuvausta"
+
+#~ msgid "Update General Description"
+#~ msgstr "Päivitä pohjakuvaus"
+
+#~ msgid "View General Description"
+#~ msgstr "Näytä pohjakuvaus"
+
+#~ msgid "View General Descriptions"
+#~ msgstr "Näytä pohjakuvaukset"
+
+#~ msgid "Search General Description"
+#~ msgstr "Etsi pohjakuvauksista"
+
+#~ msgid "Insert into General Description"
+#~ msgstr "Lisää pohjakuvaukseen"
+
+#~ msgid "General Descriptions list"
+#~ msgstr "Pohjakuvausten luettelo"
+
+#~ msgid "General Descriptions list navigation"
+#~ msgstr "Pohjakuvausten navigaatio"
+
+#~ msgid "Translation error."
+#~ msgstr "﻿Käännösvirhe."
+
+#~ msgid "Some properties are invalid. Post was not saved to the PTV."
+#~ msgstr "Jotkin asetukset ovat viallisia. Tallennus PTV:hen epäonnistui."
+
+#~ msgid "Max length 100  characters. "
+#~ msgstr "Maksimipituus 100 merkkiä. "
+
+#~ msgid "Max length "
+#~ msgstr "Maksimipituus "
+
+#~ msgid "ID"
+#~ msgstr "﻿Tunniste"
+
+#~ msgid "Form Urls"
+#~ msgstr "Lo"
+
+#~ msgid "Value"
+#~ msgstr "Arvo"
+
+#~ msgid "URL"
+#~ msgstr "Verkko-osoite"
+
+#, fuzzy
+#~ msgid "Unable to sync translations. Please try again."
+#~ msgstr "Virhe %d: Tilausta ei voitu luoda, yritä uudelleen."

@@ -1,0 +1,513 @@
+[
+  {
+    "code": "am",
+    "fi": "amhara",
+    "sv": "amhariska",
+    "en": "Amharic",
+    "order": 15
+  },
+  {
+    "code": "ar",
+    "fi": "arabia",
+    "sv": "arabiska",
+    "en": "Arabic",
+    "order": 57
+  },
+  {
+    "code": "az",
+    "fi": "azeri",
+    "sv": "azeri",
+    "en": "Azerbaijani",
+    "order": 11
+  },
+  {
+    "code": "bg",
+    "fi": "bulgaria",
+    "sv": "bulgariska",
+    "en": "Bulgarian",
+    "order": 4
+  },
+  {
+    "code": "bn",
+    "fi": "bengali",
+    "sv": "bengali",
+    "en": "Bengali",
+    "order": 5
+  },
+  {
+    "code": "bs",
+    "fi": "bosnia",
+    "sv": "bosniska",
+    "en": "Bosnian",
+    "order": 6
+  },
+  {
+    "code": "cs",
+    "fi": "tšekki",
+    "sv": "tjeckiska",
+    "en": "Czech",
+    "order": 7
+  },
+  {
+    "code": "da",
+    "fi": "tanska",
+    "sv": "danska",
+    "en": "Danish",
+    "order": 8
+  },
+  {
+    "code": "de",
+    "fi": "saksa",
+    "sv": "tyska",
+    "en": "German",
+    "order": 9
+  },
+  {
+    "code": "el",
+    "fi": "kreikka",
+    "sv": "grekiska",
+    "en": "Greek",
+    "order": 10
+  },
+  {
+    "code": "en",
+    "fi": "englanti",
+    "sv": "engelska",
+    "en": "English",
+    "order": 3
+  },
+  {
+    "code": "es",
+    "fi": "espanja",
+    "sv": "spanska",
+    "en": "Spanish",
+    "order": 12
+  },
+  {
+    "code": "et",
+    "fi": "viro",
+    "sv": "estniska",
+    "en": "Estonian",
+    "order": 13
+  },
+  {
+    "code": "fa",
+    "fi": "farsi",
+    "sv": "persiska",
+    "en": "Persian",
+    "order": 14
+  },
+  {
+    "code": "fi",
+    "fi": "suomi",
+    "sv": "finska",
+    "en": "Finnish",
+    "order": 1
+  },
+  {
+    "code": "fr",
+    "fi": "ranska",
+    "sv": "franska",
+    "en": "French",
+    "order": 16
+  },
+  {
+    "code": "he",
+    "fi": "heprea",
+    "sv": "hebreiska",
+    "en": "Hebrew",
+    "order": 17
+  },
+  {
+    "code": "hi",
+    "fi": "hindi",
+    "sv": "hindi",
+    "en": "Hindi",
+    "order": 18
+  },
+  {
+    "code": "hr",
+    "fi": "kroatia",
+    "sv": "kroatiska",
+    "en": "Croatian",
+    "order": 19
+  },
+  {
+    "code": "hu",
+    "fi": "unkari",
+    "sv": "ungerska",
+    "en": "Hungarian",
+    "order": 20
+  },
+  {
+    "code": "hy",
+    "fi": "armenia",
+    "sv": "armeniska",
+    "en": "Armenian",
+    "order": 21
+  },
+  {
+    "code": "id",
+    "fi": "indonesia",
+    "sv": "indonesiska",
+    "en": "Indonesian",
+    "order": 22
+  },
+  {
+    "code": "is",
+    "fi": "islanti",
+    "sv": "isländska",
+    "en": "Icelandic",
+    "order": 23
+  },
+  {
+    "code": "it",
+    "fi": "italia",
+    "sv": "italienska",
+    "en": "Italian",
+    "order": 24
+  },
+  {
+    "code": "ja",
+    "fi": "japani",
+    "sv": "japanska",
+    "en": "Japanese",
+    "order": 25
+  },
+  {
+    "code": "ka",
+    "fi": "georgia",
+    "sv": "georgiska",
+    "en": "Georgian",
+    "order": 26
+  },
+  {
+    "code": "kg",
+    "fi": "kongo",
+    "sv": "kongo",
+    "en": "Kongo",
+    "order": 27
+  },
+  {
+    "code": "kk",
+    "fi": "kazakki",
+    "sv": "kazakiska",
+    "en": "Kazakh",
+    "order": 28
+  },
+  {
+    "code": "km",
+    "fi": "keskikhmer",
+    "sv": "khmer",
+    "en": "Khmer",
+    "order": 29
+  },
+  {
+    "code": "ko",
+    "fi": "korea",
+    "sv": "koreanska",
+    "en": "Korean",
+    "order": 30
+  },
+  {
+    "code": "ku",
+    "fi": "kurdi",
+    "sv": "kurdiska",
+    "en": "Kurdish",
+    "order": 31
+  },
+  {
+    "code": "ky",
+    "fi": "kirgiisi",
+    "sv": "kirgiziska",
+    "en": "Kirghiz",
+    "order": 32
+  },
+  {
+    "code": "ln",
+    "fi": "lingala",
+    "sv": "lingala",
+    "en": "Lingala",
+    "order": 33
+  },
+  {
+    "code": "lo",
+    "fi": "lao",
+    "sv": "laotiska",
+    "en": "Lao",
+    "order": 34
+  },
+  {
+    "code": "lt",
+    "fi": "liettua",
+    "sv": "litauiska",
+    "en": "Lithuanian",
+    "order": 35
+  },
+  {
+    "code": "lv",
+    "fi": "latvia",
+    "sv": "lettiska",
+    "en": "Latvian",
+    "order": 36
+  },
+  {
+    "code": "mk",
+    "fi": "makedonia",
+    "sv": "makedonska",
+    "en": "Macedonian",
+    "order": 37
+  },
+  {
+    "code": "ms",
+    "fi": "malaiji",
+    "sv": "malajiska",
+    "en": "Malay",
+    "order": 38
+  },
+  {
+    "code": "my",
+    "fi": "burma",
+    "sv": "burmesiska",
+    "en": "Burmese",
+    "order": 39
+  },
+  {
+    "code": "ne",
+    "fi": "nepali",
+    "sv": "nepali",
+    "en": "Nepali",
+    "order": 40
+  },
+  {
+    "code": "nl",
+    "fi": "hollanti",
+    "sv": "nederländska",
+    "en": "Dutch",
+    "order": 41
+  },
+  {
+    "code": "no",
+    "fi": "norja",
+    "sv": "norska",
+    "en": "Norwegian",
+    "order": 42
+  },
+  {
+    "code": "pl",
+    "fi": "puola",
+    "sv": "polska",
+    "en": "Polish",
+    "order": 43
+  },
+  {
+    "code": "ps",
+    "fi": "paštu",
+    "sv": "pashto",
+    "en": "Pashto",
+    "order": 44
+  },
+  {
+    "code": "pt",
+    "fi": "portugali",
+    "sv": "portugisiska",
+    "en": "Portuguese",
+    "order": 45
+  },
+  {
+    "code": "rn",
+    "fi": "rundi",
+    "sv": "kirundi",
+    "en": "Rundi",
+    "order": 46
+  },
+  {
+    "code": "ro",
+    "fi": "romania",
+    "sv": "rumänska",
+    "en": "Romanian",
+    "order": 47
+  },
+  {
+    "code": "ru",
+    "fi": "venäjä",
+    "sv": "ryska",
+    "en": "Russian",
+    "order": 48
+  },
+  {
+    "code": "rw",
+    "fi": "ruanda",
+    "sv": "rwanda",
+    "en": "Kinyarwanda",
+    "order": 49
+  },
+  {
+    "code": "se",
+    "fi": "pohjoissaame",
+    "sv": "nordsamiska",
+    "en": "Northern Sami",
+    "order": 50
+  },
+  {
+    "code": "sh",
+    "fi": "serbokroaatti",
+    "sv": "serbokroatiska",
+    "en": "Serbo-Croatian",
+    "order": 51
+  },
+  {
+    "code": "sk",
+    "fi": "slovakki",
+    "sv": "slovakiska",
+    "en": "Slovak",
+    "order": 52
+  },
+  {
+    "code": "sl",
+    "fi": "sloveeni",
+    "sv": "slovenska",
+    "en": "Slovenian",
+    "order": 53
+  },
+  {
+    "code": "so",
+    "fi": "somali",
+    "sv": "somaliska",
+    "en": "Somali",
+    "order": 54
+  },
+  {
+    "code": "sq",
+    "fi": "albania",
+    "sv": "albanska",
+    "en": "Albanian",
+    "order": 55
+  },
+  {
+    "code": "sr",
+    "fi": "serbia",
+    "sv": "serbiska",
+    "en": "Serbian",
+    "order": 56
+  },
+  {
+    "code": "sv",
+    "fi": "ruotsi",
+    "sv": "svenska",
+    "en": "Swedish",
+    "order": 2
+  },
+  {
+    "code": "sw",
+    "fi": "swahili",
+    "sv": "swahili",
+    "en": "Swahili",
+    "order": 58
+  },
+  {
+    "code": "ta",
+    "fi": "tamili",
+    "sv": "tamil",
+    "en": "Tamil",
+    "order": 59
+  },
+  {
+    "code": "th",
+    "fi": "thai",
+    "sv": "thailändska",
+    "en": "Thai",
+    "order": 60
+  },
+  {
+    "code": "tk",
+    "fi": "turkmeeni",
+    "sv": "turkmenska",
+    "en": "Turkmen",
+    "order": 61
+  },
+  {
+    "code": "tl",
+    "fi": "tagalog",
+    "sv": "tagalog",
+    "en": "Tagalog",
+    "order": 62
+  },
+  {
+    "code": "tr",
+    "fi": "turkki",
+    "sv": "turkiska",
+    "en": "Turkish",
+    "order": 63
+  },
+  {
+    "code": "ug",
+    "fi": "uiguuri",
+    "sv": "uiguriska",
+    "en": "Uighur",
+    "order": 64
+  },
+  {
+    "code": "uk",
+    "fi": "ukraina",
+    "sv": "ukrainska",
+    "en": "Ukrainian",
+    "order": 65
+  },
+  {
+    "code": "ur",
+    "fi": "urdu",
+    "sv": "urdu",
+    "en": "Urdu",
+    "order": 66
+  },
+  {
+    "code": "uz",
+    "fi": "uzbekki",
+    "sv": "uzbekiska",
+    "en": "Uzbek",
+    "order": 67
+  },
+  {
+    "code": "vi",
+    "fi": "vietnam",
+    "sv": "vietnamesiska",
+    "en": "Vietnamese",
+    "order": 68
+  },
+  {
+    "code": "wo",
+    "fi": "wolof",
+    "sv": "wolof",
+    "en": "Wolof",
+    "order": 69
+  },
+  {
+    "code": "zh",
+    "fi": "kiina",
+    "sv": "kinesiska",
+    "en": "Chinese",
+    "order": 70
+  },
+  {
+    "code": "sgn-fi",
+    "fi": "viittomakieli",
+    "sv": "teckenspråk",
+    "en": "Finnish Sign Language",
+    "order": 71
+  },
+  {
+    "code": "smn",
+    "fi": "inarinsaame",
+    "sv": "enaresamiska",
+    "en": "Inari Sami",
+    "order": 72
+  },
+  {
+    "code": "sms",
+    "fi": "koltansaame",
+    "sv": "skoltsamiska",
+    "en": "Skolt Sami",
+    "order": 73
+  }
+]
