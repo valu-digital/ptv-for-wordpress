@@ -1,5 +1,7 @@
 # PTV for WordPress
 
+Please note that the plugin is still in a active development and breaking changes may occur before 1.0 release.
+
 ## Installation
 
 - Clone or download this repository
@@ -25,7 +27,7 @@ Plugin mode is set to `out` by default. Mode can be changed by adding `define( '
 
 **Always test plugin and its updates in the staging environment before adding it to the production environment.**
 
-### Importing services and service channels from PTV OUT API.
+### Importing services and service channels using PTV OUT API.
 
 Plugin uses background processing library to handle the import process. Import can be triggered by following curl command.
 
@@ -41,7 +43,7 @@ curl -v -X POST http://localhost/wp-json/ptv/v1/service-channels -d token=PTV_FO
 curl -v -X POST http://localhost/wp-json/ptv/v1/organizations -d token=PTV_FOR_WORDPRESS_REST_TOKEN
 ```
 
-### Creating and updating new services and service channels using PTV IN API.
+### Creating and updating services and service channels using PTV IN API.
 
 Change plugin mode in the wp-config.php `define( 'PTV_FOR_WORDPRESS_MODE', 'in' );`
 

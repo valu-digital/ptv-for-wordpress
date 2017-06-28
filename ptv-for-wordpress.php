@@ -11,7 +11,7 @@
  * Plugin Name: PTV for WordPress
  * Plugin URI:  https://www.valu.fi
  * Description: PTV WordPress Integration
- * Version:     0.8
+ * Version:     0.8.1
  * Author:      Valu Digital Oy
  * Author URI:  https://www.valu.fi
  * Text Domain: ptv-for-wordpress
