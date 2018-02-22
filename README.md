@@ -1,6 +1,8 @@
 # PTV for WordPress
 
-Please note that the plugin is still in a active development and breaking changes may occur before 1.0 release.
+  Please note that version 0.9.x will be released in March 2018. The upcoming version is compatible with PTV API version 7. Currently there is no public funding for the plugin development, so contributions are highly appreciated. 
+
+The plugin is still in development and breaking changes may occur before 1.0 release.
 
 ## Installation
 
