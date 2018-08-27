@@ -74,9 +74,6 @@ class PTV_Printable_Form_Channel_In_Controller extends PTV_Service_Channel_In_Co
 		// Set general fields.
 		$request = $this->set_general_fields( $post_id, $request );
 
-		// Set general fields.
-		$request = $this->set_general_fields( $post_id, $request );
-
 		// Validate request.
 		if ( ! $request->valid() ) {
 			$this->errors->add( 'ptv-invalid-properties', __( 'Request contains invalid properties.', 'ptv-for-wordpress' ) );
@@ -130,11 +127,26 @@ class PTV_Printable_Form_Channel_In_Controller extends PTV_Service_Channel_In_Co
 		// Set channel urls.
 		$request->set_channel_urls( $this->get_channel_urls( $post_id ) );
 
+		// Set delete all channel urls.
+		if ( ! $request->get_channel_urls() && method_exists( $request, 'set_delete_all_channel_urls' ) ) {
+			$request->set_delete_all_channel_urls( true );
+		}
+
 		// Set form identifier.
 		$request->set_form_identifier( $this->get_form_identifier( $post_id ) );
 
+		// Set delete all form identifiers.
+		if ( ! $request->get_form_identifier() && method_exists( $request, 'set_delete_all_form_identifiers' ) ) {
+			$request->set_delete_all_form_identifiers( true );
+		}
+
 		// Set form receiver.
 		$request->set_form_receiver( $this->get_form_receiver( $post_id ) );
+
+		// Set delete all form receivers.
+		if ( ! $request->get_form_receiver() && method_exists( $request, '$this->set_delete_all_form_receivers()' ) ) {
+			$request->set_delete_all_form_receivers( true );
+		}
 
 		// Set organization id.
 		$request->set_organization_id( $this->get_organization_id( $post_id ) );
@@ -142,17 +154,34 @@ class PTV_Printable_Form_Channel_In_Controller extends PTV_Service_Channel_In_Co
 		// Set support phones.
 		$request->set_support_phones( $this->get_support_phones( $post_id ) );
 
+		// Set delete all support phones.
+		if ( ! $request->get_support_phones() && method_exists( $request, 'set_delete_all_support_phones' ) ) {
+			$request->set_delete_all_support_phones( true );
+		}
+
 		// Set support emails.
 		$request->set_support_emails( $this->get_support_emails( $post_id ) );
 
-		// Delete all previous addresses.
-		$request->set_delete_delivery_address( true );
+		// Set delete all support emails.
+		if ( ! $request->get_support_emails() && method_exists( $request, 'set_delete_all_support_emails' ) ) {
+			$request->set_delete_all_support_emails( true );
+		}
 
 		// Set delivery address.
 		$request->set_delivery_address( $this->get_delivery_address( $post_id ) );
 
+		// Set delete delivery address.
+		if ( ! $request->get_delivery_address() && method_exists( $request, 'set_delete_delivery_address' ) ) {
+			$request->set_delete_delivery_address( true );
+		}
+
 		// Set attachments.
 		$request->set_attachments( $this->get_attachments( $post_id ) );
+
+		// Set delete all attachments.
+		if ( ! $request->get_attachments() && method_exists( $request, 'set_delete_all_attachments' ) ) {
+			$request->set_delete_all_attachments( true );
+		}
 
 		return $request;
 
@@ -171,7 +200,7 @@ class PTV_Printable_Form_Channel_In_Controller extends PTV_Service_Channel_In_Co
 			return null;
 		}
 
-		$result = array();
+		$channel_url_objects = array();
 
 		$post_translations = $this->get_post_translations( $post_id );
 
@@ -188,18 +217,18 @@ class PTV_Printable_Form_Channel_In_Controller extends PTV_Service_Channel_In_Co
 			foreach ( $channel_urls as $channel_url ) {
 
 				if ( isset( $channel_url['type'] ) && isset( $channel_url['_value'] ) ) {
-					$data['type']  = $channel_url['type'];
-					$data['value'] = $channel_url['_value'];
-					$result[]      = $this->prepare_localized_list_item( $data, $lang );
+					$data['type']          = $channel_url['type'];
+					$data['value']         = $channel_url['_value'];
+					$channel_url_objects[] = $this->prepare_localized_list_item( $data, $lang );
 				}
 			}
 		}
 
-		if ( empty( $result ) ) {
+		if ( empty( $channel_url_objects ) ) {
 			return null;
 		}
 
-		return $result;
+		return $channel_url_objects;
 
 	}
 
@@ -216,7 +245,7 @@ class PTV_Printable_Form_Channel_In_Controller extends PTV_Service_Channel_In_Co
 			return null;
 		}
 
-		$result = array();
+		$attachment_objects = array();
 
 		$post_translations = $this->get_post_translations( $post_id );
 
@@ -225,25 +254,29 @@ class PTV_Printable_Form_Channel_In_Controller extends PTV_Service_Channel_In_Co
 			$attachments = carbon_get_post_meta( $id, 'ptv_attachments' );
 
 			if ( ! $attachments || ! is_array( $attachments ) ) {
-				return null;
+				continue;
 			}
 
 			foreach ( $attachments as $attachment ) {
 
 				if ( isset( $attachment['url'] ) ) {
 
-					$attachment = new PTV_Attachment( $attachment );
-					$attachment->set_language( $lang );
-					$result[] = $attachment;
+					$attachment_object = new PTV_Attachment();
+					$attachment_object->set_language( sanitize_text_field( $lang ) );
+					$attachment_object->set_name( sanitize_text_field( $attachment['name'] ) );
+					$attachment_object->set_description( sanitize_text_field( $attachment['description'] ) );
+					$attachment_object->set_url( esc_url( $attachment['url'] ) );
+
+					$attachment_objects[] = $attachment_object;
 				}
 			}
 		}
 
-		if ( empty( $result ) ) {
+		if ( empty( $attachment_objects ) ) {
 			return null;
 		}
 
-		return $result;
+		return $attachment_objects;
 
 	}
 
@@ -260,74 +293,152 @@ class PTV_Printable_Form_Channel_In_Controller extends PTV_Service_Channel_In_Co
 			return null;
 		}
 
-
-		$result            = array();
+		$merged_result     = array();
+		$post_language     = $this->get_post_language( $post_id );
 		$post_translations = $this->get_post_translations( $post_id );
 
-		$addresses = carbon_get_post_meta( $post_id, 'ptv_delivery_address' );
+		$all_addresses = array();
 
+		foreach ( $post_translations as $lang => $id ) {
+
+			$localized_addresses = carbon_get_post_meta( $id, 'ptv_delivery_address' );
+
+			if ( $localized_addresses ) {
+				$all_addresses[ $lang ] = $localized_addresses;
+			}
+		}
+
+		$addresses = $all_addresses[ $post_language ];
+
+		// Fallback to the default language.
 		if ( ! $addresses ) {
-			$addresses = carbon_get_post_meta( $post_translations[ $this->settings['primary_language'] ], 'ptv_delivery_address' );
+			$addresses = $addresses[ $this->settings['primary_language'] ];
 		}
 
 		if ( ! $addresses || ! is_array( $addresses ) ) {
 			return null;
 		}
 
-		foreach ( $addresses as $address ) {
-			if ( isset( $address['postal_code'] ) ) {
-				$result[] = new PTV_Address_In( $address );
+		foreach ( $addresses as $address_index => $address ) {
+
+			$address_object = new PTV_Address_Delivery_In();
+
+			$address_object->set_sub_type( $address['sub_type'] );
+
+			switch ( $address['sub_type'] ) {
+
+				case 'Single':
+				case 'Street':
+
+					foreach ( $address['street_address'] as $street_address_index => $street_address ) {
+
+						$street_address_object = new PTV_Street_Address_In();
+						$street_address_object->set_street_number( $street_address['street_number'] );
+						$street_address_object->set_postal_code( $street_address['postal_code'] );
+
+						$localized_streets                = array();
+						$localized_additional_information = array();
+
+						foreach ( $post_translations as $lang => $id ) {
+
+							if ( isset( $all_addresses[ $lang ][ $address_index ]['street_address'][ $street_address_index ]['additional_information'] ) && ! empty( $all_addresses[ $lang ][ $address_index ]['street_address'][ $street_address_index ]['additional_information'] ) ) {
+								$localized_additional_information[] = $this->prepare_language_item( $all_addresses[ $lang ][ $address_index ]['street_address'][ $street_address_index ]['additional_information'], $lang );
+							}
+
+							if ( isset( $all_addresses[ $lang ][ $address_index ]['street_address'][ $street_address_index ]['street'] ) && ! empty( $all_addresses[ $lang ][ $address_index ]['street_address'][ $street_address_index ]['street'] ) ) {
+								$localized_streets[] = $this->prepare_language_item( $all_addresses[ $lang ][ $address_index ]['street_address'][ $street_address_index ]['street'], $lang );
+							}
+						}
+
+						if ( ! empty( $localized_streets ) ) {
+							$street_address_object->set_street( $localized_streets );
+						}
+
+						if ( ! empty( $localized_additional_information ) ) {
+							$street_address_object->set_additional_information( $localized_additional_information );
+						}
+
+						if ( ! empty( $street_address_object ) ) {
+							$address_object->set_street_address( $street_address_object );
+						}
+
+						break;
+
+					}
+
+					break;
+
+				case 'PostOfficeBox':
+
+					foreach ( $address['post_office_box_address'] as $post_office_box_address_index => $post_office_box_address ) {
+
+						$post_office_box_address_object = new PTV_Post_Office_Box_In();
+						$post_office_box_address_object->set_postal_code( $post_office_box_address['postal_code'] );
+
+						$localized_streets                = array();
+						$localized_additional_information = array();
+
+						foreach ( $post_translations as $lang => $id ) {
+
+							if ( isset( $all_addresses[ $lang ][ $address_index ]['post_office_box_address'][ $post_office_box_address_index ]['additional_information'] ) && ! empty( $all_addresses[ $lang ][ $address_index ]['post_office_box_address'][ $post_office_box_address_index ]['additional_information'] ) ) {
+								$localized_additional_information[] = $this->prepare_language_item( $all_addresses[ $lang ][ $address_index ]['post_office_box_address'][ $post_office_box_address_index ]['additional_information'], $lang );
+							}
+
+							if ( isset( $all_addresses[ $lang ][ $address_index ]['post_office_box_address'][ $post_office_box_address_index ]['post_office_box'] ) && ! empty( $all_addresses[ $lang ][ $address_index ]['post_office_box_address'][ $post_office_box_address_index ]['post_office_box'] ) ) {
+								$localized_streets[] = $this->prepare_language_item( $all_addresses[ $lang ][ $address_index ]['post_office_box_address'][ $post_office_box_address_index ]['post_office_box'], $lang );
+							}
+						}
+
+						if ( ! empty( $localized_streets ) ) {
+							$post_office_box_address_object->set_post_office_box( $localized_streets );
+						}
+
+						if ( ! empty( $localized_additional_information ) ) {
+							$post_office_box_address_object->set_additional_information( $localized_additional_information );
+						}
+
+
+						if ( ! empty( $post_office_box_address_object ) ) {
+							$address_object->set_post_office_box_address( $post_office_box_address_object );
+						}
+
+						break;
+
+					}
+
+					break;
+
+				case 'NoAddress':
+
+					if ( ! empty( $address['delivery_address_in_text'] ) ) {
+
+						$localized_delivery_address_in_text = [];
+
+						foreach ( $post_translations as $lang => $id ) {
+
+							if ( isset( $all_addresses[ $lang ][ $address_index ]['delivery_address_in_text'] ) && ! empty( $all_addresses[ $lang ][ $address_index ]['delivery_address_in_text'] ) ) {
+								$localized_delivery_address_in_text[] = $this->prepare_language_item( $all_addresses[ $lang ][ $address_index ]['delivery_address_in_text'], $lang );
+							}
+						}
+
+						$address_object->set_delivery_address_in_text( $localized_delivery_address_in_text );
+					}
+
+					break;
 			}
+
+
+			$merged_result[] = $address_object;
+
 		}
 
-		$first_result = $result[0];
+		$result = $merged_result[0];
 
-		$street_address          = array();
-		$additional_informations = array();
-		$post_office_box         = array();
-
-		foreach ( $post_translations as $lang => $id ) {
-
-			$localized_addresses = carbon_get_post_meta( $id, 'ptv_delivery_address' );
-
-			if ( ! $localized_addresses ) {
-				$localized_addresses = carbon_get_post_meta( $post_translations[ $this->settings['primary_language'] ], 'ptv_delivery_address' );
-			}
-
-			if ( ! $localized_addresses || ! is_array( $localized_addresses ) ) {
-				return null;
-			}
-
-			foreach ( $localized_addresses as $address ) {
-
-				if ( isset( $address['additional_informations'] ) && ! empty( $address['additional_informations'] ) ) {
-					$additional_informations[] = $this->prepare_language_item( $address['additional_informations'], $lang );
-				}
-
-				if ( isset( $address['street_address'] ) && ! empty( $address['street_address'] ) ) {
-					$street_address[] = $this->prepare_language_item( $address['street_address'], $lang );
-				}
-
-				if ( isset( $address['post_office_box'] ) && ! empty( $address['post_office_box'] ) ) {
-					$post_office_box[] = $this->prepare_language_item( $address['post_office_box'], $lang );
-				}
-			}
+		if ( empty( $result ) ) {
+			return null;
 		}
 
-		if ( ! empty( $street_address ) ) {
-			$first_result->set_street_address( $street_address );
-		}
-
-		if ( ! empty( $additional_informations ) ) {
-			$first_result->set_additional_informations( $additional_informations );
-		}
-
-		if ( ! empty( $post_office_box ) ) {
-			$first_result->set_post_office_box( $post_office_box );
-		}
-
-		return $first_result;
-
+		return $result;
 	}
 
 	/**
@@ -345,22 +456,22 @@ class PTV_Printable_Form_Channel_In_Controller extends PTV_Service_Channel_In_Co
 
 		$post_translations = $this->get_post_translations( $post_id );
 
-		$result = array();
+		$form_identifier = array();
 
 		foreach ( $post_translations as $lang => $id ) {
 
 			$value = carbon_get_post_meta( $id, 'ptv_form_identifier' );
 
 			if ( $value ) {
-				$result[] = $this->prepare_language_item( $value, $lang );
+				$form_identifier[] = $this->prepare_language_item( $value, $lang );
 			}
 		}
 
-		if ( empty( $result ) ) {
+		if ( empty( $form_identifier ) ) {
 			return null;
 		}
 
-		return $result;
+		return $form_identifier;
 
 	}
 
@@ -377,7 +488,7 @@ class PTV_Printable_Form_Channel_In_Controller extends PTV_Service_Channel_In_Co
 			return null;
 		}
 
-		$result = array();
+		$form_receiver = array();
 
 		$post_translations = $this->get_post_translations( $post_id );
 
@@ -386,20 +497,20 @@ class PTV_Printable_Form_Channel_In_Controller extends PTV_Service_Channel_In_Co
 			$value = carbon_get_post_meta( $id, 'ptv_form_receiver' );
 
 			if ( $value ) {
-				$result[] = $this->prepare_language_item( $value, $lang );
+				$form_receiver[] = $this->prepare_language_item( $value, $lang );
 			}
 		}
 
-		if ( empty( $result ) ) {
+		if ( empty( $form_receiver ) ) {
 			return null;
 		}
 
-		return $result;
+		return $form_receiver;
 
 	}
 
 	/**
-	 * Sync fields that are common for all languages.
+	 * Sync delivery address.
 	 *
 	 * @param $post_id
 	 * @param $updated_channel
@@ -412,25 +523,17 @@ class PTV_Printable_Form_Channel_In_Controller extends PTV_Service_Channel_In_Co
 			return false;
 		}
 
-		$post_translations = $this->get_post_translations( $post_id );
-		$updated_address   = $updated_channel->get_delivery_address();
+		$post_translations        = $this->get_post_translations( $post_id );
+		$updated_delivery_address = $updated_channel->get_delivery_address();
 
 		foreach ( $post_translations as $lang => $id ) {
 
-			$address = array();
+			$delivery_address = $this->get_serializer()->serialize_delivery_address( $updated_delivery_address, $lang );
 
-			if ( ! empty( $updated_address ) ) {
-
-				$address['type']                    = '_';
-				$address['postal_code']             = $updated_address->get_postal_code();
-				$address['street_address']          = ptv_get_localized_value( $updated_address->get_street_address(), $lang );
-				$address['post_office_box']         = ptv_get_localized_value( $updated_address->get_post_office_box(), $lang );
-				$address['street_number']           = $updated_address->get_street_number();
-				$address['additional_informations'] = ptv_get_localized_value( $updated_address->get_additional_informations(), $lang );
-
-				if ( ! empty( $address ) ) {
-					carbon_set_post_meta( $id, 'ptv_delivery_address', array( 0 => $address ) );
-				}
+			if ( ! empty( $delivery_address ) ) {
+				$this->update_post_meta( $id, $delivery_address );
+			} else {
+				$this->update_post_meta( $id, array( '_ptv_delivery_address' => '' ) );
 			}
 		}
 
@@ -479,6 +582,13 @@ class PTV_Printable_Form_Channel_In_Controller extends PTV_Service_Channel_In_Co
 
 		if ( ! $sync_areas ) {
 			$this->errors->add( 'ptv-area-sync-error', __( 'Item was saved to the PTV, but synchronization of areas to translations failed.', 'ptv-for-wordpress' ) );
+		}
+
+		// Sync modified time.
+		$sync_modified = $this->sync_modified( $post_id, $object );
+
+		if ( ! $sync_modified ) {
+			$this->errors->add( 'ptv-modified-time-sync-error', __( 'Item was saved to the PTV, but synchronization of modified time to translations failed.', 'ptv-for-wordpress' ) );
 		}
 
 	}

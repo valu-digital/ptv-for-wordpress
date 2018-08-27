@@ -70,21 +70,28 @@ class PTV_In_Module {
 		switch ( $post_type ) {
 			case 'ptv-service':
 				$controller = new PTV_Service_In_Controller();
+				$controller->set_serializer( new PTV_Service_Serializer() );
 				break;
 			case 'ptv-echannel':
 				$controller = new PTV_EChannel_In_Controller();
+				$controller->set_serializer( new PTV_EChannel_Serializer() );
 				break;
 			case 'ptv-phone':
 				$controller = new PTV_Phone_Channel_In_Controller();
+				$controller->set_serializer( new PTV_Phone_Serializer() );
 				break;
 			case 'ptv-printable-form':
 				$controller = new PTV_Printable_Form_Channel_In_Controller();
+				$controller->set_serializer( new PTV_Printable_Form_Serializer() );
 				break;
 			case 'ptv-service-location':
 				$controller = new PTV_Service_Location_Channel_In_Controller();
+				$controller->set_serializer( new PTV_Service_Location_Serializer() );
 				break;
 			case 'ptv-web-page':
 				$controller = new PTV_Web_Page_Channel_In_Controller();
+				$controller->set_serializer( new PTV_Web_Page_Serializer() );
+
 				break;
 			default:
 				return;
@@ -122,7 +129,7 @@ class PTV_In_Module {
 				<?php
 
 				$error_data = $errors->get_error_data( $code );
-				if ( $error_data ) :
+				if ( $error_data ):
 					if ( isset( $error_data['data'] ) && ! empty( $error_data['data'] ) ) : ?>
 						<p>
 							<strong><?php esc_html_e( 'Error details:', 'ptv-for-wordpress' ); ?></strong>

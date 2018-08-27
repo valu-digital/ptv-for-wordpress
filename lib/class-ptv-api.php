@@ -4,6 +4,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+/**
+ * Class PTV_Api
+ */
 class PTV_Api {
 
 	/**
@@ -86,6 +89,15 @@ class PTV_Api {
 	}
 
 	/**
+	 * Get connection API.
+	 *
+	 * @return PTV_Connection_Api()
+	 */
+	function get_connection_api() {
+		return new PTV_Connection_Api( self::get_client() );
+	}
+
+	/**
 	 * Get access token
 	 *
 	 * @return bool|mixed
@@ -98,16 +110,19 @@ class PTV_Api {
 			return $cached_token;
 		}
 
-		$args = array();
+		$organization_id = ptv_get_organization_id();
 
-		$args['body'] = array(
-			'grant_type'    => 'password',
-			'scope'         => 'dataEventRecords openid',
-			'client_id'     => 'ptv_api_client',
-			'client_secret' => 'openapi',
-			'username'      => $this->api_user,
-			'password'      => $this->api_secret,
-		);
+		if ( ! $organization_id ) {
+			return false;
+		}
+
+		$args = array( 'headers' => array( 'Content-Type' => 'application/json' ) );
+
+		$args['body'] = json_encode( array(
+			'apiUserOrganization' => $organization_id,
+			'username'            => $this->api_user,
+			'password'            => $this->api_secret,
+		) );
 
 		$response = wp_remote_post( $this->api_token_url, $args );
 
@@ -117,11 +132,11 @@ class PTV_Api {
 
 		$response_body = json_decode( wp_remote_retrieve_body( $response ) );
 
-		if ( ! isset( $response_body->access_token ) || empty( $response_body->access_token ) ) {
+		if ( ! isset( $response_body->ptvToken ) || empty( $response_body->ptvToken ) ) {
 			return false;
 		}
 
-		$token = $response_body->access_token;
+		$token = $response_body->ptvToken;
 
 		set_transient( '_ptv_access_token', $token, 60 * 60 * 12 );
 
@@ -139,7 +154,7 @@ class PTV_Api {
 
 		$configuration = PTV_Api_Client_Configuration::get_default_configuration();
 		$configuration->set_host( $this->api_url );
-		$configuration->set_timeout( 15 );
+		$configuration->set_timeout( 60 );
 
 		$token = $this->get_access_token();
 

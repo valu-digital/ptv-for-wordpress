@@ -73,13 +73,6 @@ class PTV_EChannel_In_Controller extends PTV_Service_Channel_In_Controller {
 		// Set general fields.
 		$request = $this->set_general_fields( $post_id, $request );
 
-		// Validate request.
-		if ( ! $request->valid() ) {
-			$this->errors->add( 'ptv-invalid-properties', __( 'Request contains invalid properties.', 'ptv-for-wordpress' ) );
-
-			return;
-		}
-
 		// Create a new channel.
 		$updated_channel = $this->api->get_service_channel_api()->update_echannel_by_id( $id, $request );
 
@@ -201,7 +194,7 @@ class PTV_EChannel_In_Controller extends PTV_Service_Channel_In_Controller {
 			return null;
 		}
 
-		$result = array();
+		$attachment_objects = array();
 
 		$post_translations = $this->get_post_translations( $post_id );
 
@@ -210,25 +203,28 @@ class PTV_EChannel_In_Controller extends PTV_Service_Channel_In_Controller {
 			$attachments = carbon_get_post_meta( $id, 'ptv_attachments' );
 
 			if ( ! $attachments || ! is_array( $attachments ) ) {
-				return null;
+				continue;
 			}
 
 			foreach ( $attachments as $attachment ) {
 
 				if ( isset( $attachment['url'] ) ) {
-
-					$attachment = new PTV_Attachment_With_Type( $attachment );
-					$attachment->set_language( $lang );
-					$result[] = $attachment;
+					$attachment_object = new PTV_Attachment_With_Type();
+					$attachment_object->set_language( sanitize_text_field( $lang ) );
+					$attachment_object->set_type( sanitize_text_field( $attachment['type'] ) );
+					$attachment_object->set_name( sanitize_text_field( $attachment['name'] ) );
+					$attachment_object->set_description( sanitize_text_field( $attachment['description'] ) );
+					$attachment_object->set_url( esc_url( $attachment['url'] ) );
+					$attachment_objects[] = $attachment_object;
 				}
 			}
 		}
 
-		if ( empty( $result ) ) {
+		if ( empty( $attachment_objects ) ) {
 			return null;
 		}
 
-		return $result;
+		return $attachment_objects;
 
 	}
 
@@ -248,7 +244,7 @@ class PTV_EChannel_In_Controller extends PTV_Service_Channel_In_Controller {
 		$signature_quantity = carbon_get_post_meta( $post_id, 'ptv_signature_quantity' );
 
 		if ( empty( $signature_quantity ) ) {
-			return 0;
+			return 1;
 		}
 
 		return (int) $signature_quantity;
@@ -324,6 +320,13 @@ class PTV_EChannel_In_Controller extends PTV_Service_Channel_In_Controller {
 
 		if ( ! $sync_areas ) {
 			$this->errors->add( 'ptv-area-sync-error', __( 'Item was saved to the PTV, but synchronization of areas to translations failed.', 'ptv-for-wordpress' ) );
+		}
+
+		// Sync modified time.
+		$sync_modified = $this->sync_modified( $post_id, $object );
+
+		if ( ! $sync_modified ) {
+			$this->errors->add( 'ptv-modified-time-sync-error', __( 'Item was saved to the PTV, but synchronization of modified time to translations failed.', 'ptv-for-wordpress' ) );
 		}
 
 	}

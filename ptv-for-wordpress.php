@@ -4,14 +4,14 @@
  *
  * @package     PTV for WordPress
  * @author      Valu Digital Oy
- * @copyright   2017 Valu Digital Oy
+ * @copyright   2018 Valu Digital Oy
  * @license     GPL-2.0+
  *
  * @wordpress-plugin
  * Plugin Name: PTV for WordPress
  * Plugin URI:  https://www.valu.fi
  * Description: PTV WordPress Integration
- * Version:     0.8.1
+ * Version:     0.9.8
  * Author:      Valu Digital Oy
  * Author URI:  https://www.valu.fi
  * Text Domain: ptv-for-wordpress
@@ -88,9 +88,6 @@ final class PTV_For_WordPress {
 	 */
 	function plugins_loaded() {
 
-		// Load dependencies.
-		require_once( PTV_FOR_WORDPRESS_DIR . '/vendor/autoload.php' );
-
 		// Show admin notice, if dependencies are missing.
 		if ( ! $this->check_dependencies() ) {
 			add_action( 'admin_notices', array( $this, 'show_missing_dependencies_notice' ) );
@@ -98,22 +95,28 @@ final class PTV_For_WordPress {
 			return;
 		}
 
+		// Load dependencies.
+		require_once( PTV_FOR_WORDPRESS_DIR . '/vendor/autoload.php' );
+
+		// Setup hooks
+		$this->setup_hooks();
+
 		// Load general dependencies.
-		$this->includes();
+		$this->load();
 
-		if ( 'out' === PTV_FOR_WORDPRESS_MODE ) {
-			// Out.
-			require_once( PTV_FOR_WORDPRESS_DIR . '/lib/class-ptv-out-module.php' );
-
-		} else {
-			require_once( PTV_FOR_WORDPRESS_DIR . '/lib/class-ptv-in-module.php' );
-		}
 	}
 
 	/**
-	 * Load common dependencies
+	 * Load plugin textdomain.
 	 */
-	function includes() {
+	function load_textdomain() {
+		load_plugin_textdomain( 'ptv-for-wordpress', false, basename( dirname( __FILE__ ) ) . '/languages' );
+	}
+
+	/**
+	 * Setup hooks.
+	 */
+	public function setup_hooks() {
 
 		// Add admin menu page.
 		add_action( 'admin_menu', array( $this, 'add_admin_menu' ) );
@@ -124,41 +127,57 @@ final class PTV_For_WordPress {
 		// Register post types and taxonomies.
 		add_action( 'init', array( $this, 'register_post_types_and_taxonomies' ), 9 );
 
-		require_once( PTV_FOR_WORDPRESS_DIR . '/lib/class-ptv-api.php' );
-		require_once( PTV_FOR_WORDPRESS_DIR . '/core/functions.php' );
-		require_once( PTV_FOR_WORDPRESS_DIR . '/core/polylang.php' );
+		// Enqueue scripts.
+		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
 
 	}
 
 	/**
-	 * Add admin menu
+	 * Add admin menu.
 	 */
 	function add_admin_menu() {
-		require_once( PTV_FOR_WORDPRESS_DIR . '/core/class-ptv-admin-page.php' );
+		require_once( PTV_FOR_WORDPRESS_DIR . '/lib/class-ptv-admin-page.php' );
 	}
 
 	/**
-	 * Register post types and taxonomies
-	 */
-	function register_post_types_and_taxonomies() {
-		require_once( PTV_FOR_WORDPRESS_DIR . '/core/post-types.php' );
-	}
-
-	/**
-	 * Load custom functions and fields
+	 * Load custom functions and fields.
 	 */
 	function load_custom_fields() {
 
 		Carbon_Fields::boot();
-		require_once( PTV_FOR_WORDPRESS_DIR . '/core/custom-fields.php' );
+		require_once( PTV_FOR_WORDPRESS_DIR . '/lib/carbon-fields.php' );
+		require_once( PTV_FOR_WORDPRESS_DIR . '/lib/class-ptv-custom-fields.php' );
 
 	}
 
 	/**
-	 * Load plugin textdomain
+	 * Register post types and taxonomies.
 	 */
-	function load_textdomain() {
-		load_plugin_textdomain( 'ptv-for-wordpress', false, basename( dirname( __FILE__ ) ) . '/languages' );
+	function register_post_types_and_taxonomies() {
+
+		require_once( PTV_FOR_WORDPRESS_DIR . '/lib/class-ptv-post-types.php' );
+		require_once( PTV_FOR_WORDPRESS_DIR . '/lib/class-ptv-taxonomies.php' );
+
+	}
+
+	/**
+	 * Load common dependencies.
+	 */
+	function load() {
+
+		require_once( PTV_FOR_WORDPRESS_DIR . '/lib/functions.php' );
+		require_once( PTV_FOR_WORDPRESS_DIR . '/lib/class-ptv-api.php' );
+		require_once( PTV_FOR_WORDPRESS_DIR . '/lib/polylang.php' );
+		require_once( PTV_FOR_WORDPRESS_DIR . '/lib/class-ptv-common-module.php' );
+
+		if ( 'out' === PTV_FOR_WORDPRESS_MODE ) {
+			// Out.
+			require_once( PTV_FOR_WORDPRESS_DIR . '/lib/class-ptv-out-module.php' );
+
+		} else {
+			require_once( PTV_FOR_WORDPRESS_DIR . '/lib/class-ptv-in-module.php' );
+		}
+
 	}
 
 	/**
@@ -177,6 +196,34 @@ final class PTV_For_WordPress {
 		return true;
 
 	}
+
+	/**
+	 * Enqueue scripts.
+	 */
+	function enqueue_scripts( $hook ) {
+
+		if ( ! in_array( $hook, array( 'edit.php', 'post-new.php', 'post.php' ), true ) ) {
+			return;
+		}
+
+		global $post;
+
+		wp_enqueue_script( 'ptv-for-wordpress-admin', PTV_FOR_WORDPRESS_URL . 'assets/js/ptv-for-wordpress-admin.js', array( 'jquery' ), '', true );
+
+
+		$post_type = ( isset( $post->post_type ) ) ? $post->post_type : '';
+
+		wp_localize_script( 'ptv-for-wordpress-admin', 'ptv', array(
+			'postType' => $post_type,
+			'errors'   => array(
+				'addressMissing'                  => __( 'Visiting address is required value.', 'ptv-for-wordpress' ),
+				'onlyOneDeliveryAddressIsAllowed' => __( 'Only one delivery address is allowed.', 'ptv-for-wordpress' ),
+				'visitingAddressWithWrongSubType' => __( 'Subtype of visiting address must be single.', 'ptv-for-wordpress' ),
+			),
+		) );
+
+	}
+
 
 	/**
 	 * Admin notice for missing dependencies.

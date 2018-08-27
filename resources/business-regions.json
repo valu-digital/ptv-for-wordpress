@@ -1,0 +1,1603 @@
+[
+  {
+    "Code": "88978",
+    "Names": [
+      {
+        "Name": "Äänekosken seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Äänekoskiregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Äänekoski Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "992",
+      "275"
+    ]
+  },
+  {
+    "Code": "88942",
+    "Names": [
+      {
+        "Name": "Espoon seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Esboregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Espoo Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "049",
+      "235",
+      "257"
+    ]
+  },
+  {
+    "Code": "89056",
+    "Names": [
+      {
+        "Name": "Etelä-Päijänteen seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Etelä-Päijänteen seutu",
+        "Language": "sv"
+      },
+      {
+        "Name": "Etelä-Päijänteen seutu",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "016",
+      "081",
+      "111",
+      "316",
+      "576",
+      "781"
+    ]
+  },
+  {
+    "Code": "88993",
+    "Names": [
+      {
+        "Name": "Etelä-Pirkanmaan seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Södra Birkaland",
+        "Language": "sv"
+      },
+      {
+        "Name": "Southern Tampere Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "020",
+      "635",
+      "887",
+      "908"
+    ]
+  },
+  {
+    "Code": "88858",
+    "Names": [
+      {
+        "Name": "Forssan seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Forssaregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Forssa Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "061",
+      "103",
+      "169",
+      "834",
+      "981"
+    ]
+  },
+  {
+    "Code": "89032",
+    "Names": [
+      {
+        "Name": "Haapaveden-Siikalatvan seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Haapavesi-Siikalatva region",
+        "Language": "sv"
+      },
+      {
+        "Name": "Haapavesi-Siikalatva region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "071",
+      "630",
+      "791"
+    ]
+  },
+  {
+    "Code": "88867",
+    "Names": [
+      {
+        "Name": "Hämeenlinnan seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Tavastehusregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Hämeenlinna Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "109",
+      "082"
+    ]
+  },
+  {
+    "Code": "89035",
+    "Names": [
+      {
+        "Name": "Helsinki",
+        "Language": "fi"
+      },
+      {
+        "Name": "Helsingfors",
+        "Language": "sv"
+      },
+      {
+        "Name": "Helsinki",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "091"
+    ]
+  },
+  {
+    "Code": "88861",
+    "Names": [
+      {
+        "Name": "Hyvinkää ja Riihimäen seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Hyvinge och Riihimäkiregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Hyvinkää and Riihimäki region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "086",
+      "106",
+      "433",
+      "694"
+    ]
+  },
+  {
+    "Code": "88957",
+    "Names": [
+      {
+        "Name": "Itä-Lapin seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Östra Lappland",
+        "Language": "sv"
+      },
+      {
+        "Name": "Eastern Lapland",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "320",
+      "583",
+      "614",
+      "732",
+      "742"
+    ]
+  },
+  {
+    "Code": "89011",
+    "Names": [
+      {
+        "Name": "Itä-Uusimaan seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Östra Nyland",
+        "Language": "sv"
+      },
+      {
+        "Name": "Eastern Uusimaa Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "018",
+      "407",
+      "434",
+      "504",
+      "638",
+      "616"
+    ]
+  },
+  {
+    "Code": "88951",
+    "Names": [
+      {
+        "Name": "Jämsän seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Jämsäregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Jämsä Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "182",
+      "291"
+    ]
+  },
+  {
+    "Code": "88864",
+    "Names": [
+      {
+        "Name": "Järviseutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Järviseuturegionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Järviseutu Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "005",
+      "052",
+      "403",
+      "759",
+      "934"
+    ]
+  },
+  {
+    "Code": "88876",
+    "Names": [
+      {
+        "Name": "Joutsan seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Joutsaregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Joutsa Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "172",
+      "435"
+    ]
+  },
+  {
+    "Code": "88954",
+    "Names": [
+      {
+        "Name": "Jyväskylän seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Jyväskylä region",
+        "Language": "sv"
+      },
+      {
+        "Name": "Jyväskylä Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "179",
+      "410",
+      "500",
+      "892"
+    ]
+  },
+  {
+    "Code": "88960",
+    "Names": [
+      {
+        "Name": "Kainuun seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Kalixregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Kainuu Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "105",
+      "205",
+      "290",
+      "578",
+      "620",
+      "697",
+      "765",
+      "777",
+      "785"
+    ]
+  },
+  {
+    "Code": "89005",
+    "Names": [
+      {
+        "Name": "Karstulan seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Karstularegionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Karstula Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "226",
+      "312"
+    ]
+  },
+  {
+    "Code": "88885",
+    "Names": [
+      {
+        "Name": "Kaustisen seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Kaustinenregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Kaustinen Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "074",
+      "236",
+      "421",
+      "584",
+      "849",
+      "924"
+    ]
+  },
+  {
+    "Code": "88963",
+    "Names": [
+      {
+        "Name": "Kemi-Tornion seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Kemi-Torneå -regionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Kemi-Tornio Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "240",
+      "241",
+      "751",
+      "845",
+      "851"
+    ]
+  },
+  {
+    "Code": "88966",
+    "Names": [
+      {
+        "Name": "Keski-Savon seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Mellersta Savolax",
+        "Language": "sv"
+      },
+      {
+        "Name": "Middle Savonia",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "090",
+      "171",
+      "420",
+      "915"
+    ]
+  },
+  {
+    "Code": "89026",
+    "Names": [
+      {
+        "Name": "Keski-Uudenmaan seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Mellersta Nyland",
+        "Language": "sv"
+      },
+      {
+        "Name": "Central Uusimaa",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "186",
+      "224",
+      "245",
+      "505",
+      "543",
+      "611",
+      "753",
+      "858",
+      "927"
+    ]
+  },
+  {
+    "Code": "88948",
+    "Names": [
+      {
+        "Name": "Keuruun seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Keuruuregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Keuruu Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "249",
+      "495"
+    ]
+  },
+  {
+    "Code": "88969",
+    "Names": [
+      {
+        "Name": "Koillismaan seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Koillismaaregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Koillismaa Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "305",
+      "832"
+    ]
+  },
+  {
+    "Code": "89053",
+    "Names": [
+      {
+        "Name": "Kokkolan seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Karlebyregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Kokkola Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "217",
+      "272"
+    ]
+  },
+  {
+    "Code": "88924",
+    "Names": [
+      {
+        "Name": "Kotkan-Haminan seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Kotka-Fredrikshamn -regionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Kotka-Hamina Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "075",
+      "285",
+      "489",
+      "624",
+      "935"
+    ]
+  },
+  {
+    "Code": "88888",
+    "Names": [
+      {
+        "Name": "Kouvolan seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Kouvolaregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Kouvola Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "142",
+      "286"
+    ]
+  },
+  {
+    "Code": "88891",
+    "Names": [
+      {
+        "Name": "Kuopion seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Kuopioregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Kuopio region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "204",
+      "297",
+      "687",
+      "749",
+      "857"
+    ]
+  },
+  {
+    "Code": "88894",
+    "Names": [
+      {
+        "Name": "Kuusiokunnat",
+        "Language": "fi"
+      },
+      {
+        "Name": "Kuusiokunnat",
+        "Language": "sv"
+      },
+      {
+        "Name": "Kuusiokunnat",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "989",
+      "010",
+      "300"
+    ]
+  },
+  {
+    "Code": "88897",
+    "Names": [
+      {
+        "Name": "Kyrösjärven seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Kyrösjärviregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Kyrösjärvi Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "108",
+      "143"
+    ]
+  },
+  {
+    "Code": "88855",
+    "Names": [
+      {
+        "Name": "Lahden seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Lahtisregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Lahti region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "098",
+      "398",
+      "560"
+    ]
+  },
+  {
+    "Code": "89044",
+    "Names": [
+      {
+        "Name": "Länsi-Uusimaa",
+        "Language": "fi"
+      },
+      {
+        "Name": "Västra Nyland",
+        "Language": "sv"
+      },
+      {
+        "Name": "Western Uusimaa",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "078",
+      "149",
+      "444",
+      "710",
+      "755"
+    ]
+  },
+  {
+    "Code": "88873",
+    "Names": [
+      {
+        "Name": "Lappeenranta-Imatra seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Villmanstrand-Imatra -regionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Lappeenranta-Imatra Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "153",
+      "405",
+      "416",
+      "441",
+      "580",
+      "689",
+      "700",
+      "739",
+      "831"
+    ]
+  },
+  {
+    "Code": "302081",
+    "Names": [
+      {
+        "Name": "Loimaan seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Loimaaregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Loimaa Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "019",
+      "284",
+      "430",
+      "480",
+      "561",
+      "636"
+    ]
+  },
+  {
+    "Code": "88900",
+    "Names": [
+      {
+        "Name": "Mikkelin seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "St. Michel-regionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Mikkeli Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "097",
+      "213",
+      "507",
+      "491",
+      "588",
+      "623"
+    ]
+  },
+  {
+    "Code": "88972",
+    "Names": [
+      {
+        "Name": "Nivala-Haapajärven seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Nivala-Haapajärvi -regionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Nivala-Haapajärvi Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "069",
+      "317",
+      "535",
+      "626",
+      "691"
+    ]
+  },
+  {
+    "Code": "89002",
+    "Names": [
+      {
+        "Name": "Oulun seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Uleåborgregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Oulu Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "072",
+      "139",
+      "244",
+      "425",
+      "436",
+      "494",
+      "564",
+      "615",
+      "859",
+      "889"
+    ]
+  },
+  {
+    "Code": "88975",
+    "Names": [
+      {
+        "Name": "Parkanon-Kihniön seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Parkano-Kihniö -regionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Parkano-Kihniö Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "250",
+      "581"
+    ]
+  },
+  {
+    "Code": "88903",
+    "Names": [
+      {
+        "Name": "Pieksämäen seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Pieksämäkiregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Pieksämäki Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "593"
+    ]
+  },
+  {
+    "Code": "89029",
+    "Names": [
+      {
+        "Name": "Pietarsaaren seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Jakobstadsregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Jakobstads Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "288",
+      "440",
+      "599",
+      "598",
+      "893"
+    ]
+  },
+  {
+    "Code": "88990",
+    "Names": [
+      {
+        "Name": "Pohjois-Karjalan seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Norra Karelen",
+        "Language": "sv"
+      },
+      {
+        "Name": "North Karelia",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "146",
+      "167",
+      "176",
+      "260",
+      "276",
+      "422",
+      "426",
+      "541",
+      "309",
+      "607",
+      "707",
+      "848",
+      "911"
+    ]
+  },
+  {
+    "Code": "89014",
+    "Names": [
+      {
+        "Name": "Pohjois-Lapin seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Norra Lappland",
+        "Language": "sv"
+      },
+      {
+        "Name": "Northern Lapland",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "148",
+      "758",
+      "890"
+    ]
+  },
+  {
+    "Code": "89041",
+    "Names": [
+      {
+        "Name": "Pohjois-Satakunta",
+        "Language": "fi"
+      },
+      {
+        "Name": "Norra Satakunta",
+        "Language": "sv"
+      },
+      {
+        "Name": "Northern Satakunta",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "099",
+      "181",
+      "214",
+      "230",
+      "747"
+    ]
+  },
+  {
+    "Code": "89050",
+    "Names": [
+      {
+        "Name": "Porin seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Björneborgregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Pori region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "079",
+      "102",
+      "271",
+      "484",
+      "531",
+      "608",
+      "609",
+      "886"
+    ]
+  },
+  {
+    "Code": "89023",
+    "Names": [
+      {
+        "Name": "Raahen seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Brahestadtsregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Raahe region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "625",
+      "678",
+      "748"
+    ]
+  },
+  {
+    "Code": "88882",
+    "Names": [
+      {
+        "Name": "Rajupusun seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Rajupusu-regionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Rajupusu Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "178",
+      "681",
+      "768"
+    ]
+  },
+  {
+    "Code": "89047",
+    "Names": [
+      {
+        "Name": "Rauman seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Raumaregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Rauma region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "050",
+      "051",
+      "684",
+      "783"
+    ]
+  },
+  {
+    "Code": "88927",
+    "Names": [
+      {
+        "Name": "Rovaniemi ja Ranua",
+        "Language": "fi"
+      },
+      {
+        "Name": "Rovaniemi och Ranua",
+        "Language": "sv"
+      },
+      {
+        "Name": "Rovaniemi and Ranua",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "683",
+      "698"
+    ]
+  },
+  {
+    "Code": "89038",
+    "Names": [
+      {
+        "Name": "Saarijärvi",
+        "Language": "fi"
+      },
+      {
+        "Name": "Saarijärvi regionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Saarijärvi region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "729"
+    ]
+  },
+  {
+    "Code": "88906",
+    "Names": [
+      {
+        "Name": "Salon seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Saloregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Salo Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "734"
+    ]
+  },
+  {
+    "Code": "88933",
+    "Names": [
+      {
+        "Name": "Sastamalan seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Sastamalaregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Sastamala Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "619",
+      "790"
+    ]
+  },
+  {
+    "Code": "88909",
+    "Names": [
+      {
+        "Name": "Savonlinnan seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Savonlinnaregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Savonlinnan Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "046",
+      "740"
+    ]
+  },
+  {
+    "Code": "88912",
+    "Names": [
+      {
+        "Name": "Seinäjoen seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Seinäjokiregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Seinäjoki Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "145",
+      "233",
+      "301",
+      "408",
+      "743"
+    ]
+  },
+  {
+    "Code": "88999",
+    "Names": [
+      {
+        "Name": "Seutua ei löydy!",
+        "Language": "fi"
+      },
+      {
+        "Name": "Regionen finns inte",
+        "Language": "sv"
+      },
+      {
+        "Name": "Region does not found",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "035",
+      "043",
+      "060",
+      "062",
+      "065",
+      "076",
+      "077",
+      "165",
+      "170",
+      "216",
+      "318",
+      "295",
+      "417",
+      "438",
+      "478",
+      "592",
+      "736",
+      "761",
+      "766",
+      "771"
+    ]
+  },
+  {
+    "Code": "88915",
+    "Names": [
+      {
+        "Name": "Sisä-Savon seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Inre Savolax",
+        "Language": "sv"
+      },
+      {
+        "Name": "Inner Savo region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "239",
+      "595",
+      "686",
+      "778",
+      "844",
+      "921"
+    ]
+  },
+  {
+    "Code": "89020",
+    "Names": [
+      {
+        "Name": "Suupohjan rannikkoseutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Sydösterbotten",
+        "Language": "sv"
+      },
+      {
+        "Name": "Coastal Southern Ostrobothnia",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "231",
+      "287",
+      "545"
+    ]
+  },
+  {
+    "Code": "88918",
+    "Names": [
+      {
+        "Name": "Suupohjan seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Sydbotten",
+        "Language": "sv"
+      },
+      {
+        "Name": "Southern Ostrobothnia",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "151",
+      "218",
+      "232",
+      "846"
+    ]
+  },
+  {
+    "Code": "88945",
+    "Names": [
+      {
+        "Name": "Tampereen kaupunkiseutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Tammerforsregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Tampere Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "211",
+      "418",
+      "536",
+      "562",
+      "604",
+      "837",
+      "922",
+      "980"
+    ]
+  },
+  {
+    "Code": "88939",
+    "Names": [
+      {
+        "Name": "Tornionlaakson seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Tornedalen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Tornio Valley",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "854",
+      "976"
+    ]
+  },
+  {
+    "Code": "88987",
+    "Names": [
+      {
+        "Name": "Tunturi-Lapin seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Fjäll-Lappland",
+        "Language": "sv"
+      },
+      {
+        "Name": "Fell Lapland",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "047",
+      "261",
+      "273",
+      "498"
+    ]
+  },
+  {
+    "Code": "89008",
+    "Names": [
+      {
+        "Name": "Turun seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Turkuregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Turku Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "202",
+      "423",
+      "481",
+      "503",
+      "529",
+      "538",
+      "577",
+      "680",
+      "704",
+      "738",
+      "853"
+    ]
+  },
+  {
+    "Code": "89059",
+    "Names": [
+      {
+        "Name": "Turunmaa",
+        "Language": "fi"
+      },
+      {
+        "Name": "Åboland",
+        "Language": "sv"
+      },
+      {
+        "Name": "Turunmaa",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "322",
+      "445"
+    ]
+  },
+  {
+    "Code": "88996",
+    "Names": [
+      {
+        "Name": "Vaasan seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Vasaregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Vaasa Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "152",
+      "280",
+      "399",
+      "475",
+      "499",
+      "905",
+      "946"
+    ]
+  },
+  {
+    "Code": "89017",
+    "Names": [
+      {
+        "Name": "Vakka-Suomen seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Nystadsregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Vakka-Suomi region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "304",
+      "400",
+      "631",
+      "833",
+      "895",
+      "918"
+    ]
+  },
+  {
+    "Code": "88984",
+    "Names": [
+      {
+        "Name": "Vantaan seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Vandaregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Vantaa Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "092"
+    ]
+  },
+  {
+    "Code": "88921",
+    "Names": [
+      {
+        "Name": "Witas-alue",
+        "Language": "fi"
+      },
+      {
+        "Name": "Witas-regionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Witas Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "256",
+      "265",
+      "601",
+      "931"
+    ]
+  },
+  {
+    "Code": "88981",
+    "Names": [
+      {
+        "Name": "Ylä-Pirkanmaan seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Övre Birkaland",
+        "Language": "sv"
+      },
+      {
+        "Name": "Upper Tampere Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "177",
+      "508",
+      "702",
+      "936"
+    ]
+  },
+  {
+    "Code": "88870",
+    "Names": [
+      {
+        "Name": "Ylä-Savon seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Övre Savolax",
+        "Language": "sv"
+      },
+      {
+        "Name": "Ylä-Savo region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "140",
+      "263",
+      "402",
+      "762",
+      "925"
+    ]
+  },
+  {
+    "Code": "88936",
+    "Names": [
+      {
+        "Name": "Ylivieskan seutu",
+        "Language": "fi"
+      },
+      {
+        "Name": "Ylivieskaregionen",
+        "Language": "sv"
+      },
+      {
+        "Name": "Ylivieska Region",
+        "Language": "en"
+      }
+    ],
+    "Municipalities": [
+      "009",
+      "208",
+      "483",
+      "563",
+      "746",
+      "977"
+    ]
+  }
+]

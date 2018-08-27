@@ -134,6 +134,11 @@ class PTV_Phone_Channel_In_Controller extends PTV_Service_Channel_In_Controller 
 		// Set urls.
 		$request->set_urls( $this->get_urls( $post_id ) );
 
+		// Set delete all web pages.
+		if ( ! $request->get_urls() && method_exists( $request, 'set_delete_all_web_pages' ) ) {
+			$request->set_delete_all_web_pages( true );
+		}
+
 		// Set phone numbers.
 		$request->set_phone_numbers( $this->get_phone_numbers( $post_id ) );
 
@@ -157,7 +162,7 @@ class PTV_Phone_Channel_In_Controller extends PTV_Service_Channel_In_Controller 
 			return null;
 		}
 
-		$result = array();
+		$phone_objects = array();
 
 		$post_translations = $this->get_post_translations( $post_id );
 
@@ -173,23 +178,30 @@ class PTV_Phone_Channel_In_Controller extends PTV_Service_Channel_In_Controller 
 
 				if ( isset( $phone['number'] ) ) {
 
-					$phone = new PTV_Phone_Channel_Phone( $phone );
-					$phone->set_language( $lang );
+					$phone_object = new PTV_Phone_With_Type();
+					$phone_object->set_language( sanitize_text_field( $lang ) );
+					$phone_object->set_type( sanitize_text_field( $phone['type'] ) );
+					$phone_object->set_additional_information( sanitize_text_field( $phone['additional_information'] ) );
+					$phone_object->set_service_charge_type( sanitize_text_field( $phone['service_charge_type'] ) );
+					$phone_object->set_charge_description( sanitize_text_field( $phone['charge_description'] ) );
+					$phone_object->set_is_finnish_service_number( (bool) $phone['is_finnish_service_number'] );
+					$phone_object->set_prefix_number( sanitize_text_field( $phone['prefix_number'] ) );
+					$phone_object->set_number( sanitize_text_field( $phone['number'] ) );
 
 					if ( true === $phone['is_finnish_service_number'] ) {
-						$phone->set_prefix_number( null );
+						$phone_object->set_prefix_number( null );
 					}
 
-					$result[] = $phone;
+					$phone_objects[] = $phone_object;
 				}
 			}
 		}
 
-		if ( empty( $result ) ) {
+		if ( empty( $phone_objects ) ) {
 			return null;
 		}
 
-		return $result;
+		return $phone_objects;
 
 	}
 
@@ -233,6 +245,13 @@ class PTV_Phone_Channel_In_Controller extends PTV_Service_Channel_In_Controller 
 
 		if ( ! $sync_areas ) {
 			$this->errors->add( 'ptv-area-sync-error', __( 'Item was saved to the PTV, but synchronization of areas to translations failed.', 'ptv-for-wordpress' ) );
+		}
+
+		// Sync modified time.
+		$sync_modified = $this->sync_modified( $post_id, $object );
+
+		if ( ! $sync_modified ) {
+			$this->errors->add( 'ptv-modified-time-sync-error', __( 'Item was saved to the PTV, but synchronization of modified time to translations failed.', 'ptv-for-wordpress' ) );
 		}
 
 	}

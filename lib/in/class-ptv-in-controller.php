@@ -25,6 +25,11 @@ abstract class PTV_In_Controller {
 	protected $errors;
 
 	/**
+	 * @var
+	 */
+	private $serializer;
+
+	/**
 	 * PTV_In_Controller constructor.
 	 *
 	 * @param PTV_Api|null $api
@@ -39,6 +44,22 @@ abstract class PTV_In_Controller {
 		$this->settings = ptv_get_settings();
 		$this->errors   = new WP_Error();
 
+	}
+
+	/**
+	 * Set serializer.
+	 *
+	 * @param $serializer
+	 */
+	function set_serializer( $serializer ) {
+		$this->serializer = $serializer;
+	}
+
+	/**
+	 * Get serializer.
+	 */
+	function get_serializer() {
+		return $this->serializer;
 	}
 
 	/**
@@ -215,7 +236,10 @@ abstract class PTV_In_Controller {
 		}
 
 		$item = new PTV_Localized_List_Item();
-		$item->set_type( $data['type'] )->set_value( $data['value'] )->set_language( $lang );
+		$item
+			->set_type( sanitize_text_field( $data['type'] ) )
+			->set_value( sanitize_textarea_field( $data['value'] ) )
+			->set_language( sanitize_text_field( $lang ) );
 
 		return $item;
 
@@ -288,9 +312,8 @@ abstract class PTV_In_Controller {
 			return null;
 		}
 
-		$status = carbon_get_post_meta( $post_id, 'ptv_publishing_status' );
+		return sanitize_text_field( carbon_get_post_meta( $post_id, 'ptv_publishing_status' ) );
 
-		return $status;
 	}
 
 	/**
@@ -306,7 +329,7 @@ abstract class PTV_In_Controller {
 			return null;
 		}
 
-		return get_post_meta( $post_id, '_ptv_area_type', true );
+		return sanitize_text_field( get_post_meta( $post_id, '_ptv_area_type', true ) );
 
 	}
 
@@ -323,7 +346,7 @@ abstract class PTV_In_Controller {
 			return null;
 		}
 
-		$result = array();
+		$area_objects = array();
 
 		$areas = carbon_get_post_meta( $post_id, 'ptv_areas' );
 
@@ -333,21 +356,27 @@ abstract class PTV_In_Controller {
 
 		foreach ( $areas as $area ) {
 
-			$area_object = new PTV_Area_In();
 
-			$area_object
-				->set_type( $area['type'] )
-				->set_area_codes( $area['municipalities'] );
+			$area_codes = $area[ ptv_to_snake_case( $area['type'] ) ];
 
-			$result[] = $area_object;
+			if ( $area_codes ) {
 
+				$area_object = new PTV_Area_In();
+
+				$area_object
+					->set_type( sanitize_text_field( $area['type'] ) )
+					->set_area_codes( $area_codes );
+
+				$area_objects[] = $area_object;
+
+			}
 		}
 
-		if ( empty( $result ) ) {
+		if ( empty( $area_objects ) ) {
 			return null;
 		}
 
-		return $result;
+		return $area_objects;
 
 	}
 
@@ -365,40 +394,20 @@ abstract class PTV_In_Controller {
 			return false;
 		}
 
-		$areas        = array();
-		$area_objects = $updated_object->get_areas();
-
-		if ( ! empty( $area_objects ) ) {
-
-			foreach ( $area_objects as $area_object ) {
-
-				$area           = array();
-				$municipalities = array();
-				$area['type']   = $area_object->get_type();
-
-				$municipality_objects = $area_object->get_municipalities();
-
-				if ( ! empty( $municipality_objects ) ) {
-
-					foreach ( $municipality_objects as $municipality_object ) {
-						$municipalities[] = $municipality_object->get_code();
-					}
-
-					$area['municipalities'] = $municipalities;
-				}
-				$areas[] = $area;
-			}
-		}
-
 		$post_translations = $this->get_post_translations( $post_id );
 
 		foreach ( $post_translations as $lang => $id ) {
 
-			carbon_set_post_meta( $id, 'ptv_area_type', $updated_object->get_area_type() );
+			$areas = $this->get_serializer()->serialize_areas( $updated_object->get_areas(), $lang );
 
 			if ( ! empty( $areas ) ) {
-				carbon_set_post_meta( $id, 'ptv_areas', $areas );
+				$this->update_post_meta( $id, $areas );
 			}
+
+			$area_type = $this->get_serializer()->serialize_area_type( $updated_object->get_area_type(), $lang );
+
+			$this->update_post_meta( $id, $area_type );
+
 		}
 
 		return true;
@@ -423,8 +432,71 @@ abstract class PTV_In_Controller {
 
 		foreach ( $post_translations as $lang => $id ) {
 
-			if ( ! empty( $updated_object->get_languages() ) ) {
-				carbon_set_post_meta( $id, 'ptv_languages', $updated_object->get_languages() );
+			$languages = $this->get_serializer()->serialize_languages( $updated_object->get_languages(), $lang );
+
+			if ( ! empty( $languages ) ) {
+				$this->update_post_meta( $id, $languages );
+			}
+		}
+
+		return true;
+
+	}
+
+	/**
+	 * Sync modified time.
+	 *
+	 * @param $post_id
+	 * @param $object
+	 *
+	 * @return bool
+	 */
+	public function sync_modified( $post_id, $object ) {
+
+
+		if ( ! $post_id || ! $object ) {
+			return false;
+		}
+
+		$modified_object = $object->get_modified();
+
+		// Return true if nothing to sync.
+		if ( empty( $modified_object ) ) {
+			return true;
+		}
+
+		$post_translations = $this->get_post_translations( $post_id );
+
+		foreach ( $post_translations as $lang => $id ) {
+
+			$modified_time = $this->get_serializer()->serialize_modified( $modified_object, $lang );
+
+			if ( ! empty( $modified_time ) ) {
+				$this->update_post_meta( $id, $modified_time );
+			}
+		}
+
+		return true;
+
+	}
+
+	/**
+	 * Update post meta
+	 *
+	 * @param $id
+	 * @param array $meta_values
+	 *
+	 * @return bool
+	 */
+	function update_post_meta( $id, $meta_values = array() ) {
+
+		if ( ! $id || empty( $meta_values ) ) {
+			return false;
+		}
+
+		foreach ( $meta_values as $meta_key => $meta_value ) {
+			if ( 0 === strpos( $meta_key, '_ptv_' ) ) {
+				carbon_set_post_meta( $id, ltrim( $meta_key, '_' ), $meta_value, ptv_get_container_id( $id ) );
 			}
 		}
 

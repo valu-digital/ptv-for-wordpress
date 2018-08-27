@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b990869e9280419468c556ddc4c15414",
+    "content-hash": "01633343de776fe31078caa898839b96",
     "packages": [
         {
             "name": "htmlburger/carbon-fields",
-            "version": "2.0.0-beta.11",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/htmlburger/carbon-fields.git",
-                "reference": "90d3449493f36346f4431ece9eed94245b6ee3a5"
+                "reference": "bcfb81e12d0e3162609e938efbdd4ae01bd4abde"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/htmlburger/carbon-fields/zipball/90d3449493f36346f4431ece9eed94245b6ee3a5",
-                "reference": "90d3449493f36346f4431ece9eed94245b6ee3a5",
+                "url": "https://api.github.com/repos/htmlburger/carbon-fields/zipball/bcfb81e12d0e3162609e938efbdd4ae01bd4abde",
+                "reference": "bcfb81e12d0e3162609e938efbdd4ae01bd4abde",
                 "shasum": ""
             },
             "require": {
@@ -127,15 +127,21 @@
             ],
             "description": "WordPress developer-friendly custom fields for post types, taxonomy terms, users, comments, widgets, options and more.",
             "homepage": "http://carbonfields.net/",
-            "time": "2017-06-26T06:59:33+00:00"
+            "time": "2017-11-16T15:36:25+00:00"
         },
         {
             "name": "valu-digital/ptv-client-for-wordpress",
-            "version": "0.8",
+            "version": "0.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/valu-digital/ptv-client-for-wordpress.git",
-                "reference": "4f200e5a5f419a728b8b03bc4b9d3270033ee563"
+                "reference": "abddbdc94807f2d72206ce1063991dcb4e694202"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/valu-digital/ptv-client-for-wordpress/zipball/abddbdc94807f2d72206ce1063991dcb4e694202",
+                "reference": "abddbdc94807f2d72206ce1063991dcb4e694202",
+                "shasum": ""
             },
             "require": {
                 "ext-curl": "*",
@@ -164,15 +170,17 @@
                 "php",
                 "ptv"
             ],
-            "time": "2017-06-27T14:57:14+00:00"
+            "support": {
+                "source": "https://github.com/valu-digital/ptv-client-for-wordpress/tree/master",
+                "issues": "https://github.com/valu-digital/ptv-client-for-wordpress/issues"
+            },
+            "time": "2018-08-27T09:49:38+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "htmlburger/carbon-fields": 10
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
