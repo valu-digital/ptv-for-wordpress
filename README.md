@@ -49,6 +49,6 @@ curl -v -X POST http://localhost/wp-json/ptv/v1/organizations -d token=PTV_FOR_W
 
 Change plugin mode in the wp-config.php `define( 'PTV_FOR_WORDPRESS_MODE', 'in' );`
 
-Using "in mode" requires importing of some taxonomy terms. These terms can be found from the [resources](resources) folder as a JSON format.
+Using in mode requires that PTV taxonomy terms are imported to the WordPress. Use following command to import the taxonomy terms.
+`curl -v -X POST http://localhost/wp-json/ptv/v1/taxonomies -d token=PTV_FOR_WORDPRESS_REST_TOKEN`
 
-Taxonomies needs to be imported manually for now. WordPress importer compatible WXR file will be available later.
