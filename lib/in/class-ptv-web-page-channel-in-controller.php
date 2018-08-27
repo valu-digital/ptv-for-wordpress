@@ -123,6 +123,12 @@ class PTV_Web_Page_Channel_In_Controller extends PTV_Service_Channel_In_Controll
 		// Set languages.
 		$request->set_languages( $this->get_languages( $post_id ) );
 
+		// Set support emails.
+		$request->set_support_emails( $this->get_support_emails( $post_id ) );
+		
+		// Set support phones.
+		$request->set_support_phones( $this->get_support_phones( $post_id ) );
+
 		// Set organization id
 		$request->set_organization_id( $this->get_organization_id( $post_id ) );
 
@@ -156,6 +162,13 @@ class PTV_Web_Page_Channel_In_Controller extends PTV_Service_Channel_In_Controll
 
 		if ( ! $sync_languages ) {
 			$this->errors->add( 'ptv-languages-sync-error', __( 'Item was saved to the PTV, but synchronization of languages to translations failed.', 'ptv-for-wordpress' ) );
+		}
+
+		// Sync modified time.
+		$sync_modified = $this->sync_modified( $post_id, $object );
+
+		if ( ! $sync_modified ) {
+			$this->errors->add( 'ptv-modified-time-sync-error', __( 'Item was saved to the PTV, but synchronization of modified time to translations failed.', 'ptv-for-wordpress' ) );
 		}
 	}
 

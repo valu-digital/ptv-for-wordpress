@@ -1,0 +1,597 @@
+[
+  {
+    "Code": "9",
+    "Names": [
+      {
+        "Name": "Etelä-Karjalan sosiaali- ja terveyspiiri (EKSOTE)",
+        "Language": "fi"
+      },
+      {
+        "Name": "Södra Karelens sjukvårdsdistrikt",
+        "Language": "sv"
+      }
+    ],
+    "Municipalities": [
+      "153",
+      "405",
+      "416",
+      "441",
+      "580",
+      "689",
+      "700",
+      "739",
+      "831"
+    ]
+  },
+  {
+    "Code": "15",
+    "Names": [
+      {
+        "Name": "Etelä-Pohjanmaan sairaanhoitopiiri",
+        "Language": "fi"
+      },
+      {
+        "Name": "Syd-Österbottens sjukvårdsdistrikt",
+        "Language": "sv"
+      }
+    ],
+    "Municipalities": [
+      "005",
+      "010",
+      "052",
+      "145",
+      "151",
+      "152",
+      "218",
+      "232",
+      "233",
+      "300",
+      "301",
+      "403",
+      "408",
+      "743",
+      "759",
+      "846",
+      "934",
+      "989"
+    ]
+  },
+  {
+    "Code": "10",
+    "Names": [
+      {
+        "Name": "Etelä-Savon sosiaali- ja terveyspalvelujen kuntayhtymä (ESSOTE)",
+        "Language": "fi"
+      },
+      {
+        "Name": "Södra Savolax sjukvårdsdistrikt",
+        "Language": "sv"
+      }
+    ],
+    "Municipalities": [
+      "097",
+      "171",
+      "178",
+      "213",
+      "491",
+      "507",
+      "588",
+      "593",
+      "623"
+    ]
+  },
+  {
+    "Code": "25",
+    "Names": [
+      {
+        "Name": "Helsingin ja Uudenmaan sairaanhoitopiiri",
+        "Language": "fi"
+      },
+      {
+        "Name": "Helsingfors och Nylands sjukvårdsdistrikt",
+        "Language": "sv"
+      }
+    ],
+    "Municipalities": [
+      "018",
+      "049",
+      "078",
+      "091",
+      "106",
+      "149",
+      "186",
+      "224",
+      "235",
+      "245",
+      "257",
+      "407",
+      "444",
+      "434",
+      "505",
+      "543",
+      "611",
+      "638",
+      "710",
+      "753",
+      "755",
+      "858",
+      "092",
+      "927"
+    ]
+  },
+  {
+    "Code": "11",
+    "Names": [
+      {
+        "Name": "Itä-Savon sairaanhoitopiiri",
+        "Language": "fi"
+      },
+      {
+        "Name": "Östra Savolax sjukvårdsdistrikt",
+        "Language": "sv"
+      }
+    ],
+    "Municipalities": [
+      "046",
+      "681",
+      "740",
+      "768"
+    ]
+  },
+  {
+    "Code": "19",
+    "Names": [
+      {
+        "Name": "Kainuun sairaanhoitopiiri",
+        "Language": "fi"
+      },
+      {
+        "Name": "Kajanalands sjukvårdsdistrikt",
+        "Language": "sv"
+      }
+    ],
+    "Municipalities": [
+      "105",
+      "205",
+      "290",
+      "578",
+      "620",
+      "697",
+      "765",
+      "777"
+    ]
+  },
+  {
+    "Code": "5",
+    "Names": [
+      {
+        "Name": "Kanta-Hämeen sairaanhoitopiiri",
+        "Language": "fi"
+      },
+      {
+        "Name": "Centrala Tavastlands sjukvårdsdistrikt",
+        "Language": "sv"
+      }
+    ],
+    "Municipalities": [
+      "061",
+      "082",
+      "086",
+      "103",
+      "109",
+      "165",
+      "169",
+      "433",
+      "694",
+      "834",
+      "981"
+    ]
+  },
+  {
+    "Code": "17",
+    "Names": [
+      {
+        "Name": "Keski-Pohjanmaan sairaanhoitopiiri",
+        "Language": "fi"
+      },
+      {
+        "Name": "Mellersta Österbottens sjukvårdsdistrikt",
+        "Language": "sv"
+      }
+    ],
+    "Municipalities": [
+      "074",
+      "217",
+      "236",
+      "272",
+      "288",
+      "421",
+      "584",
+      "691",
+      "849",
+      "924"
+    ]
+  },
+  {
+    "Code": "14",
+    "Names": [
+      {
+        "Name": "Keski-Suomen sairaanhoitopiiri",
+        "Language": "fi"
+      },
+      {
+        "Name": "Mellersta Finlands sjukvårdsdistrikt",
+        "Language": "sv"
+      }
+    ],
+    "Municipalities": [
+      "077",
+      "172",
+      "179",
+      "216",
+      "226",
+      "249",
+      "256",
+      "265",
+      "275",
+      "312",
+      "410",
+      "435",
+      "495",
+      "500",
+      "592",
+      "601",
+      "729",
+      "850",
+      "892",
+      "931",
+      "992"
+    ]
+  },
+  {
+    "Code": "8",
+    "Names": [
+      {
+        "Name": "Kymenlaakson sairaanhoitopiiri",
+        "Language": "fi"
+      },
+      {
+        "Name": "Kymmenedalens sjukvårdsdistrikt",
+        "Language": "sv"
+      }
+    ],
+    "Municipalities": [
+      "075",
+      "285",
+      "286",
+      "489",
+      "624",
+      "935"
+    ]
+  },
+  {
+    "Code": "21",
+    "Names": [
+      {
+        "Name": "Lapin sairaanhoitopiiri",
+        "Language": "fi"
+      },
+      {
+        "Name": "Lapplands sjukvårdsdistrikt",
+        "Language": "sv"
+      }
+    ],
+    "Municipalities": [
+      "047",
+      "148",
+      "320",
+      "261",
+      "273",
+      "498",
+      "583",
+      "854",
+      "614",
+      "683",
+      "698",
+      "732",
+      "742",
+      "758",
+      "890"
+    ]
+  },
+  {
+    "Code": "20",
+    "Names": [
+      {
+        "Name": "Länsi-Pohjan sairaanhoitopiiri",
+        "Language": "fi"
+      },
+      {
+        "Name": "Länsi-Pohja sjukvårdsdistrikt",
+        "Language": "sv"
+      }
+    ],
+    "Municipalities": [
+      "240",
+      "241",
+      "751",
+      "845",
+      "851",
+      "976"
+    ]
+  },
+  {
+    "Code": "6",
+    "Names": [
+      {
+        "Name": "Pirkanmaan sairaanhoitopiiri",
+        "Language": "fi"
+      },
+      {
+        "Name": "Birkalands sjukvårdsdistrikt",
+        "Language": "sv"
+      }
+    ],
+    "Municipalities": [
+      "020",
+      "108",
+      "143",
+      "177",
+      "182",
+      "211",
+      "250",
+      "291",
+      "418",
+      "508",
+      "536",
+      "562",
+      "581",
+      "604",
+      "635",
+      "702",
+      "790",
+      "837",
+      "887",
+      "908",
+      "922",
+      "936",
+      "980"
+    ]
+  },
+  {
+    "Code": "12",
+    "Names": [
+      {
+        "Name": "Pohjois-Karjalan sairaanhoitopiiri",
+        "Language": "fi"
+      },
+      {
+        "Name": "Norra Karelens sjukvårdsdistrikt",
+        "Language": "sv"
+      }
+    ],
+    "Municipalities": [
+      "090",
+      "146",
+      "167",
+      "176",
+      "260",
+      "276",
+      "422",
+      "426",
+      "541",
+      "309",
+      "607",
+      "707",
+      "848",
+      "911"
+    ]
+  },
+  {
+    "Code": "18",
+    "Names": [
+      {
+        "Name": "Pohjois-Pohjanmaan sairaanhoitopiiri",
+        "Language": "fi"
+      },
+      {
+        "Name": "Norra Österbottens sjukvårdsdistrikt",
+        "Language": "sv"
+      }
+    ],
+    "Municipalities": [
+      "009",
+      "069",
+      "071",
+      "072",
+      "139",
+      "208",
+      "244",
+      "305",
+      "317",
+      "425",
+      "436",
+      "483",
+      "494",
+      "535",
+      "563",
+      "564",
+      "615",
+      "625",
+      "626",
+      "630",
+      "678",
+      "746",
+      "748",
+      "791",
+      "832",
+      "859",
+      "889",
+      "785",
+      "977"
+    ]
+  },
+  {
+    "Code": "13",
+    "Names": [
+      {
+        "Name": "Pohjois-Savon sairaanhoitopiiri",
+        "Language": "fi"
+      },
+      {
+        "Name": "Norra Savolax sjukvårdsdistrikt",
+        "Language": "sv"
+      }
+    ],
+    "Municipalities": [
+      "140",
+      "204",
+      "239",
+      "263",
+      "297",
+      "402",
+      "420",
+      "595",
+      "686",
+      "687",
+      "749",
+      "762",
+      "778",
+      "844",
+      "857",
+      "915",
+      "921",
+      "925"
+    ]
+  },
+  {
+    "Code": "7",
+    "Names": [
+      {
+        "Name": "Päijät-Hämeen sairaanhoitopiiri",
+        "Language": "fi"
+      },
+      {
+        "Name": "Päijät-Häme sjukvårdsdistrikt",
+        "Language": "sv"
+      }
+    ],
+    "Municipalities": [
+      "016",
+      "081",
+      "111",
+      "098",
+      "142",
+      "316",
+      "398",
+      "504",
+      "560",
+      "576",
+      "616",
+      "781"
+    ]
+  },
+  {
+    "Code": "4",
+    "Names": [
+      {
+        "Name": "Satakunnan sairaanhoitopiiri",
+        "Language": "fi"
+      },
+      {
+        "Name": "Satakunta sjukvårdsdistrikt",
+        "Language": "sv"
+      }
+    ],
+    "Municipalities": [
+      "050",
+      "051",
+      "079",
+      "099",
+      "102",
+      "181",
+      "214",
+      "230",
+      "271",
+      "484",
+      "531",
+      "608",
+      "609",
+      "684",
+      "747",
+      "783",
+      "886"
+    ]
+  },
+  {
+    "Code": "16",
+    "Names": [
+      {
+        "Name": "Vaasan sairaanhoitopiiri",
+        "Language": "fi"
+      },
+      {
+        "Name": "Vasa sjukvårdsdistrikt",
+        "Language": "sv"
+      }
+    ],
+    "Municipalities": [
+      "231",
+      "280",
+      "287",
+      "399",
+      "440",
+      "475",
+      "499",
+      "545",
+      "599",
+      "598",
+      "893",
+      "905",
+      "946"
+    ]
+  },
+  {
+    "Code": "3",
+    "Names": [
+      {
+        "Name": "Varsinais-Suomen sairaanhoitopiiri",
+        "Language": "fi"
+      },
+      {
+        "Name": "Egentliga Finlands sjukvårdsdistrikt",
+        "Language": "sv"
+      }
+    ],
+    "Municipalities": [
+      "019",
+      "202",
+      "322",
+      "284",
+      "304",
+      "400",
+      "423",
+      "430",
+      "480",
+      "481",
+      "503",
+      "529",
+      "538",
+      "561",
+      "577",
+      "445",
+      "619",
+      "631",
+      "636",
+      "680",
+      "704",
+      "734",
+      "738",
+      "761",
+      "833",
+      "853",
+      "895",
+      "918"
+    ]
+  }
+]

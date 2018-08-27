@@ -4,8 +4,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-require_once( PTV_FOR_WORDPRESS_DIR . '/lib/out/class-wp-async-request.php' );
-require_once( PTV_FOR_WORDPRESS_DIR . '/lib/out/class-wp-background-process.php' );
+require_once( PTV_FOR_WORDPRESS_DIR . '/lib/libraries/class-wp-async-request.php' );
+require_once( PTV_FOR_WORDPRESS_DIR . '/lib/libraries/class-wp-background-process.php' );
 require_once( PTV_FOR_WORDPRESS_DIR . '/lib/out/class-ptv-background-process.php' );
 
 /**

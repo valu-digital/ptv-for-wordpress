@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Valu PTV Integration\n"
-"POT-Creation-Date: 2017-06-28 21:58+0200\n"
-"PO-Revision-Date: 2017-06-28 21:58+0200\n"
+"POT-Creation-Date: 2018-02-28 14:23+0200\n"
+"PO-Revision-Date: 2018-02-28 14:24+0200\n"
 "Last-Translator: Mikko Virenius <mikko.virenius@valu.fi>\n"
 "Language-Team: Mikko Virenius <mikko.virenius@valu.fi>\n"
 "Language: fi\n"
@@ -18,370 +18,506 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: vendor\n"
+"X-Poedit-SearchPathExcluded-1: node_modules\n"
+"X-Poedit-SearchPathExcluded-2: bower_components\n"
 
-#: core/class-ptv-admin-page.php:37
+#: lib/class-ptv-admin-page.php:40
 msgid "PTV settings"
 msgstr "PTV-asetukset"
 
-#: core/class-ptv-admin-page.php:53
+#: lib/class-ptv-admin-page.php:60
 msgid "PTV Settings"
 msgstr "PTV-asetukset"
 
-#: core/class-ptv-admin-page.php:79
+#: lib/class-ptv-admin-page.php:86
 msgid "General settings"
 msgstr "Yleiset asetukset"
 
-#: core/class-ptv-admin-page.php:86 core/custom-fields.php:329
+#: lib/class-ptv-admin-page.php:93
 msgid "Organization ID"
-msgstr "Organisaation ID"
+msgstr "Organisaationtunniste"
 
-#: core/class-ptv-admin-page.php:94
+#: lib/class-ptv-admin-page.php:101
 msgid "Primary language"
 msgstr "﻿Ensisijainen kieli"
 
-#: core/class-ptv-admin-page.php:144
+#: lib/class-ptv-admin-page.php:151
 msgid "Finnish"
 msgstr "Suomi"
 
-#: core/class-ptv-admin-page.php:145
+#: lib/class-ptv-admin-page.php:152
 msgid "Swedish"
 msgstr "Ruotsi"
 
-#: core/class-ptv-admin-page.php:146
+#: lib/class-ptv-admin-page.php:153
 msgid "English"
 msgstr "Englanti"
 
-#: core/custom-fields.php:21
+#: lib/class-ptv-custom-fields.php:87
 msgid "Monday"
 msgstr "﻿Maanantai"
 
-#: core/custom-fields.php:22
+#: lib/class-ptv-custom-fields.php:88
 msgid "Tuesday"
 msgstr "Tiistai"
 
-#: core/custom-fields.php:23
+#: lib/class-ptv-custom-fields.php:89
 msgid "Wednesday"
 msgstr "Keskiviikko"
 
-#: core/custom-fields.php:24
+#: lib/class-ptv-custom-fields.php:90
 msgid "Thursday"
 msgstr "﻿Torstai"
 
-#: core/custom-fields.php:25
+#: lib/class-ptv-custom-fields.php:91
 msgid "Friday"
 msgstr "﻿Perjantai"
 
-#: core/custom-fields.php:26
+#: lib/class-ptv-custom-fields.php:92
 msgid "Saturday"
 msgstr "﻿Lauantai"
 
-#: core/custom-fields.php:27
+#: lib/class-ptv-custom-fields.php:93
 msgid "Sunday"
 msgstr "Sunnuntai"
 
-#: core/custom-fields.php:44
+#: lib/class-ptv-custom-fields.php:110
 msgid "Standard"
 msgstr "Normaalit palveluajat"
 
-#: core/custom-fields.php:45
+#: lib/class-ptv-custom-fields.php:111
 msgid "Special"
 msgstr "Vuorokauden yli menevät palveluajat"
 
-#: core/custom-fields.php:46
+#: lib/class-ptv-custom-fields.php:112
 msgid "Exception"
 msgstr "Poikkeavat palveluajat"
 
-#: core/custom-fields.php:50
-msgid "State"
-msgstr "Valtio"
-
-#: core/custom-fields.php:51 core/custom-fields.php:94
+#: lib/class-ptv-custom-fields.php:116 lib/class-ptv-custom-fields.php:160
+#: lib/class-ptv-custom-fields.php:1880
 msgid "Municipality"
 msgstr "Kunta"
 
-#: core/custom-fields.php:52
-msgid "RegionalOrganization"
-msgstr "Organisaatio"
-
-#: core/custom-fields.php:53 core/custom-fields.php:99
-#: core/custom-fields.php:617 core/custom-fields.php:1121
-#: core/custom-fields.php:1306 core/custom-fields.php:1356
-#: core/post-types.php:66 core/post-types.php:93
-msgid "Organization"
-msgstr "﻿Organisaatio"
-
-#: core/custom-fields.php:54
+#: lib/class-ptv-custom-fields.php:117
 msgid "Company"
 msgstr "Yritys"
 
-#: core/custom-fields.php:58
+#: lib/class-ptv-custom-fields.php:118
+msgid "State"
+msgstr "Valtio"
+
+#: lib/class-ptv-custom-fields.php:119
+msgid "RegionalOrganization"
+msgstr "Organisaatio"
+
+#: lib/class-ptv-custom-fields.php:120 lib/class-ptv-custom-fields.php:192
+#: lib/class-ptv-custom-fields.php:463 lib/class-ptv-custom-fields.php:716
+#: lib/class-ptv-custom-fields.php:759 lib/class-ptv-custom-fields.php:1109
+#: lib/class-ptv-custom-fields.php:1403 lib/class-ptv-custom-fields.php:1517
+#: lib/class-ptv-custom-fields.php:1814 lib/class-ptv-custom-fields.php:2214
+#: lib/class-ptv-post-types.php:63 lib/class-ptv-post-types.php:90
+msgid "Organization"
+msgstr "﻿Organisaatio"
+
+#: lib/class-ptv-custom-fields.php:124
 msgid "Published"
 msgstr "﻿Julkaistu"
 
-#: core/custom-fields.php:59
+#: lib/class-ptv-custom-fields.php:125
 msgid "Draft"
 msgstr "﻿Luonnos"
 
-#: core/custom-fields.php:60
+#: lib/class-ptv-custom-fields.php:126
 msgid "Archived"
 msgstr "Arkistoitu"
 
-#: core/custom-fields.php:64 core/custom-fields.php:491
-#: core/custom-fields.php:1288
+#: lib/class-ptv-custom-fields.php:130 lib/class-ptv-custom-fields.php:669
+#: lib/class-ptv-custom-fields.php:977 lib/class-ptv-custom-fields.php:1794
 msgid "Name"
 msgstr "Nimi"
 
-#: core/custom-fields.php:65
+#: lib/class-ptv-custom-fields.php:131
 msgid "AlternateName"
 msgstr "Vaihtoehtoinen nimi"
 
-#: core/custom-fields.php:69
+#: lib/class-ptv-custom-fields.php:135
 msgid "Attachment"
 msgstr "Liite"
 
-#: core/custom-fields.php:70
+#: lib/class-ptv-custom-fields.php:136
 msgid "Form"
 msgstr "Lomake"
 
-#: core/custom-fields.php:74
+#: lib/class-ptv-custom-fields.php:140
 msgid "Phone"
 msgstr "Puhelin"
 
-#: core/custom-fields.php:75
+#: lib/class-ptv-custom-fields.php:141
 msgid "Sms"
 msgstr "Tekstiviesti"
 
-#: core/custom-fields.php:76
+#: lib/class-ptv-custom-fields.php:142
 msgid "Fax"
 msgstr "Faksi"
 
-#: core/custom-fields.php:80
+#: lib/class-ptv-custom-fields.php:146
 msgid "pdf"
 msgstr "pdf"
 
-#: core/custom-fields.php:81
+#: lib/class-ptv-custom-fields.php:147
 msgid "doc/docx"
 msgstr "doc/docx"
 
-#: core/custom-fields.php:82
+#: lib/class-ptv-custom-fields.php:148
 msgid "xls/xlsx"
 msgstr "xls/xlsx"
 
-#: core/custom-fields.php:83
+#: lib/class-ptv-custom-fields.php:149
 msgid "rtf"
 msgstr "rtf"
 
-#: core/custom-fields.php:84
+#: lib/class-ptv-custom-fields.php:150
 msgid "odt"
 msgstr "odt"
 
-#: core/custom-fields.php:88
+#: lib/class-ptv-custom-fields.php:154
 msgid "Whole country"
 msgstr "﻿Koko maa"
 
-#: core/custom-fields.php:89
+#: lib/class-ptv-custom-fields.php:155
 msgid "Whole country except Aland Islands"
 msgstr "﻿Koko maa lukuun ottamatta Ahvenanmaata"
 
-#: core/custom-fields.php:90
+#: lib/class-ptv-custom-fields.php:156
 msgid "Restricted area"
 msgstr "﻿Rajoitettu alue"
 
-#: core/custom-fields.php:101 core/custom-fields.php:359
-#: core/custom-fields.php:857 core/custom-fields.php:1137
-#: core/custom-fields.php:1321
+#: lib/class-ptv-custom-fields.php:161
+msgid "Province"
+msgstr "Maakunta"
+
+#: lib/class-ptv-custom-fields.php:162
+msgid "Business Regions"
+msgstr "Yrityspalveluiden seutualueet"
+
+#: lib/class-ptv-custom-fields.php:163
+msgid "Hospital Regions"
+msgstr "Sairaanhoitopiirit"
+
+#: lib/class-ptv-custom-fields.php:166
+msgid "items"
+msgstr "kohdetta"
+
+#: lib/class-ptv-custom-fields.php:167
+msgid "new"
+msgstr "uusi"
+
+#: lib/class-ptv-custom-fields.php:194 lib/class-ptv-custom-fields.php:782
+#: lib/class-ptv-custom-fields.php:1424 lib/class-ptv-custom-fields.php:1536
+#: lib/class-ptv-custom-fields.php:1833
 msgid "General"
 msgstr "Yleiset"
 
-#: core/custom-fields.php:103 core/custom-fields.php:230
-#: core/custom-fields.php:361 core/custom-fields.php:634
-#: core/custom-fields.php:859
-msgid "Service Name"
-msgstr "﻿Palvelun nimi"
+#: lib/class-ptv-custom-fields.php:196
+msgid "Organization name"
+msgstr "Organisaation nimi"
 
-#: core/custom-fields.php:107 core/custom-fields.php:234
-#: core/custom-fields.php:238 core/custom-fields.php:365
-#: core/custom-fields.php:484 core/custom-fields.php:494
-#: core/custom-fields.php:521 core/custom-fields.php:638
-#: core/custom-fields.php:649 core/custom-fields.php:749
-#: core/custom-fields.php:863 core/custom-fields.php:867
-#: core/custom-fields.php:891 core/custom-fields.php:955
-#: core/custom-fields.php:1114 core/custom-fields.php:1143
-#: core/custom-fields.php:1147 core/custom-fields.php:1180
-#: core/custom-fields.php:1186 core/custom-fields.php:1194
-#: core/custom-fields.php:1253 core/custom-fields.php:1291
-#: core/custom-fields.php:1328
+#: lib/class-ptv-custom-fields.php:200 lib/class-ptv-custom-fields.php:225
+#: lib/class-ptv-custom-fields.php:494 lib/class-ptv-custom-fields.php:498
+#: lib/class-ptv-custom-fields.php:788 lib/class-ptv-custom-fields.php:968
+#: lib/class-ptv-custom-fields.php:980 lib/class-ptv-custom-fields.php:1008
+#: lib/class-ptv-custom-fields.php:1135 lib/class-ptv-custom-fields.php:1150
+#: lib/class-ptv-custom-fields.php:1302 lib/class-ptv-custom-fields.php:1431
+#: lib/class-ptv-custom-fields.php:1501 lib/class-ptv-custom-fields.php:1542
+#: lib/class-ptv-custom-fields.php:1546 lib/class-ptv-custom-fields.php:1580
+#: lib/class-ptv-custom-fields.php:1700 lib/class-ptv-custom-fields.php:1797
+#: lib/class-ptv-custom-fields.php:1839 lib/class-ptv-custom-fields.php:1843
+#: lib/class-ptv-custom-fields.php:2045 lib/class-ptv-custom-fields.php:2204
 msgid "Max length 100 characters. "
 msgstr "Maksimipituus 100 merkkiä. "
 
-#: core/custom-fields.php:108
-msgid "Alternate Name"
+#: lib/class-ptv-custom-fields.php:201
+msgid "Alternate name"
 msgstr "Vaihtoehtoinen nimi"
 
-#: core/custom-fields.php:111
-msgid "Display Name"
-msgstr "﻿Näytä nimi"
+#: lib/class-ptv-custom-fields.php:204
+msgid "Display name"
+msgstr "Ensisijaisesti käytettävä nimi"
 
-#: core/custom-fields.php:116 core/custom-fields.php:243
-#: core/custom-fields.php:370 core/custom-fields.php:500
-#: core/custom-fields.php:643 core/custom-fields.php:872
-#: core/custom-fields.php:1152 core/custom-fields.php:1297
-#: core/custom-fields.php:1334
-msgid "Description"
-msgstr "Kuvaus"
+#: lib/class-ptv-custom-fields.php:209 lib/class-ptv-custom-fields.php:505
+#: lib/class-ptv-custom-fields.php:789 lib/class-ptv-custom-fields.php:1136
+#: lib/class-ptv-custom-fields.php:1432 lib/class-ptv-custom-fields.php:1547
+#: lib/class-ptv-custom-fields.php:1844
+msgid "Short description"
+msgstr "Tiivistelmä"
 
-#: core/custom-fields.php:119 core/custom-fields.php:246
-#: core/custom-fields.php:249 core/custom-fields.php:252
-#: core/custom-fields.php:373 core/custom-fields.php:646
-#: core/custom-fields.php:875 core/custom-fields.php:1155
-#: core/custom-fields.php:1338
-msgid "Max length 2500 characters. "
-msgstr "Maksimipituus 2500 merkkiä. "
-
-#: core/custom-fields.php:120
-msgid "Business code"
-msgstr "Y-tunnus"
-
-#: core/custom-fields.php:124 core/custom-fields.php:126
-#: core/custom-fields.php:658 core/custom-fields.php:1050
-msgid "Phone Numbers"
-msgstr "﻿Puhelinnumerot"
-
-#: core/custom-fields.php:128 core/custom-fields.php:441
-#: core/custom-fields.php:660 core/custom-fields.php:1052
-#: core/custom-fields.php:1210
-msgid "Is Finnish service number?"
-msgstr "Palvelunumero, johon ei voi soittaa ulkomailta."
-
-#: core/custom-fields.php:129 core/custom-fields.php:442
-#: core/custom-fields.php:661 core/custom-fields.php:1053
-#: core/custom-fields.php:1211
-msgid "Prefix Number"
-msgstr "Suuntanumero"
-
-#: core/custom-fields.php:140 core/custom-fields.php:455
-#: core/custom-fields.php:672 core/custom-fields.php:1064
-#: core/custom-fields.php:1224
-msgid "Number"
-msgstr "﻿Numero"
-
-#: core/custom-fields.php:142 core/custom-fields.php:257
-#: core/custom-fields.php:458 core/custom-fields.php:675
-#: core/custom-fields.php:1067 core/custom-fields.php:1227
-msgid "Service Charge Type"
-msgstr "Palvelun maksullisuus"
-
-#: core/custom-fields.php:144 core/custom-fields.php:259
-#: core/custom-fields.php:460 core/custom-fields.php:677
-#: core/custom-fields.php:1069 core/custom-fields.php:1229
-msgid "Charged"
-msgstr "Maksullinen"
-
-#: core/custom-fields.php:145 core/custom-fields.php:260
-#: core/custom-fields.php:461 core/custom-fields.php:678
-#: core/custom-fields.php:1070 core/custom-fields.php:1230
-msgid "Free"
-msgstr "Maksuton"
-
-#: core/custom-fields.php:146 core/custom-fields.php:326
-#: core/custom-fields.php:462 core/custom-fields.php:679
-#: core/custom-fields.php:1071 core/custom-fields.php:1231
-msgid "Other"
-msgstr "Muu"
-
-#: core/custom-fields.php:149 core/custom-fields.php:465
-#: core/custom-fields.php:682 core/custom-fields.php:1074
-#: core/custom-fields.php:1234
-msgid "Service charge details"
-msgstr "Maksullisuuden lisätiedot"
-
-#: core/custom-fields.php:162 core/custom-fields.php:242
-#: core/custom-fields.php:337 core/custom-fields.php:369
-#: core/custom-fields.php:478 core/custom-fields.php:502
-#: core/custom-fields.php:642 core/custom-fields.php:695
-#: core/custom-fields.php:871 core/custom-fields.php:904
-#: core/custom-fields.php:1087 core/custom-fields.php:1151
-#: core/custom-fields.php:1200 core/custom-fields.php:1247
-#: core/custom-fields.php:1299 core/custom-fields.php:1333
+#: lib/class-ptv-custom-fields.php:212 lib/class-ptv-custom-fields.php:344
+#: lib/class-ptv-custom-fields.php:508 lib/class-ptv-custom-fields.php:723
+#: lib/class-ptv-custom-fields.php:792 lib/class-ptv-custom-fields.php:959
+#: lib/class-ptv-custom-fields.php:988 lib/class-ptv-custom-fields.php:1139
+#: lib/class-ptv-custom-fields.php:1190 lib/class-ptv-custom-fields.php:1436
+#: lib/class-ptv-custom-fields.php:1492 lib/class-ptv-custom-fields.php:1550
+#: lib/class-ptv-custom-fields.php:1691 lib/class-ptv-custom-fields.php:1805
+#: lib/class-ptv-custom-fields.php:1847 lib/class-ptv-custom-fields.php:2173
 msgid "Max length 150 characters. "
 msgstr "Maksimipituus 150 merkkiä. "
 
-#: core/custom-fields.php:163 core/custom-fields.php:696
-#: core/custom-fields.php:1088
-msgid "Channel Type"
-msgstr "Kanavan tyyppi"
+#: lib/class-ptv-custom-fields.php:213 lib/class-ptv-custom-fields.php:509
+#: lib/class-ptv-custom-fields.php:793 lib/class-ptv-custom-fields.php:986
+#: lib/class-ptv-custom-fields.php:1140 lib/class-ptv-custom-fields.php:1437
+#: lib/class-ptv-custom-fields.php:1551 lib/class-ptv-custom-fields.php:1803
+#: lib/class-ptv-custom-fields.php:1848
+msgid "Description"
+msgstr "Kuvaus"
 
-#: core/custom-fields.php:169 core/custom-fields.php:171
-#: core/custom-fields.php:1096
-msgid "Web Pages"
-msgstr "﻿Verkkosivut"
+#: lib/class-ptv-custom-fields.php:216 lib/class-ptv-custom-fields.php:512
+#: lib/class-ptv-custom-fields.php:516 lib/class-ptv-custom-fields.php:519
+#: lib/class-ptv-custom-fields.php:740 lib/class-ptv-custom-fields.php:796
+#: lib/class-ptv-custom-fields.php:1143 lib/class-ptv-custom-fields.php:1441
+#: lib/class-ptv-custom-fields.php:1554 lib/class-ptv-custom-fields.php:1851
+msgid "Max length 2500 characters. "
+msgstr "Maksimipituus 2500 merkkiä. "
 
-#: core/custom-fields.php:174 core/custom-fields.php:1099
-msgid "URL address"
-msgstr "URL-osoite"
+#: lib/class-ptv-custom-fields.php:217
+msgid "Business code"
+msgstr "Y-tunnus"
 
-#: core/custom-fields.php:179 core/custom-fields.php:377
-#: core/custom-fields.php:499 core/custom-fields.php:653
-#: core/custom-fields.php:1104 core/custom-fields.php:1170
-#: core/custom-fields.php:1295 core/custom-fields.php:1343
-msgid "Max length 500 characters. "
-msgstr "Maksimipituus 500 merkkiä. "
+#: lib/class-ptv-custom-fields.php:219
+msgid "Email addresses"
+msgstr "﻿Sähköpostiosoitteet"
 
-#: core/custom-fields.php:179 core/custom-fields.php:377
-#: core/custom-fields.php:499 core/custom-fields.php:653
-#: core/custom-fields.php:1104 core/custom-fields.php:1170
-#: core/custom-fields.php:1295 core/custom-fields.php:1343
-msgid "Please start URL address with http:// or https://."
-msgstr "Huolehdi, että verkko-osoitteen alussa on http:// tai https://."
+#: lib/class-ptv-custom-fields.php:222 lib/class-ptv-custom-fields.php:965
+#: lib/class-ptv-custom-fields.php:1147 lib/class-ptv-custom-fields.php:1498
+#: lib/class-ptv-custom-fields.php:1697 lib/class-ptv-custom-fields.php:2201
+msgid "Email"
+msgstr "﻿Sähköposti"
 
-#: core/custom-fields.php:185 core/custom-fields.php:187
-#: core/custom-fields.php:878 core/custom-fields.php:880
-msgid "Addresses"
-msgstr "Osoitteet"
+#: lib/class-ptv-custom-fields.php:229 lib/class-ptv-custom-fields.php:234
+#: lib/class-ptv-custom-fields.php:578 lib/class-ptv-custom-fields.php:583
+#: lib/class-ptv-custom-fields.php:830 lib/class-ptv-custom-fields.php:835
+#: lib/class-ptv-custom-fields.php:1206 lib/class-ptv-custom-fields.php:1211
+#: lib/class-ptv-custom-fields.php:1704 lib/class-ptv-custom-fields.php:1709
+#: lib/class-ptv-custom-fields.php:1949 lib/class-ptv-custom-fields.php:1954
+msgid "Areas"
+msgstr "Alueet"
 
-#: core/custom-fields.php:189 core/custom-fields.php:280
-#: core/custom-fields.php:417 core/custom-fields.php:503
-#: core/custom-fields.php:719 core/custom-fields.php:882
-#: core/custom-fields.php:925 core/custom-fields.php:1264
+#: lib/class-ptv-custom-fields.php:231 lib/class-ptv-custom-fields.php:580
+#: lib/class-ptv-custom-fields.php:832 lib/class-ptv-custom-fields.php:1208
+#: lib/class-ptv-custom-fields.php:1706 lib/class-ptv-custom-fields.php:1951
+msgid "Area type"
+msgstr "﻿Alueen tyyppi"
+
+#: lib/class-ptv-custom-fields.php:238 lib/class-ptv-custom-fields.php:389
+#: lib/class-ptv-custom-fields.php:587 lib/class-ptv-custom-fields.php:839
+#: lib/class-ptv-custom-fields.php:989 lib/class-ptv-custom-fields.php:1215
+#: lib/class-ptv-custom-fields.php:1713 lib/class-ptv-custom-fields.php:1859
+#: lib/class-ptv-custom-fields.php:1958
 msgid "Type"
 msgstr "﻿Tyyppi"
 
-#: core/custom-fields.php:191 core/custom-fields.php:884
-msgid "Mailing Address"
-msgstr "Postiosoite"
+#: lib/class-ptv-custom-fields.php:240 lib/class-ptv-custom-fields.php:589
+#: lib/class-ptv-custom-fields.php:841 lib/class-ptv-custom-fields.php:1217
+#: lib/class-ptv-custom-fields.php:1715 lib/class-ptv-custom-fields.php:1960
+msgid "Select municipalities"
+msgstr "Valitse kunnat"
 
-#: core/custom-fields.php:192 core/custom-fields.php:885
-msgid "Visiting Address"
+#: lib/class-ptv-custom-fields.php:255 lib/class-ptv-custom-fields.php:604
+#: lib/class-ptv-custom-fields.php:856 lib/class-ptv-custom-fields.php:1232
+#: lib/class-ptv-custom-fields.php:1730 lib/class-ptv-custom-fields.php:1975
+msgid "Select provinces"
+msgstr "﻿Valitse maakunnat"
+
+#: lib/class-ptv-custom-fields.php:270 lib/class-ptv-custom-fields.php:619
+#: lib/class-ptv-custom-fields.php:871 lib/class-ptv-custom-fields.php:1247
+#: lib/class-ptv-custom-fields.php:1745 lib/class-ptv-custom-fields.php:1990
+msgid "Select business regions"
+msgstr "Valitse yrityspalveluiden seutualueet"
+
+#: lib/class-ptv-custom-fields.php:285 lib/class-ptv-custom-fields.php:634
+#: lib/class-ptv-custom-fields.php:886 lib/class-ptv-custom-fields.php:1262
+#: lib/class-ptv-custom-fields.php:1760 lib/class-ptv-custom-fields.php:2005
+msgid "Select hospital regions"
+msgstr "Valitse sairaanhoitopiirit"
+
+#: lib/class-ptv-custom-fields.php:314 lib/class-ptv-custom-fields.php:316
+#: lib/class-ptv-custom-fields.php:1160 lib/class-ptv-custom-fields.php:2143
+msgid "Phone numbers"
+msgstr "﻿Puhelinnumerot"
+
+#: lib/class-ptv-custom-fields.php:319
+msgid "Is Finnish Service number?"
+msgstr "Palvelunumero, johon ei voi soittaa ulkomailta."
+
+#: lib/class-ptv-custom-fields.php:320 lib/class-ptv-custom-fields.php:921
+#: lib/class-ptv-custom-fields.php:1164 lib/class-ptv-custom-fields.php:1455
+#: lib/class-ptv-custom-fields.php:1654 lib/class-ptv-custom-fields.php:2147
+msgid "Prefix number"
+msgstr "Suuntanumero"
+
+#: lib/class-ptv-custom-fields.php:331 lib/class-ptv-custom-fields.php:934
+#: lib/class-ptv-custom-fields.php:1176 lib/class-ptv-custom-fields.php:1468
+#: lib/class-ptv-custom-fields.php:1667 lib/class-ptv-custom-fields.php:2159
+msgid "Number"
+msgstr "﻿Numero"
+
+#: lib/class-ptv-custom-fields.php:333 lib/class-ptv-custom-fields.php:360
+#: lib/class-ptv-custom-fields.php:409 lib/class-ptv-custom-fields.php:429
+#: lib/class-ptv-custom-fields.php:720 lib/class-ptv-custom-fields.php:738
+#: lib/class-ptv-custom-fields.php:937 lib/class-ptv-custom-fields.php:1005
+#: lib/class-ptv-custom-fields.php:1179 lib/class-ptv-custom-fields.php:1299
+#: lib/class-ptv-custom-fields.php:1471 lib/class-ptv-custom-fields.php:1598
+#: lib/class-ptv-custom-fields.php:1618 lib/class-ptv-custom-fields.php:1670
+#: lib/class-ptv-custom-fields.php:1879 lib/class-ptv-custom-fields.php:1912
+#: lib/class-ptv-custom-fields.php:2042 lib/class-ptv-custom-fields.php:2162
+msgid "Additional information"
+msgstr "﻿Lisätiedot"
+
+#: lib/class-ptv-custom-fields.php:334 lib/class-ptv-custom-fields.php:560
+#: lib/class-ptv-custom-fields.php:939 lib/class-ptv-custom-fields.php:1180
+#: lib/class-ptv-custom-fields.php:1472 lib/class-ptv-custom-fields.php:1671
+#: lib/class-ptv-custom-fields.php:2163
+msgid "Service charge type"
+msgstr "Palvelun maksullisuus"
+
+#: lib/class-ptv-custom-fields.php:336 lib/class-ptv-custom-fields.php:562
+#: lib/class-ptv-custom-fields.php:941 lib/class-ptv-custom-fields.php:1182
+#: lib/class-ptv-custom-fields.php:1474 lib/class-ptv-custom-fields.php:1673
+#: lib/class-ptv-custom-fields.php:2165
+msgid "Charged"
+msgstr "Maksullinen"
+
+#: lib/class-ptv-custom-fields.php:337 lib/class-ptv-custom-fields.php:563
+#: lib/class-ptv-custom-fields.php:942 lib/class-ptv-custom-fields.php:1183
+#: lib/class-ptv-custom-fields.php:1475 lib/class-ptv-custom-fields.php:1674
+#: lib/class-ptv-custom-fields.php:2166
+msgid "Free"
+msgstr "Maksuton"
+
+#: lib/class-ptv-custom-fields.php:338 lib/class-ptv-custom-fields.php:712
+#: lib/class-ptv-custom-fields.php:943 lib/class-ptv-custom-fields.php:1184
+#: lib/class-ptv-custom-fields.php:1476 lib/class-ptv-custom-fields.php:1675
+#: lib/class-ptv-custom-fields.php:2167
+msgid "Other"
+msgstr "Muu"
+
+#: lib/class-ptv-custom-fields.php:341 lib/class-ptv-custom-fields.php:946
+#: lib/class-ptv-custom-fields.php:1187 lib/class-ptv-custom-fields.php:1479
+#: lib/class-ptv-custom-fields.php:1678 lib/class-ptv-custom-fields.php:2170
+msgid "Service charge details"
+msgstr "Maksullisuuden lisätiedot"
+
+#: lib/class-ptv-custom-fields.php:345 lib/class-ptv-custom-fields.php:1191
+#: lib/class-ptv-custom-fields.php:2174
+msgid "Channel Type"
+msgstr "Kanavan tyyppi"
+
+#: lib/class-ptv-custom-fields.php:351 lib/class-ptv-custom-fields.php:353
+msgid "Electronic invoicings"
+msgstr "Sähköinen laskutus"
+
+#: lib/class-ptv-custom-fields.php:356
+msgid "Operator code"
+msgstr "Operaattoritunnus"
+
+#: lib/class-ptv-custom-fields.php:358
+msgid "Electronic invoicing address"
+msgstr "Verkkolaskuosoite"
+
+#: lib/class-ptv-custom-fields.php:364 lib/class-ptv-custom-fields.php:366
+#: lib/class-ptv-custom-fields.php:2182
+msgid "Web pages"
+msgstr "﻿Verkkosivut"
+
+#: lib/class-ptv-custom-fields.php:370 lib/class-ptv-custom-fields.php:2186
+msgid "URL address"
+msgstr "URL-osoite"
+
+#: lib/class-ptv-custom-fields.php:375 lib/class-ptv-custom-fields.php:522
+#: lib/class-ptv-custom-fields.php:534 lib/class-ptv-custom-fields.php:546
+#: lib/class-ptv-custom-fields.php:568 lib/class-ptv-custom-fields.php:800
+#: lib/class-ptv-custom-fields.php:985 lib/class-ptv-custom-fields.php:1155
+#: lib/class-ptv-custom-fields.php:1446 lib/class-ptv-custom-fields.php:1570
+#: lib/class-ptv-custom-fields.php:1801 lib/class-ptv-custom-fields.php:2191
+msgid "Max length 500 characters. "
+msgstr "Maksimipituus 500 merkkiä. "
+
+#: lib/class-ptv-custom-fields.php:375 lib/class-ptv-custom-fields.php:800
+#: lib/class-ptv-custom-fields.php:985 lib/class-ptv-custom-fields.php:1155
+#: lib/class-ptv-custom-fields.php:1446 lib/class-ptv-custom-fields.php:1570
+#: lib/class-ptv-custom-fields.php:1801 lib/class-ptv-custom-fields.php:2191
+msgid "Please start URL address with http:// or https://."
+msgstr "Huolehdi, että verkko-osoitteen alussa on http:// tai https://."
+
+#: lib/class-ptv-custom-fields.php:376 lib/class-ptv-custom-fields.php:2192
+msgid "Web Page Name"
+msgstr "Verkkosivun nimi"
+
+#: lib/class-ptv-custom-fields.php:384 lib/class-ptv-custom-fields.php:386
+#: lib/class-ptv-custom-fields.php:1854 lib/class-ptv-custom-fields.php:1856
+msgid "Addresses"
+msgstr "Osoitteet"
+
+#: lib/class-ptv-custom-fields.php:391 lib/class-ptv-custom-fields.php:1861
+msgid "Visiting address"
 msgstr "Käyntiosoite"
 
-#: core/custom-fields.php:194 core/custom-fields.php:887
-#: core/custom-fields.php:1183
-msgid "Street Address"
-msgstr "Katuosoite"
+#: lib/class-ptv-custom-fields.php:392 lib/class-ptv-custom-fields.php:1862
+msgid "Mailing address"
+msgstr "Postiosoite"
 
-#: core/custom-fields.php:197 core/custom-fields.php:892
-#: core/custom-fields.php:1187
-msgid "Street Number"
-msgstr "Osoitenumero"
+#: lib/class-ptv-custom-fields.php:394 lib/class-ptv-custom-fields.php:1584
+#: lib/class-ptv-custom-fields.php:1864
+msgid "Subtype"
+msgstr "Alatyyppi"
 
-#: core/custom-fields.php:199 core/custom-fields.php:896
-#: core/custom-fields.php:1195
-msgid "Postal Code"
-msgstr "Postinumero"
+#: lib/class-ptv-custom-fields.php:396 lib/class-ptv-custom-fields.php:1866
+msgid "Single"
+msgstr "﻿Yksittäinen"
 
-#: core/custom-fields.php:202 core/custom-fields.php:1191
-msgid "Post Office Box"
+#: lib/class-ptv-custom-fields.php:397 lib/class-ptv-custom-fields.php:405
+#: lib/class-ptv-custom-fields.php:1586 lib/class-ptv-custom-fields.php:1594
+#: lib/class-ptv-custom-fields.php:1867 lib/class-ptv-custom-fields.php:1875
+msgid "Street"
+msgstr "Katu"
+
+#: lib/class-ptv-custom-fields.php:398 lib/class-ptv-custom-fields.php:423
+#: lib/class-ptv-custom-fields.php:427 lib/class-ptv-custom-fields.php:1587
+#: lib/class-ptv-custom-fields.php:1612 lib/class-ptv-custom-fields.php:1616
+#: lib/class-ptv-custom-fields.php:1868 lib/class-ptv-custom-fields.php:1906
+#: lib/class-ptv-custom-fields.php:1910
+msgid "Post office box"
 msgstr "Postilokero-osoite"
 
-#: core/custom-fields.php:204 core/custom-fields.php:899
-msgid "Country"
-msgstr "Maa"
+#: lib/class-ptv-custom-fields.php:399 lib/class-ptv-custom-fields.php:1869
+msgid "Abroad"
+msgstr "﻿Sijainti ulkomailla"
 
-#: core/custom-fields.php:206 core/custom-fields.php:901
-msgid "Additional Informations"
-msgstr "Lisätiedot"
+#: lib/class-ptv-custom-fields.php:401 lib/class-ptv-custom-fields.php:1590
+#: lib/class-ptv-custom-fields.php:1871
+msgid "Street address"
+msgstr "Katuosoite"
 
-#: core/custom-fields.php:209 core/custom-fields.php:907
+#: lib/class-ptv-custom-fields.php:406 lib/class-ptv-custom-fields.php:1595
+#: lib/class-ptv-custom-fields.php:1876
+msgid "Street number"
+msgstr "﻿Katuosoite"
+
+#: lib/class-ptv-custom-fields.php:407 lib/class-ptv-custom-fields.php:428
+#: lib/class-ptv-custom-fields.php:1596 lib/class-ptv-custom-fields.php:1617
+#: lib/class-ptv-custom-fields.php:1877 lib/class-ptv-custom-fields.php:1911
+msgid "Postal code"
+msgstr "Postinumero"
+
+#: lib/class-ptv-custom-fields.php:408 lib/class-ptv-custom-fields.php:1597
+#: lib/class-ptv-custom-fields.php:1878
+msgid "Post office"
+msgstr "Postitoimipaikka"
+
+#: lib/class-ptv-custom-fields.php:443 lib/class-ptv-custom-fields.php:1926
+msgid "Location abroad"
+msgstr "﻿Sijainti ulkomailla"
+
+#: lib/class-ptv-custom-fields.php:455 lib/class-ptv-custom-fields.php:1644
 msgid ""
 "Addresses are common to all translations. Add equal number of addresses to "
 "each translation."
@@ -389,34 +525,41 @@ msgstr ""
 "Osoitteet ovat yhteisiä kaikille kieliversioille. Lisää sama määrä "
 "osoitteita kaikkiin kieliversioihin."
 
-#: core/custom-fields.php:212 core/custom-fields.php:342
-#: core/custom-fields.php:614 core/custom-fields.php:842
-#: core/custom-fields.php:1117 core/custom-fields.php:1303
-#: core/custom-fields.php:1353
+#: lib/class-ptv-custom-fields.php:458 lib/class-ptv-custom-fields.php:754
+#: lib/class-ptv-custom-fields.php:1104 lib/class-ptv-custom-fields.php:1398
+#: lib/class-ptv-custom-fields.php:1512 lib/class-ptv-custom-fields.php:1809
+#: lib/class-ptv-custom-fields.php:2208
 msgid "Meta"
 msgstr "Metatiedot"
 
-#: core/custom-fields.php:213 core/custom-fields.php:343
-#: core/custom-fields.php:615 core/custom-fields.php:843
-#: core/custom-fields.php:1119 core/custom-fields.php:1304
-#: core/custom-fields.php:1354
+#: lib/class-ptv-custom-fields.php:459 lib/class-ptv-custom-fields.php:755
+#: lib/class-ptv-custom-fields.php:1105 lib/class-ptv-custom-fields.php:1399
+#: lib/class-ptv-custom-fields.php:1513 lib/class-ptv-custom-fields.php:1810
+#: lib/class-ptv-custom-fields.php:2210
 msgid "PTV ID"
-msgstr "PTV ID"
+msgstr "PTV-tunniste"
 
-#: core/custom-fields.php:215
+#: lib/class-ptv-custom-fields.php:461 lib/class-ptv-custom-fields.php:757
+#: lib/class-ptv-custom-fields.php:1107 lib/class-ptv-custom-fields.php:1401
+#: lib/class-ptv-custom-fields.php:1515 lib/class-ptv-custom-fields.php:1812
+#: lib/class-ptv-custom-fields.php:2212
+msgid "Modified"
+msgstr "Muokattu"
+
+#: lib/class-ptv-custom-fields.php:467
 msgid "Organization type"
 msgstr "Organisaation tyyppi"
 
-#: core/custom-fields.php:219 core/custom-fields.php:345
-#: core/custom-fields.php:623 core/custom-fields.php:845
-#: core/custom-fields.php:1127 core/custom-fields.php:1312
-#: core/custom-fields.php:1362
+#: lib/class-ptv-custom-fields.php:471 lib/class-ptv-custom-fields.php:763
+#: lib/class-ptv-custom-fields.php:1115 lib/class-ptv-custom-fields.php:1407
+#: lib/class-ptv-custom-fields.php:1523 lib/class-ptv-custom-fields.php:1820
+#: lib/class-ptv-custom-fields.php:2220
 msgid "Publishing status"
 msgstr "Julkaisun tila"
 
-#: core/custom-fields.php:221 core/custom-fields.php:347
-#: core/custom-fields.php:625 core/custom-fields.php:847
-#: core/custom-fields.php:1129 core/custom-fields.php:1314
+#: lib/class-ptv-custom-fields.php:473 lib/class-ptv-custom-fields.php:765
+#: lib/class-ptv-custom-fields.php:1117 lib/class-ptv-custom-fields.php:1409
+#: lib/class-ptv-custom-fields.php:1822 lib/class-ptv-custom-fields.php:2222
 msgid ""
 "Changing publishing status affects all language versions. After publishing "
 "status can be set only as archived."
@@ -424,1212 +567,1295 @@ msgstr ""
 "Julkaisutilan muuttaminen vaikuttaa kaikkiin kieliversioihin. Julkaisun "
 "jälkeen tila voidaan asettaa ainoastaan arkistoiduksi."
 
-#: core/custom-fields.php:226 core/custom-fields.php:350
-#: core/post-types.php:16 core/post-types.php:43
+#: lib/class-ptv-custom-fields.php:482 lib/class-ptv-custom-fields.php:501
+#: lib/class-ptv-post-types.php:396 lib/class-ptv-post-types.php:423
 msgid "Service"
 msgstr "﻿Palvelu"
 
-#: core/custom-fields.php:228 core/custom-fields.php:632
+#: lib/class-ptv-custom-fields.php:484 lib/class-ptv-custom-fields.php:1129
 msgid "General Information"
 msgstr "Perustiedot"
 
-#: core/custom-fields.php:235 core/custom-fields.php:864
-msgid "Service Alternate Name"
+#: lib/class-ptv-custom-fields.php:486
+msgid "General description"
+msgstr "Pohjakuvaus"
+
+#: lib/class-ptv-custom-fields.php:490
+msgid "Service name"
+msgstr "﻿Palvelun nimi"
+
+#: lib/class-ptv-custom-fields.php:495 lib/class-ptv-custom-fields.php:1840
+msgid "Service alternate name"
 msgstr "﻿Vaihtoehtoinen nimi"
 
-#: core/custom-fields.php:239 core/custom-fields.php:366
-#: core/custom-fields.php:639 core/custom-fields.php:868
-#: core/custom-fields.php:1148 core/custom-fields.php:1329
-msgid "Short Description"
-msgstr "Tiivistelmä"
-
-#: core/custom-fields.php:247
-msgid "Requirements"
-msgstr "Ehdot ja kriteerit"
-
-#: core/custom-fields.php:250
-msgid "User Instructions"
-msgstr "Toimintaohjeet"
-
-#: core/custom-fields.php:255
-msgid "Service Charge Details"
-msgstr "Maksullisuuden tiedot"
-
-#: core/custom-fields.php:265 core/custom-fields.php:704
-#: core/custom-fields.php:910 core/custom-fields.php:1346
-msgid "Languages"
-msgstr "Kielet"
-
-#: core/custom-fields.php:267 core/custom-fields.php:706
-#: core/custom-fields.php:912 core/custom-fields.php:1348
-msgid "Service is available in following languages"
-msgstr "Kielet, joilla palvelu on saatavilla"
-
-#: core/custom-fields.php:272 core/custom-fields.php:277
-#: core/custom-fields.php:409 core/custom-fields.php:414
-#: core/custom-fields.php:711 core/custom-fields.php:716
-#: core/custom-fields.php:917 core/custom-fields.php:922
-#: core/custom-fields.php:1256 core/custom-fields.php:1261
-msgid "Areas"
-msgstr "Alueet"
-
-#: core/custom-fields.php:274 core/custom-fields.php:411
-#: core/custom-fields.php:713 core/custom-fields.php:919
-#: core/custom-fields.php:1258
-msgid "Area type"
-msgstr "﻿Alueen tyyppi"
-
-#: core/custom-fields.php:282 core/custom-fields.php:419
-#: core/custom-fields.php:721 core/custom-fields.php:927
-#: core/custom-fields.php:1266
-msgid "Select municipalities"
-msgstr "Valitse kunnat"
-
-#: core/custom-fields.php:300
-msgid "Service Channels"
-msgstr "Asiointikanavat"
-
-#: core/custom-fields.php:302
-msgid "Service Channel IDs"
-msgstr "Palvelukanavien tunnukset"
-
-#: core/custom-fields.php:305
-msgid "Service Channel ID"
-msgstr "Palvelukanavan tunnus"
-
-#: core/custom-fields.php:311 core/custom-fields.php:312
-#: core/post-types.php:65 core/post-types.php:70
-msgid "Organizations"
-msgstr "﻿Organisaatiot"
-
-#: core/custom-fields.php:315
-msgid "Organization Role"
-msgstr "Organisaation rooli"
-
-#: core/custom-fields.php:317
-msgid "Responsible"
-msgstr "Palvelun vastuutaho"
-
-#: core/custom-fields.php:318
-msgid "Producer"
-msgstr "﻿Tuottaja"
-
-#: core/custom-fields.php:321
-msgid "Provision Type"
-msgstr "Palvelun tyyppi"
-
-#: core/custom-fields.php:323
-msgid "Self Produced Services"
-msgstr "﻿Itse tuotetut palvelut"
-
-#: core/custom-fields.php:324
-msgid "Voucher Services"
-msgstr "Palvelusetelipalvelut"
-
-#: core/custom-fields.php:325
-msgid "Purchase Services"
-msgstr "Ostopalvelut"
-
-#: core/custom-fields.php:334 core/custom-fields.php:518
-#: core/custom-fields.php:746 core/custom-fields.php:952
-msgid "Additional Information"
-msgstr "﻿Lisätiedot"
-
-#: core/custom-fields.php:348
+#: lib/class-ptv-custom-fields.php:499
 msgid "Service type"
 msgstr "Palvelun tyyppi"
 
-#: core/custom-fields.php:351
-msgid "Permission and Obligation"
+#: lib/class-ptv-custom-fields.php:502
+msgid "Permission and obligation"
 msgstr "Lupa tai muu velvoite"
 
-#: core/custom-fields.php:374 core/custom-fields.php:495
-#: core/custom-fields.php:650 core/custom-fields.php:1166
-#: core/custom-fields.php:1292 core/custom-fields.php:1339
+#: lib/class-ptv-custom-fields.php:503
+msgid "Professional qualification"
+msgstr "﻿Ammattipätevyys"
+
+#: lib/class-ptv-custom-fields.php:513
+msgid "Requirements"
+msgstr "Ehdot ja kriteerit"
+
+#: lib/class-ptv-custom-fields.php:517
+msgid "User instructions"
+msgstr "Toimintaohjeet"
+
+#: lib/class-ptv-custom-fields.php:520
+msgid "Dead line additional info"
+msgstr "Määräaika"
+
+#: lib/class-ptv-custom-fields.php:532
+msgid "Validity time additional info"
+msgstr "Voimassaoloaika"
+
+#: lib/class-ptv-custom-fields.php:544
+msgid "Processing time additional info"
+msgstr "Käsittelyaika"
+
+#: lib/class-ptv-custom-fields.php:558
+msgid "Service Charge Details"
+msgstr "Maksullisuuden tiedot"
+
+#: lib/class-ptv-custom-fields.php:566
+msgid "Charge type additional info"
+msgstr "Maksullisuuden lisätiedot"
+
+#: lib/class-ptv-custom-fields.php:571 lib/class-ptv-custom-fields.php:1199
+#: lib/class-ptv-custom-fields.php:1505 lib/class-ptv-custom-fields.php:1942
+msgid "Languages"
+msgstr "Kielet"
+
+#: lib/class-ptv-custom-fields.php:573 lib/class-ptv-custom-fields.php:1201
+#: lib/class-ptv-custom-fields.php:1507 lib/class-ptv-custom-fields.php:1944
+msgid "Service is available in following languages"
+msgstr "Kielet, joilla palvelu on saatavilla"
+
+#: lib/class-ptv-custom-fields.php:663
+msgid "Legislation"
+msgstr "Lakitiedot"
+
+#: lib/class-ptv-custom-fields.php:665
+msgid "Laws"
+msgstr "Lakitiedot"
+
+#: lib/class-ptv-custom-fields.php:673
+msgid "Web Page"
+msgstr "Verkkosivu"
+
+#: lib/class-ptv-custom-fields.php:680
+msgid "Removing legislation element affects other language versions. "
+msgstr "Lakitiedon poistaminen vaikuttaa muihin kieliversioihin."
+
+#: lib/class-ptv-custom-fields.php:683
+msgid "Service Channels"
+msgstr "Asiointikanavat"
+
+#: lib/class-ptv-custom-fields.php:685
+msgid "Service channel IDs"
+msgstr "Palvelukanavien tunnukset"
+
+#: lib/class-ptv-custom-fields.php:689
+msgid "Service channel ID"
+msgstr "Palvelukanavan tunnus"
+
+#: lib/class-ptv-custom-fields.php:695 lib/class-ptv-custom-fields.php:696
+#: lib/class-ptv-post-types.php:62 lib/class-ptv-post-types.php:67
+msgid "Organizations"
+msgstr "﻿Organisaatiot"
+
+#: lib/class-ptv-custom-fields.php:700
+msgid "Organization role"
+msgstr "Organisaation rooli"
+
+#: lib/class-ptv-custom-fields.php:702
+msgid "Responsible"
+msgstr "Palvelun vastuutaho"
+
+#: lib/class-ptv-custom-fields.php:703
+msgid "Producer"
+msgstr "﻿Tuottaja"
+
+#: lib/class-ptv-custom-fields.php:704
+msgid "Other responsible"
+msgstr "Muu vastuutaho"
+
+#: lib/class-ptv-custom-fields.php:708
+msgid "Provision Type"
+msgstr "Palvelun tyyppi"
+
+#: lib/class-ptv-custom-fields.php:710
+msgid "Self produced services"
+msgstr "﻿Itse tuotetut palvelut"
+
+#: lib/class-ptv-custom-fields.php:711
+msgid "Purchase services"
+msgstr "Ostopalvelut"
+
+#: lib/class-ptv-custom-fields.php:727
+msgid "Add at least one service producer and one responsible organization. "
+msgstr "Lisää vähintään yksi palvelutuottaja ja yksi palvelun vastuutaho."
+
+#: lib/class-ptv-custom-fields.php:729 lib/class-ptv-custom-fields.php:732
+msgid "Service vouchers"
+msgstr "Palvelusetelipalvelut"
+
+#: lib/class-ptv-custom-fields.php:730
+msgid "Service vouchers in use?"
+msgstr "Palvelussa on käytössä palveluseteli?"
+
+#: lib/class-ptv-custom-fields.php:736
+msgid "Value"
+msgstr "Arvo"
+
+#: lib/class-ptv-custom-fields.php:737 lib/class-ptv-custom-fields.php:797
+#: lib/class-ptv-custom-fields.php:981 lib/class-ptv-custom-fields.php:1152
+#: lib/class-ptv-custom-fields.php:1442 lib/class-ptv-custom-fields.php:1566
+#: lib/class-ptv-custom-fields.php:1798
 msgid "Url"
 msgstr "﻿URL-osoite"
 
-#: core/custom-fields.php:380
+#: lib/class-ptv-custom-fields.php:766
+msgid "Funding type"
+msgstr "﻿Rahoitustyyppi"
+
+#: lib/class-ptv-custom-fields.php:768
+msgid "Publicly funded"
+msgstr "Julkinen palvelu"
+
+#: lib/class-ptv-custom-fields.php:769
+msgid "Market funded"
+msgstr "Yksityinen palvelu"
+
+#: lib/class-ptv-custom-fields.php:780
+msgid "Echannel"
+msgstr "Verkkoasiointi"
+
+#: lib/class-ptv-custom-fields.php:784 lib/class-ptv-custom-fields.php:1131
+#: lib/class-ptv-custom-fields.php:1426 lib/class-ptv-custom-fields.php:1835
+msgid "Service channel name"
+msgstr "Palvelukanavan nimi"
+
+#: lib/class-ptv-custom-fields.php:803
 msgid "Signatures and authentication"
 msgstr "Sähköinen tunnistus ja allekirjoitus"
 
-#: core/custom-fields.php:382
+#: lib/class-ptv-custom-fields.php:805
 msgid "Requires authentication"
 msgstr "Edellyttää sähköistä tunnistusta"
 
-#: core/custom-fields.php:384
-msgid "- Select -"
-msgstr "- Valitse -"
-
-#: core/custom-fields.php:385 core/custom-fields.php:391
-#: core/custom-fields.php:524 core/custom-fields.php:581
-#: core/custom-fields.php:598 core/custom-fields.php:752
-#: core/custom-fields.php:809 core/custom-fields.php:826
-#: core/custom-fields.php:958 core/custom-fields.php:1015
-#: core/custom-fields.php:1032
+#: lib/class-ptv-custom-fields.php:807 lib/class-ptv-custom-fields.php:812
+#: lib/class-ptv-custom-fields.php:1011 lib/class-ptv-custom-fields.php:1071
+#: lib/class-ptv-custom-fields.php:1088 lib/class-ptv-custom-fields.php:1305
+#: lib/class-ptv-custom-fields.php:1365 lib/class-ptv-custom-fields.php:1382
+#: lib/class-ptv-custom-fields.php:2048 lib/class-ptv-custom-fields.php:2108
+#: lib/class-ptv-custom-fields.php:2125
 msgid "No"
 msgstr "Ei"
 
-#: core/custom-fields.php:386 core/custom-fields.php:392
-#: core/custom-fields.php:525 core/custom-fields.php:582
-#: core/custom-fields.php:599 core/custom-fields.php:753
-#: core/custom-fields.php:810 core/custom-fields.php:827
-#: core/custom-fields.php:959 core/custom-fields.php:1016
-#: core/custom-fields.php:1033
+#: lib/class-ptv-custom-fields.php:808 lib/class-ptv-custom-fields.php:813
+#: lib/class-ptv-custom-fields.php:1012 lib/class-ptv-custom-fields.php:1072
+#: lib/class-ptv-custom-fields.php:1089 lib/class-ptv-custom-fields.php:1306
+#: lib/class-ptv-custom-fields.php:1366 lib/class-ptv-custom-fields.php:1383
+#: lib/class-ptv-custom-fields.php:2049 lib/class-ptv-custom-fields.php:2109
+#: lib/class-ptv-custom-fields.php:2126
 msgid "Yes"
 msgstr "Kyllä"
 
-#: core/custom-fields.php:389
+#: lib/class-ptv-custom-fields.php:810
 msgid "Requires signature"
 msgstr "﻿Edellyttää allekirjoitusta"
 
-#: core/custom-fields.php:395
+#: lib/class-ptv-custom-fields.php:816
 msgid "Signature quantity"
 msgstr "Allekirjoitusten lukumäärä"
 
-#: core/custom-fields.php:437 core/custom-fields.php:1206
+#: lib/class-ptv-custom-fields.php:915 lib/class-ptv-custom-fields.php:1449
+#: lib/class-ptv-custom-fields.php:1648
 msgid "Support"
 msgstr "﻿Tuki"
 
-#: core/custom-fields.php:439 core/custom-fields.php:1208
-msgid "Support Phones"
+#: lib/class-ptv-custom-fields.php:917 lib/class-ptv-custom-fields.php:1451
+#: lib/class-ptv-custom-fields.php:1650
+msgid "Support phones"
 msgstr "Tuen puhelinnumerot"
 
-#: core/custom-fields.php:481 core/custom-fields.php:1250
-msgid "Email"
-msgstr "﻿Sähköposti"
+#: lib/class-ptv-custom-fields.php:920 lib/class-ptv-custom-fields.php:1163
+#: lib/class-ptv-custom-fields.php:1454 lib/class-ptv-custom-fields.php:1653
+#: lib/class-ptv-custom-fields.php:2146
+msgid "Is finnish service number?"
+msgstr "Palvelunumero, johon ei voi soittaa ulkomailta."
 
-#: core/custom-fields.php:487 core/custom-fields.php:489
-#: core/custom-fields.php:1284 core/custom-fields.php:1286
+#: lib/class-ptv-custom-fields.php:962 lib/class-ptv-custom-fields.php:1144
+#: lib/class-ptv-custom-fields.php:1495 lib/class-ptv-custom-fields.php:1694
+msgid "Support emails"
+msgstr "Tuen sähköpostiosoitteet"
+
+#: lib/class-ptv-custom-fields.php:972 lib/class-ptv-custom-fields.php:974
+#: lib/class-ptv-custom-fields.php:1789 lib/class-ptv-custom-fields.php:1791
 msgid "Attachments"
 msgstr "Liitteet"
 
-#: core/custom-fields.php:511 core/custom-fields.php:513
-#: core/custom-fields.php:739 core/custom-fields.php:741
-#: core/custom-fields.php:945 core/custom-fields.php:947
-msgid "Service Hours"
+#: lib/class-ptv-custom-fields.php:997 lib/class-ptv-custom-fields.php:999
+#: lib/class-ptv-custom-fields.php:1291 lib/class-ptv-custom-fields.php:1293
+#: lib/class-ptv-custom-fields.php:2034 lib/class-ptv-custom-fields.php:2036
+msgid "Service hours"
 msgstr "Palveluajat"
 
-#: core/custom-fields.php:515 core/custom-fields.php:743
-#: core/custom-fields.php:949
-msgid "Service Hour type"
+#: lib/class-ptv-custom-fields.php:1002 lib/class-ptv-custom-fields.php:1296
+#: lib/class-ptv-custom-fields.php:2039
+msgid "Service hour type"
 msgstr "Palveluajan tyyppi"
 
-#: core/custom-fields.php:522 core/custom-fields.php:750
-#: core/custom-fields.php:956
+#: lib/class-ptv-custom-fields.php:1009 lib/class-ptv-custom-fields.php:1303
+#: lib/class-ptv-custom-fields.php:2046
 msgid "Valid for now"
 msgstr "﻿Voimassa toistaiseksi"
 
-#: core/custom-fields.php:527 core/custom-fields.php:755
-#: core/custom-fields.php:961
-msgid "Valid From"
+#: lib/class-ptv-custom-fields.php:1014 lib/class-ptv-custom-fields.php:1308
+#: lib/class-ptv-custom-fields.php:2051
+msgid "Valid from"
 msgstr "Voimassaolo alkaa"
 
-#: core/custom-fields.php:539 core/custom-fields.php:767
-#: core/custom-fields.php:973
-msgid "Valid To"
+#: lib/class-ptv-custom-fields.php:1027 lib/class-ptv-custom-fields.php:1321
+#: lib/class-ptv-custom-fields.php:2064
+msgid "Valid to"
 msgstr "Voimassaolo päättyy"
 
-#: core/custom-fields.php:551 core/custom-fields.php:779
-#: core/custom-fields.php:985
-msgid "Opening Hours"
-msgstr "Palveluajat"
+#: lib/class-ptv-custom-fields.php:1040 lib/class-ptv-custom-fields.php:1334
+#: lib/class-ptv-custom-fields.php:2077
+msgid "Opening hours"
+msgstr "Aukioloajat"
 
-#: core/custom-fields.php:554 core/custom-fields.php:782
-#: core/custom-fields.php:988
-msgid "Day From"
-msgstr "Alkupäivä"
+#: lib/class-ptv-custom-fields.php:1044 lib/class-ptv-custom-fields.php:1338
+#: lib/class-ptv-custom-fields.php:2081
+msgid "Day from"
+msgstr "Alkaa"
 
-#: core/custom-fields.php:557 core/custom-fields.php:785
-#: core/custom-fields.php:991
-msgid "Day To"
-msgstr "Päätöspäivä"
+#: lib/class-ptv-custom-fields.php:1047 lib/class-ptv-custom-fields.php:1341
+#: lib/class-ptv-custom-fields.php:2084
+msgid "Day to"
+msgstr "Päättyy"
 
-#: core/custom-fields.php:569 core/custom-fields.php:797
-#: core/custom-fields.php:1003
-msgid "Time From"
+#: lib/class-ptv-custom-fields.php:1059 lib/class-ptv-custom-fields.php:1353
+#: lib/class-ptv-custom-fields.php:2096
+msgid "Time from"
 msgstr "Alkuaika"
 
-#: core/custom-fields.php:574 core/custom-fields.php:802
-#: core/custom-fields.php:1008
+#: lib/class-ptv-custom-fields.php:1064 lib/class-ptv-custom-fields.php:1358
+#: lib/class-ptv-custom-fields.php:2101
 msgid "Time To"
 msgstr "Päätösaika"
 
-#: core/custom-fields.php:579 core/custom-fields.php:807
-#: core/custom-fields.php:1013
+#: lib/class-ptv-custom-fields.php:1069 lib/class-ptv-custom-fields.php:1363
+#: lib/class-ptv-custom-fields.php:2106
 msgid "Is extra?"
 msgstr "Onko lisäaika?"
 
-#: core/custom-fields.php:596 core/custom-fields.php:824
-#: core/custom-fields.php:1030
+#: lib/class-ptv-custom-fields.php:1086 lib/class-ptv-custom-fields.php:1380
+#: lib/class-ptv-custom-fields.php:2123
 msgid "Is closed"
 msgstr "Suljettu koko ajanjakson"
 
-#: core/custom-fields.php:621 core/custom-fields.php:848
-#: core/custom-fields.php:1125 core/custom-fields.php:1310
-#: core/custom-fields.php:1360
+#: lib/class-ptv-custom-fields.php:1113 lib/class-ptv-custom-fields.php:1410
+#: lib/class-ptv-custom-fields.php:1521 lib/class-ptv-custom-fields.php:1818
+#: lib/class-ptv-custom-fields.php:2218
 msgid "Service channel type"
 msgstr "Palvelukanavan tyyppi"
 
-#: core/custom-fields.php:630 core/post-types.php:166 core/post-types.php:193
+#: lib/class-ptv-custom-fields.php:1127 lib/class-ptv-post-types.php:289
+#: lib/class-ptv-post-types.php:316
 msgid "Phone Channel"
 msgstr "Puhelinasionti"
 
-#: core/custom-fields.php:647
-msgid "Support Email"
-msgstr "Tuen sähköposti"
-
-#: core/custom-fields.php:656
+#: lib/class-ptv-custom-fields.php:1158
 msgid "Phone Number"
 msgstr "﻿Puhelinnumero"
 
-#: core/custom-fields.php:855 core/post-types.php:266 core/post-types.php:293
-msgid "Service Location Channel"
-msgstr "Palvelupiste"
+#: lib/class-ptv-custom-fields.php:1422
+msgid "Web page"
+msgstr "Verkkosivu"
 
-#: core/custom-fields.php:895 core/custom-fields.php:1190
-msgid "Max length 30 characters. "
-msgstr "Maksimipituus 30 merkkiä. "
-
-#: core/custom-fields.php:1048
-msgid "Phones and faxes"
-msgstr "Puhelimet ja faxit"
-
-#: core/custom-fields.php:1094
-msgid "Contact"
-msgstr "﻿Yhteystiedot"
-
-#: core/custom-fields.php:1105
-msgid "Web Page Name"
-msgstr "Verkkosivun nimi"
-
-#: core/custom-fields.php:1111
-msgid "Emails"
-msgstr "Sähköpostit"
-
-#: core/custom-fields.php:1139
-msgid "Form Name"
-msgstr "Lomakkeen nimi"
-
-#: core/custom-fields.php:1144
-msgid "Form Identifier"
-msgstr "﻿Lomakkeen tunnus"
-
-#: core/custom-fields.php:1158
-msgid "Files"
-msgstr "﻿Tiedostot"
-
-#: core/custom-fields.php:1160
-msgid "Document details"
-msgstr "Dokumenttien tiedot"
-
-#: core/custom-fields.php:1162
-msgid "Document Type"
-msgstr "Tiedostomuoto"
-
-#: core/custom-fields.php:1176 core/custom-fields.php:1181
-msgid "Delivery Address"
-msgstr "Toimitusosoite"
-
-#: core/custom-fields.php:1178
-msgid "Form Receiver"
-msgstr "Lomakkeen vastaanottaja"
-
-#: core/custom-fields.php:1198
-msgid "Delivery informations"
-msgstr "Toimitustieto sanallisesti"
-
-#: core/custom-fields.php:1323
-msgid "Service Channel Name"
-msgstr "Palvelukanavan nimi"
-
-#: core/custom-fields.php:1364
+#: lib/class-ptv-custom-fields.php:1525
 msgid "Changing publishing status affects all translations."
 msgstr "Julkaisun tilan muuttaminen vaikuttaa kaikkiin kieliversioihin."
 
-#: core/functions.php:154 core/functions.php:193
-msgid "Select one"
-msgstr "﻿Valitse yksi"
+#: lib/class-ptv-custom-fields.php:1534
+msgid "Printable Form"
+msgstr "Tulostettava lomake"
 
-#: core/post-types.php:13
-msgctxt "Post Type General Name"
-msgid "Services"
-msgstr "﻿Palvelut"
+#: lib/class-ptv-custom-fields.php:1538
+msgid "Form Name"
+msgstr "Lomakkeen nimi"
 
-#: core/post-types.php:14
-msgctxt "Post Type Singular Name"
-msgid "Service"
-msgstr "Palvelu"
+#: lib/class-ptv-custom-fields.php:1543
+msgid "Form Identifier"
+msgstr "﻿Lomakkeen tunnus"
 
-#: core/post-types.php:15 core/post-types.php:20
-msgid "Services"
-msgstr "﻿Palvelut"
+#: lib/class-ptv-custom-fields.php:1557
+msgid "Files"
+msgstr "﻿Tiedostot"
 
-#: core/post-types.php:17
-msgid "Service Archives"
-msgstr "Arkisto: Palvelut"
+#: lib/class-ptv-custom-fields.php:1559
+msgid "Document details"
+msgstr "Dokumenttien tiedot"
 
-#: core/post-types.php:18
-msgid "Service Attributes"
-msgstr "Palvelun ominaisuudet"
+#: lib/class-ptv-custom-fields.php:1562
+msgid "Document Type"
+msgstr "Tiedostomuoto"
 
-#: core/post-types.php:19
-msgid "Parent Service:"
-msgstr "Pääpalvelu:"
+#: lib/class-ptv-custom-fields.php:1576
+msgid "Delivery address"
+msgstr "Toimitusosoite"
 
-#: core/post-types.php:21
-msgid "Add New Service"
-msgstr "Lisää uusi palvelu"
+#: lib/class-ptv-custom-fields.php:1578
+msgid "Form receiver"
+msgstr "Lomakkeen vastaanottaja"
 
-#: core/post-types.php:22 core/post-types.php:72 core/post-types.php:122
-#: core/post-types.php:172 core/post-types.php:222 core/post-types.php:272
-#: core/post-types.php:322
-msgid "Add New"
-msgstr "﻿Lisää uusi"
+#: lib/class-ptv-custom-fields.php:1581
+msgid "Delivery addresses"
+msgstr "﻿Toimitusosoitteet"
 
-#: core/post-types.php:23
-msgid "New Service"
-msgstr "﻿Uusi palvelu"
+#: lib/class-ptv-custom-fields.php:1588
+msgid "No Address"
+msgstr "Ei osoitetta"
 
-#: core/post-types.php:24
-msgid "Edit Service"
-msgstr "Muokkaa palvelua"
+#: lib/class-ptv-custom-fields.php:1632
+msgid "Delivery address in text"
+msgstr "Toimitustieto sanallisesti"
 
-#: core/post-types.php:25
-msgid "Update Service"
-msgstr "Päivitä palvelu"
+#: lib/class-ptv-custom-fields.php:1831 lib/class-ptv-post-types.php:177
+#: lib/class-ptv-post-types.php:204
+msgid "Service Location Channel"
+msgstr "Palvelupaikka"
 
-#: core/post-types.php:26
-msgid "View Service"
-msgstr "Näytä palvelu"
+#: lib/class-ptv-custom-fields.php:1939
+msgid "Addresses are common to all translations. Visiting address is required."
+msgstr ""
+"Osoitteet ovat yhteisiä kaikille kieliversioille. Käyntiosoite on pakollinen."
 
-#: core/post-types.php:27
-msgid "View Services"
-msgstr "﻿Näytä palvelut"
+#: lib/class-ptv-custom-fields.php:2141
+msgid "Phones and faxes"
+msgstr "Puhelimet ja faxit"
 
-#: core/post-types.php:28
-msgid "Search Service"
-msgstr "﻿Etsi palveluista"
+#: lib/class-ptv-custom-fields.php:2180
+msgid "Contact"
+msgstr "﻿Yhteystiedot"
 
-#: core/post-types.php:29 core/post-types.php:79 core/post-types.php:129
-#: core/post-types.php:179 core/post-types.php:229 core/post-types.php:279
-#: core/post-types.php:329
-msgid "Not found"
-msgstr "﻿Ei tuloksia"
+#: lib/class-ptv-custom-fields.php:2198
+msgid "Emails"
+msgstr "Sähköpostit"
 
-#: core/post-types.php:30 core/post-types.php:80 core/post-types.php:130
-#: core/post-types.php:180 core/post-types.php:230 core/post-types.php:280
-#: core/post-types.php:330
-msgid "Not found in Trash"
-msgstr "Ei tuloksia roskakorissa"
+#: lib/class-ptv-in-module.php:135
+msgid "Error details:"
+msgstr "Virheen yksityiskohdat:"
 
-#: core/post-types.php:31 core/post-types.php:81 core/post-types.php:131
-#: core/post-types.php:181 core/post-types.php:231 core/post-types.php:281
-#: core/post-types.php:331
-msgid "Featured Image"
-msgstr "﻿Artikkelikuva"
-
-#: core/post-types.php:32 core/post-types.php:82 core/post-types.php:132
-#: core/post-types.php:182 core/post-types.php:232 core/post-types.php:282
-#: core/post-types.php:332
-msgid "Set featured image"
-msgstr "Aseta artikkelikuva"
-
-#: core/post-types.php:33 core/post-types.php:83 core/post-types.php:133
-#: core/post-types.php:183 core/post-types.php:233 core/post-types.php:283
-#: core/post-types.php:333
-msgid "Remove featured image"
-msgstr "Poista artikkelikuva"
-
-#: core/post-types.php:34 core/post-types.php:84 core/post-types.php:134
-#: core/post-types.php:184 core/post-types.php:234 core/post-types.php:284
-#: core/post-types.php:334
-msgid "Use as featured image"
-msgstr "﻿Käytä artikkelikuvana"
-
-#: core/post-types.php:35
-msgid "Insert into service"
-msgstr "Lisää palveluun"
-
-#: core/post-types.php:36 core/post-types.php:86 core/post-types.php:136
-#: core/post-types.php:186 core/post-types.php:236 core/post-types.php:286
-#: core/post-types.php:336
-msgid "Uploaded to this item"
-msgstr "﻿Ladattu tähän kohteeseen"
-
-#: core/post-types.php:37
-msgid "Services list"
-msgstr "Palveluluettelo"
-
-#: core/post-types.php:38
-msgid "Services list navigation"
-msgstr "Palveluluettelon navigaatio"
-
-#: core/post-types.php:39 core/post-types.php:89 core/post-types.php:139
-#: core/post-types.php:189 core/post-types.php:239 core/post-types.php:289
-#: core/post-types.php:339
-msgid "Filter services list"
-msgstr "Suodata palveluluetteloa"
-
-#: core/post-types.php:63
+#: lib/class-ptv-post-types.php:60
 msgctxt "Post Type General Name"
 msgid "Organizations"
 msgstr "﻿Organisaatiot"
 
-#: core/post-types.php:64
+#: lib/class-ptv-post-types.php:61
 msgctxt "Post Type Singular Name"
 msgid "Organization"
 msgstr "﻿Organisaatio"
 
-#: core/post-types.php:67
+#: lib/class-ptv-post-types.php:64
 msgid "Organization Archives"
 msgstr "Arkisto: organisaatiot"
 
-#: core/post-types.php:68
+#: lib/class-ptv-post-types.php:65
 msgid "Organization Attributes"
 msgstr "Organisaation ominaisuudet"
 
-#: core/post-types.php:69
+#: lib/class-ptv-post-types.php:66
 msgid "Parent Organization:"
 msgstr "Yläorganisaatio:"
 
-#: core/post-types.php:71
+#: lib/class-ptv-post-types.php:68
 msgid "Add New Organization"
 msgstr "﻿Lisää uusi organisaatio"
 
-#: core/post-types.php:73
+#: lib/class-ptv-post-types.php:69 lib/class-ptv-post-types.php:127
+#: lib/class-ptv-post-types.php:183 lib/class-ptv-post-types.php:239
+#: lib/class-ptv-post-types.php:295 lib/class-ptv-post-types.php:348
+#: lib/class-ptv-post-types.php:402
+msgid "Add New"
+msgstr "﻿Lisää uusi"
+
+#: lib/class-ptv-post-types.php:70
 msgid "New Organization"
 msgstr "Uusi organisaatio"
 
-#: core/post-types.php:74
+#: lib/class-ptv-post-types.php:71
 msgid "Edit Organization"
 msgstr "Muokkaa organisaatiota"
 
-#: core/post-types.php:75
+#: lib/class-ptv-post-types.php:72
 msgid "Update Organization"
 msgstr "Päivitä organisaatio"
 
-#: core/post-types.php:76
+#: lib/class-ptv-post-types.php:73
 msgid "View Organization"
 msgstr "Näytä organisaatio"
 
-#: core/post-types.php:77
+#: lib/class-ptv-post-types.php:74
 msgid "View Organizations"
 msgstr "Näytä organisaatiot"
 
-#: core/post-types.php:78
+#: lib/class-ptv-post-types.php:75
 msgid "Search Organization"
 msgstr "Etsi organisaatioista"
 
-#: core/post-types.php:85
+#: lib/class-ptv-post-types.php:76 lib/class-ptv-post-types.php:134
+#: lib/class-ptv-post-types.php:190 lib/class-ptv-post-types.php:246
+#: lib/class-ptv-post-types.php:302 lib/class-ptv-post-types.php:355
+#: lib/class-ptv-post-types.php:409
+msgid "Not found"
+msgstr "﻿Ei tuloksia"
+
+#: lib/class-ptv-post-types.php:77 lib/class-ptv-post-types.php:135
+#: lib/class-ptv-post-types.php:191 lib/class-ptv-post-types.php:247
+#: lib/class-ptv-post-types.php:303 lib/class-ptv-post-types.php:356
+#: lib/class-ptv-post-types.php:410
+msgid "Not found in Trash"
+msgstr "Ei tuloksia roskakorissa"
+
+#: lib/class-ptv-post-types.php:78 lib/class-ptv-post-types.php:136
+#: lib/class-ptv-post-types.php:192 lib/class-ptv-post-types.php:248
+#: lib/class-ptv-post-types.php:304 lib/class-ptv-post-types.php:357
+#: lib/class-ptv-post-types.php:411
+msgid "Featured Image"
+msgstr "﻿Artikkelikuva"
+
+#: lib/class-ptv-post-types.php:79 lib/class-ptv-post-types.php:137
+#: lib/class-ptv-post-types.php:193 lib/class-ptv-post-types.php:249
+#: lib/class-ptv-post-types.php:305 lib/class-ptv-post-types.php:358
+#: lib/class-ptv-post-types.php:412
+msgid "Set featured image"
+msgstr "Aseta artikkelikuva"
+
+#: lib/class-ptv-post-types.php:80 lib/class-ptv-post-types.php:138
+#: lib/class-ptv-post-types.php:194 lib/class-ptv-post-types.php:250
+#: lib/class-ptv-post-types.php:306 lib/class-ptv-post-types.php:359
+#: lib/class-ptv-post-types.php:413
+msgid "Remove featured image"
+msgstr "Poista artikkelikuva"
+
+#: lib/class-ptv-post-types.php:81 lib/class-ptv-post-types.php:139
+#: lib/class-ptv-post-types.php:195 lib/class-ptv-post-types.php:251
+#: lib/class-ptv-post-types.php:307 lib/class-ptv-post-types.php:360
+#: lib/class-ptv-post-types.php:414
+msgid "Use as featured image"
+msgstr "﻿Käytä artikkelikuvana"
+
+#: lib/class-ptv-post-types.php:82
 msgid "Insert into Organization"
 msgstr "Lisää organisaatioon"
 
-#: core/post-types.php:87
+#: lib/class-ptv-post-types.php:83 lib/class-ptv-post-types.php:141
+#: lib/class-ptv-post-types.php:197 lib/class-ptv-post-types.php:253
+#: lib/class-ptv-post-types.php:309 lib/class-ptv-post-types.php:362
+#: lib/class-ptv-post-types.php:416
+msgid "Uploaded to this item"
+msgstr "﻿Ladattu tähän kohteeseen"
+
+#: lib/class-ptv-post-types.php:84
 msgid "Organizations list"
 msgstr "Organisaatioluettelo"
 
-#: core/post-types.php:88
+#: lib/class-ptv-post-types.php:85
 msgid "Organizations list navigation"
 msgstr "Organisaatioluettelon navigaatio"
 
-#: core/post-types.php:113
+#: lib/class-ptv-post-types.php:86 lib/class-ptv-post-types.php:144
+#: lib/class-ptv-post-types.php:200 lib/class-ptv-post-types.php:256
+#: lib/class-ptv-post-types.php:312 lib/class-ptv-post-types.php:365
+#: lib/class-ptv-post-types.php:419
+msgid "Filter services list"
+msgstr "Suodata palveluluetteloa"
+
+#: lib/class-ptv-post-types.php:118
 msgctxt "Post Type General Name"
-msgid "Electronic Channels"
-msgstr "Verkkoasiointikanavat"
+msgid "Webpage Channels"
+msgstr "Verkkosivut"
 
-#: core/post-types.php:114
+#: lib/class-ptv-post-types.php:119
 msgctxt "Post Type Singular Name"
-msgid "Electronic Channel"
-msgstr "Verkkoasiointi"
+msgid "Webpage Channel"
+msgstr "Verkkosivu"
 
-#: core/post-types.php:115 core/post-types.php:120
-msgid "Electronic Channels"
-msgstr "Verkkoasiointikanavat"
+#: lib/class-ptv-post-types.php:120 lib/class-ptv-post-types.php:125
+msgid "Webpage Channels"
+msgstr "Verkkosivut"
 
-#: core/post-types.php:116 core/post-types.php:143
-msgid "Electronic Channel"
-msgstr "Verkkoasiointi"
+#: lib/class-ptv-post-types.php:121 lib/class-ptv-post-types.php:148
+msgid "Webpage Channel"
+msgstr "Verkkosivu"
 
-#: core/post-types.php:117
-msgid "Electronic Channel Archives"
-msgstr "Arkisto: verkkoasiointikanavat"
+#: lib/class-ptv-post-types.php:122
+msgid "Webpage Channel Archives"
+msgstr "Arkisto: Verkkosivut"
 
-#: core/post-types.php:118
-msgid "Electronic Channel Attributes"
-msgstr "Verkkoasiointikanavan ominaisyydet"
+#: lib/class-ptv-post-types.php:123
+msgid "Webpage Channel Attributes"
+msgstr "Verkkosivun ominaisuudet"
 
-#: core/post-types.php:119
-msgid "Parent Electronic Channel:"
-msgstr "Yläkanava:"
+#: lib/class-ptv-post-types.php:124
+msgid "Parent Webpage Channel:"
+msgstr "Yläverkkosivu:"
 
-#: core/post-types.php:121
-msgid "Add New Electronic Channel"
-msgstr "Lisää uusi verkkoasiointi"
+#: lib/class-ptv-post-types.php:126
+msgid "Add New Webpage Channel"
+msgstr "Lisää uusi verkkosivu"
 
-#: core/post-types.php:123
-msgid "New Electronic Channel"
-msgstr "Uusi verkkoasiointi"
+#: lib/class-ptv-post-types.php:128
+msgid "New Webpage Channel"
+msgstr "Uusi verkkosivu"
 
-#: core/post-types.php:124
-msgid "Edit Electronic Channel"
-msgstr "Muokkaa verkkoasiointikanavaa"
+#: lib/class-ptv-post-types.php:129
+msgid "Edit Webpage Channel"
+msgstr "Muokkaa verkkosivua"
 
-#: core/post-types.php:125
-msgid "Update Electronic Channel"
-msgstr "Päivitä verkkoasiointi"
+#: lib/class-ptv-post-types.php:130
+msgid "Update Webpage Channel"
+msgstr "Päivitä verkkosivu"
 
-#: core/post-types.php:126
-msgid "View Electronic Channel"
-msgstr "Näytä verkkoasiointi"
+#: lib/class-ptv-post-types.php:131
+msgid "View Webpage Channel"
+msgstr "Näytä verkkosivu"
 
-#: core/post-types.php:127
-msgid "View Electronic Channels"
-msgstr "Näytä verkkoasiointikanavat"
+#: lib/class-ptv-post-types.php:132
+msgid "View Webpage Channels"
+msgstr "Näytä verkkosivut"
 
-#: core/post-types.php:128
-msgid "Search Electronic Channel"
-msgstr "Etsi verkkoasiointikanavista"
+#: lib/class-ptv-post-types.php:133
+msgid "Search Webpage Channel"
+msgstr "Etsi verkkosivuista"
 
-#: core/post-types.php:135
-msgid "Insert into Electronic Channel"
-msgstr "Lisää verkkoasioinkanavaan"
+#: lib/class-ptv-post-types.php:140
+msgid "Insert into Webpage Channel"
+msgstr "Lisää verkkosivuun"
 
-#: core/post-types.php:137
-msgid "Electronic Channels list"
-msgstr "Verkkoasiointikanavien luettelo"
+#: lib/class-ptv-post-types.php:142
+msgid "Webpage Channels list"
+msgstr "Verkkosivuluettelo"
 
-#: core/post-types.php:138
-msgid "Electronic Channels list navigation"
-msgstr "Verkkoasiointiluettelon navigaatio"
+#: lib/class-ptv-post-types.php:143
+msgid "Webpage Channels list navigation"
+msgstr "Verkkosivuluettelon navigaatio"
 
-#: core/post-types.php:163
+#: lib/class-ptv-post-types.php:174
+msgctxt "Post Type General Name"
+msgid "Service Location Channels"
+msgstr "Palvelupaikat"
+
+#: lib/class-ptv-post-types.php:175
+msgctxt "Post Type Singular Name"
+msgid "Service Location Channel"
+msgstr "Palvelupaikka"
+
+#: lib/class-ptv-post-types.php:176 lib/class-ptv-post-types.php:181
+msgid "Service Location Channels"
+msgstr "Palvelupaikat"
+
+#: lib/class-ptv-post-types.php:178
+msgid "Service Location Channel Archives"
+msgstr "Arkisto: Palvelupaikat"
+
+#: lib/class-ptv-post-types.php:179
+msgid "Service Location Channel Attributes"
+msgstr "Palvelupaikan ominaisuudet"
+
+#: lib/class-ptv-post-types.php:180
+msgid "Parent Service Location Channel:"
+msgstr "Yläpalvelupaikka:"
+
+#: lib/class-ptv-post-types.php:182
+msgid "Add New Service Location Channel"
+msgstr "Lisää uusi palvelupaikka"
+
+#: lib/class-ptv-post-types.php:184
+msgid "New Service Location Channel"
+msgstr "Uusi palvelupaikka"
+
+#: lib/class-ptv-post-types.php:185
+msgid "Edit Service Location Channel"
+msgstr "Muokkaa palvelupaikkaa"
+
+#: lib/class-ptv-post-types.php:186
+msgid "Update Service Location Channel"
+msgstr "Päivitä palvelupaikka"
+
+#: lib/class-ptv-post-types.php:187
+msgid "View Service Location Channel"
+msgstr "Näytä palvelupaikka"
+
+#: lib/class-ptv-post-types.php:188
+msgid "View Service Location Channels"
+msgstr "Näytä palvelupaikat"
+
+#: lib/class-ptv-post-types.php:189
+msgid "Search Service Location Channel"
+msgstr "Etsi palvelupaikoista"
+
+#: lib/class-ptv-post-types.php:196
+msgid "Insert into Service Location Channel"
+msgstr "Lisää palvelupaikkaan"
+
+#: lib/class-ptv-post-types.php:198
+msgid "Service Location Channels list"
+msgstr "Palvelupaikkaluettelo"
+
+#: lib/class-ptv-post-types.php:199
+msgid "Service Location Channels list navigation"
+msgstr "Palvelupaikkojen navigaatio"
+
+#: lib/class-ptv-post-types.php:230
+msgctxt "Post Type General Name"
+msgid "Printable Form Channels"
+msgstr "Tulostettavat lomakkeet"
+
+#: lib/class-ptv-post-types.php:231
+msgctxt "Post Type Singular Name"
+msgid "Printable Form Channel"
+msgstr "Tulostettava lomake"
+
+#: lib/class-ptv-post-types.php:232 lib/class-ptv-post-types.php:237
+msgid "Printable Form Channels"
+msgstr "Tulostettavat lomakkeet"
+
+#: lib/class-ptv-post-types.php:233 lib/class-ptv-post-types.php:260
+msgid "Printable Form Channel"
+msgstr "Tulostettava lomake"
+
+#: lib/class-ptv-post-types.php:234
+msgid "Printable Form Channel Archives"
+msgstr "Arkisto: Tulostettavat lomakkeet"
+
+#: lib/class-ptv-post-types.php:235
+msgid "Printable Form Channel Attributes"
+msgstr "Tulostettavan lomakkeen ominaisuudet"
+
+#: lib/class-ptv-post-types.php:236
+msgid "Parent Printable Form Channel:"
+msgstr "Ylälomake:"
+
+#: lib/class-ptv-post-types.php:238
+msgid "Add New Printable Form Channel"
+msgstr "Lisää uusi tulostettava lomake"
+
+#: lib/class-ptv-post-types.php:240
+msgid "New Printable Form Channel"
+msgstr "Uusi tulostettava lomake"
+
+#: lib/class-ptv-post-types.php:241
+msgid "Edit Printable Form Channel"
+msgstr "Muokkaa tulostettavaa lomaketta"
+
+#: lib/class-ptv-post-types.php:242
+msgid "Update Printable Form Channel"
+msgstr "Päivitä tulostettava lomake"
+
+#: lib/class-ptv-post-types.php:243
+msgid "View Printable Form Channel"
+msgstr "Näytä tulostettava lomake"
+
+#: lib/class-ptv-post-types.php:244
+msgid "View Printable Form Channels"
+msgstr "Näytä tulostettavat lomakkeet"
+
+#: lib/class-ptv-post-types.php:245
+msgid "Search Printable Form Channel"
+msgstr "Etsi tulostettavista lomakkeista"
+
+#: lib/class-ptv-post-types.php:252
+msgid "Insert into Printable Form Channel"
+msgstr "Lisää tulostettavaan lomakkeeseen"
+
+#: lib/class-ptv-post-types.php:254
+msgid "Printable Form Channels list"
+msgstr "Tulostettavien lomakkeiden luettelo"
+
+#: lib/class-ptv-post-types.php:255
+msgid "Printable Form Channels list navigation"
+msgstr "Tulostettavien lomakkeiden luettelon navigaatio"
+
+#: lib/class-ptv-post-types.php:286
 msgctxt "Post Type General Name"
 msgid "Phone Channels"
 msgstr "Puhelinasiontikanavat"
 
-#: core/post-types.php:164
+#: lib/class-ptv-post-types.php:287
 msgctxt "Post Type Singular Name"
 msgid "Phone Channel"
 msgstr "Puhelinasionti"
 
-#: core/post-types.php:165 core/post-types.php:170
+#: lib/class-ptv-post-types.php:288 lib/class-ptv-post-types.php:293
 msgid "Phone Channels"
 msgstr "Puhelinasiontikanavat"
 
-#: core/post-types.php:167
+#: lib/class-ptv-post-types.php:290
 msgid "Phone Channel Archives"
 msgstr "Arkisto: Puhelinasiointikanavat"
 
-#: core/post-types.php:168
+#: lib/class-ptv-post-types.php:291
 msgid "Phone Channel Attributes"
 msgstr "Puhelinasiontikanavan ominaisuudet"
 
-#: core/post-types.php:169
+#: lib/class-ptv-post-types.php:292
 msgid "Parent Phone Channel:"
 msgstr "Yläkohde:"
 
-#: core/post-types.php:171
+#: lib/class-ptv-post-types.php:294
 msgid "Add New Phone Channel"
 msgstr "Lisää uusi puhelinasiointi"
 
-#: core/post-types.php:173
+#: lib/class-ptv-post-types.php:296
 msgid "New Phone Channel"
 msgstr "Uusi puhelinasiointi"
 
-#: core/post-types.php:174
+#: lib/class-ptv-post-types.php:297
 msgid "Edit Phone Channel"
 msgstr "Muokkaa puhelinasiointikanavaa"
 
-#: core/post-types.php:175
+#: lib/class-ptv-post-types.php:298
 msgid "Update Phone Channel"
 msgstr "Päivitä puhelinasiointi"
 
-#: core/post-types.php:176
+#: lib/class-ptv-post-types.php:299
 msgid "View Phone Channel"
 msgstr "Näytä puhelinasiointi"
 
-#: core/post-types.php:177
+#: lib/class-ptv-post-types.php:300
 msgid "View Phone Channels"
 msgstr "Näytä puhelinasiointikanavat"
 
-#: core/post-types.php:178
+#: lib/class-ptv-post-types.php:301
 msgid "Search Phone Channel"
 msgstr "Etsi puhelinasiointikanavista"
 
-#: core/post-types.php:185
+#: lib/class-ptv-post-types.php:308
 msgid "Insert into Phone Channel"
 msgstr "Lisää puhelinasiointikanavaan"
 
-#: core/post-types.php:187
+#: lib/class-ptv-post-types.php:310
 msgid "Phone Channels list"
 msgstr "Puhelinasiointikanavien luettelo"
 
-#: core/post-types.php:188
+#: lib/class-ptv-post-types.php:311
 msgid "Phone Channels list navigation"
 msgstr "Puhelinasiointikanavien navigaatio"
 
-#: core/post-types.php:213
+#: lib/class-ptv-post-types.php:339
 msgctxt "Post Type General Name"
-msgid "Printable Form Channels"
-msgstr "Tulostettavat lomakkeet"
+msgid "Electronic Channels"
+msgstr "Verkkoasiointikanavat"
 
-#: core/post-types.php:214
+#: lib/class-ptv-post-types.php:340
 msgctxt "Post Type Singular Name"
-msgid "Printable Form Channel"
-msgstr "Tulostettava lomake"
+msgid "Electronic Channel"
+msgstr "Verkkoasiointi"
 
-#: core/post-types.php:215 core/post-types.php:220
-msgid "Printable Form Channels"
-msgstr "Tulostettavat lomakkeet"
+#: lib/class-ptv-post-types.php:341 lib/class-ptv-post-types.php:346
+msgid "Electronic Channels"
+msgstr "Verkkoasiointikanavat"
 
-#: core/post-types.php:216 core/post-types.php:243
-msgid "Printable Form Channel"
-msgstr "Tulostettava lomake"
+#: lib/class-ptv-post-types.php:342 lib/class-ptv-post-types.php:369
+msgid "Electronic Channel"
+msgstr "Verkkoasiointi"
 
-#: core/post-types.php:217
-msgid "Printable Form Channel Archives"
-msgstr "Arkisto: Tulostettavat lomakkeet"
+#: lib/class-ptv-post-types.php:343
+msgid "Electronic Channel Archives"
+msgstr "Arkisto: verkkoasiointikanavat"
 
-#: core/post-types.php:218
-msgid "Printable Form Channel Attributes"
-msgstr "Tulostettavan lomakkeen ominaisuudet"
+#: lib/class-ptv-post-types.php:344
+msgid "Electronic Channel Attributes"
+msgstr "Verkkoasiointikanavan ominaisuudet"
 
-#: core/post-types.php:219
-msgid "Parent Printable Form Channel:"
-msgstr "Ylälomake:"
+#: lib/class-ptv-post-types.php:345
+msgid "Parent Electronic Channel:"
+msgstr "Yläkanava:"
 
-#: core/post-types.php:221
-msgid "Add New Printable Form Channel"
-msgstr "Lisää uusi tulostettava lomake"
+#: lib/class-ptv-post-types.php:347
+msgid "Add New Electronic Channel"
+msgstr "Lisää uusi verkkoasiointi"
 
-#: core/post-types.php:223
-msgid "New Printable Form Channel"
-msgstr "Uusi tulostettava lomake"
+#: lib/class-ptv-post-types.php:349
+msgid "New Electronic Channel"
+msgstr "Uusi verkkoasiointi"
 
-#: core/post-types.php:224
-msgid "Edit Printable Form Channel"
-msgstr "Muokkaa tulostettavaa lomaketta"
+#: lib/class-ptv-post-types.php:350
+msgid "Edit Electronic Channel"
+msgstr "Muokkaa verkkoasiointikanavaa"
 
-#: core/post-types.php:225
-msgid "Update Printable Form Channel"
-msgstr "Päivitä tulostettava lomake"
+#: lib/class-ptv-post-types.php:351
+msgid "Update Electronic Channel"
+msgstr "Päivitä verkkoasiointi"
 
-#: core/post-types.php:226
-msgid "View Printable Form Channel"
-msgstr "Näytä tulostettava lomake"
+#: lib/class-ptv-post-types.php:352
+msgid "View Electronic Channel"
+msgstr "Näytä verkkoasiointi"
 
-#: core/post-types.php:227
-msgid "View Printable Form Channels"
-msgstr "Näytä tulostettavat lomakkeet"
+#: lib/class-ptv-post-types.php:353
+msgid "View Electronic Channels"
+msgstr "Näytä verkkoasiointikanavat"
 
-#: core/post-types.php:228
-msgid "Search Printable Form Channel"
-msgstr "Etsi tulostettavista lomakkeista"
+#: lib/class-ptv-post-types.php:354
+msgid "Search Electronic Channel"
+msgstr "Etsi verkkoasiointikanavista"
 
-#: core/post-types.php:235
-msgid "Insert into Printable Form Channel"
-msgstr "Lisää tulostettavaan lomakkeeseen"
+#: lib/class-ptv-post-types.php:361
+msgid "Insert into Electronic Channel"
+msgstr "Lisää verkkoasioinkanavaan"
 
-#: core/post-types.php:237
-msgid "Printable Form Channels list"
-msgstr "Tulostettavien lomakkeiden luettelo"
+#: lib/class-ptv-post-types.php:363
+msgid "Electronic Channels list"
+msgstr "Verkkoasiointikanavien luettelo"
 
-#: core/post-types.php:238
-msgid "Printable Form Channels list navigation"
-msgstr "Tulostettavien lomakkeiden luettelon navigaatio"
+#: lib/class-ptv-post-types.php:364
+msgid "Electronic Channels list navigation"
+msgstr "Verkkoasiointiluettelon navigaatio"
 
-#: core/post-types.php:263
+#: lib/class-ptv-post-types.php:393
 msgctxt "Post Type General Name"
-msgid "Service Location Channels"
-msgstr "Palvelupisteet"
+msgid "Services"
+msgstr "﻿Palvelut"
 
-#: core/post-types.php:264
+#: lib/class-ptv-post-types.php:394
 msgctxt "Post Type Singular Name"
-msgid "Service Location Channel"
-msgstr "Palvelupiste"
+msgid "Service"
+msgstr "Palvelu"
 
-#: core/post-types.php:265 core/post-types.php:270
-msgid "Service Location Channels"
-msgstr "Palvelupisteet"
+#: lib/class-ptv-post-types.php:395 lib/class-ptv-post-types.php:400
+msgid "Services"
+msgstr "﻿Palvelut"
 
-#: core/post-types.php:267
-msgid "Service Location Channel Archives"
-msgstr "Arkisto: Palvelupisteet"
+#: lib/class-ptv-post-types.php:397
+msgid "Service Archives"
+msgstr "Arkisto: Palvelut"
 
-#: core/post-types.php:268
-msgid "Service Location Channel Attributes"
-msgstr "Palvelupisteen ominaisuudet"
+#: lib/class-ptv-post-types.php:398
+msgid "Service Attributes"
+msgstr "Palvelun ominaisuudet"
 
-#: core/post-types.php:269
-msgid "Parent Service Location Channel:"
-msgstr "Yläpalvelupiste:"
+#: lib/class-ptv-post-types.php:399
+msgid "Parent Service:"
+msgstr "Pääpalvelu:"
 
-#: core/post-types.php:271
-msgid "Add New Service Location Channel"
-msgstr "Lisää uusi palvelupiste"
+#: lib/class-ptv-post-types.php:401
+msgid "Add New Service"
+msgstr "Lisää uusi palvelu"
 
-#: core/post-types.php:273
-msgid "New Service Location Channel"
-msgstr "Uusi palvelupiste"
+#: lib/class-ptv-post-types.php:403
+msgid "New Service"
+msgstr "﻿Uusi palvelu"
 
-#: core/post-types.php:274
-msgid "Edit Service Location Channel"
-msgstr "Muokkaa palvelupistettä"
+#: lib/class-ptv-post-types.php:404
+msgid "Edit Service"
+msgstr "Muokkaa palvelua"
 
-#: core/post-types.php:275
-msgid "Update Service Location Channel"
-msgstr "Päivitä palvelupiste"
+#: lib/class-ptv-post-types.php:405
+msgid "Update Service"
+msgstr "Päivitä palvelu"
 
-#: core/post-types.php:276
-msgid "View Service Location Channel"
-msgstr "Näytä palvelupiste"
+#: lib/class-ptv-post-types.php:406
+msgid "View Service"
+msgstr "Näytä palvelu"
 
-#: core/post-types.php:277
-msgid "View Service Location Channels"
-msgstr "Näytä palvelupisteet"
+#: lib/class-ptv-post-types.php:407
+msgid "View Services"
+msgstr "﻿Näytä palvelut"
 
-#: core/post-types.php:278
-msgid "Search Service Location Channel"
-msgstr "Etsi palvelupisteistä"
+#: lib/class-ptv-post-types.php:408
+msgid "Search Service"
+msgstr "﻿Etsi palveluista"
 
-#: core/post-types.php:285
-msgid "Insert into Service Location Channel"
-msgstr "Lisää palvelupisteeseen"
+#: lib/class-ptv-post-types.php:415
+msgid "Insert into service"
+msgstr "Lisää palveluun"
 
-#: core/post-types.php:287
-msgid "Service Location Channels list"
-msgstr "Palvelupisteluettelo"
+#: lib/class-ptv-post-types.php:417
+msgid "Services list"
+msgstr "Palveluluettelo"
 
-#: core/post-types.php:288
-msgid "Service Location Channels list navigation"
-msgstr "Palvelupisteiden "
+#: lib/class-ptv-post-types.php:418
+msgid "Services list navigation"
+msgstr "Palveluluettelon navigaatio"
 
-#: core/post-types.php:313
-msgctxt "Post Type General Name"
-msgid "Webpage Channels"
-msgstr "Verkkosivut"
-
-#: core/post-types.php:314
-msgctxt "Post Type Singular Name"
-msgid "Webpage Channel"
-msgstr "Verkkosivu"
-
-#: core/post-types.php:315 core/post-types.php:320
-msgid "Webpage Channels"
-msgstr "Verkkosivut"
-
-#: core/post-types.php:316 core/post-types.php:343
-msgid "Webpage Channel"
-msgstr "Verkkosivu"
-
-#: core/post-types.php:317
-msgid "Webpage Channel Archives"
-msgstr "Arkisto: Verkkosivut"
-
-#: core/post-types.php:318
-msgid "Webpage Channel Attributes"
-msgstr "Verkkosivun ominaisuudet"
-
-#: core/post-types.php:319
-msgid "Parent Webpage Channel:"
-msgstr "Yläverkkosivu:"
-
-#: core/post-types.php:321
-msgid "Add New Webpage Channel"
-msgstr "Lisää uus verkkosivu"
-
-#: core/post-types.php:323
-msgid "New Webpage Channel"
-msgstr "Uusi verkkosivu"
-
-#: core/post-types.php:324
-msgid "Edit Webpage Channel"
-msgstr "Muokkaa verkkosivua"
-
-#: core/post-types.php:325
-msgid "Update Webpage Channel"
-msgstr "Päivitä verkkosivu"
-
-#: core/post-types.php:326
-msgid "View Webpage Channel"
-msgstr "Näytä verkkosivu"
-
-#: core/post-types.php:327
-msgid "View Webpage Channels"
-msgstr "Näytä verkkosivut"
-
-#: core/post-types.php:328
-msgid "Search Webpage Channel"
-msgstr "Etsi verkkosivuista"
-
-#: core/post-types.php:335
-msgid "Insert into Webpage Channel"
-msgstr "Lisää verkkosivuun"
-
-#: core/post-types.php:337
-msgid "Webpage Channels list"
-msgstr "Verkkosivuluettelo"
-
-#: core/post-types.php:338
-msgid "Webpage Channels list navigation"
-msgstr "Verkkosivuluettelon navigaatio"
-
-#: core/post-types.php:372
+#: lib/class-ptv-taxonomies.php:60
 msgctxt "Taxonomy General Name"
 msgid "Service classes"
 msgstr "Palveluluokat"
 
-#: core/post-types.php:373
+#: lib/class-ptv-taxonomies.php:61
 msgctxt "Taxonomy Singular Name"
 msgid "Service class"
 msgstr "Palveluluokka"
 
-#: core/post-types.php:374
+#: lib/class-ptv-taxonomies.php:62
 msgid "Service classes"
 msgstr "Palveluluokat"
 
-#: core/post-types.php:375
+#: lib/class-ptv-taxonomies.php:63
 msgid "All Service classes"
 msgstr "Kaikki palveluluokat"
 
-#: core/post-types.php:376
+#: lib/class-ptv-taxonomies.php:64
 msgid "Parent Service class"
 msgstr "Pääpalveluluokka"
 
-#: core/post-types.php:377
+#: lib/class-ptv-taxonomies.php:65
 msgid "Parent Service class:"
 msgstr "Pääpalveluluokka:"
 
-#: core/post-types.php:378
+#: lib/class-ptv-taxonomies.php:66
 msgid "New Service class Name"
 msgstr "Uuden palveluluokan nimi"
 
-#: core/post-types.php:379
+#: lib/class-ptv-taxonomies.php:67
 msgid "Add New Service class"
 msgstr "Lisää uusi palveluluokka"
 
-#: core/post-types.php:380
+#: lib/class-ptv-taxonomies.php:68
 msgid "Edit Service class"
 msgstr "Muokkaa palveluluokkaa"
 
-#: core/post-types.php:381
+#: lib/class-ptv-taxonomies.php:69
 msgid "Update Service class"
 msgstr "Päivitä palveluluokka"
 
-#: core/post-types.php:382
+#: lib/class-ptv-taxonomies.php:70
 msgid "View Service class"
 msgstr "Näytä palveluluokka"
 
-#: core/post-types.php:383 core/post-types.php:419 core/post-types.php:455
-#: core/post-types.php:491 core/post-types.php:527
+#: lib/class-ptv-taxonomies.php:71 lib/class-ptv-taxonomies.php:118
+#: lib/class-ptv-taxonomies.php:166 lib/class-ptv-taxonomies.php:215
+#: lib/class-ptv-taxonomies.php:264
 msgid "Separate items with commas"
 msgstr "Erottele kohteet pilkulla"
 
-#: core/post-types.php:384 core/post-types.php:420 core/post-types.php:456
-#: core/post-types.php:492 core/post-types.php:528
+#: lib/class-ptv-taxonomies.php:72 lib/class-ptv-taxonomies.php:119
+#: lib/class-ptv-taxonomies.php:167 lib/class-ptv-taxonomies.php:216
+#: lib/class-ptv-taxonomies.php:265
 msgid "Add or remove items"
 msgstr "Lisää tai poista kohteita"
 
-#: core/post-types.php:385 core/post-types.php:421 core/post-types.php:457
-#: core/post-types.php:493 core/post-types.php:529
+#: lib/class-ptv-taxonomies.php:73 lib/class-ptv-taxonomies.php:120
+#: lib/class-ptv-taxonomies.php:168 lib/class-ptv-taxonomies.php:217
+#: lib/class-ptv-taxonomies.php:266
 msgid "Choose from the most used"
 msgstr "﻿Valitse käytetyimmistä"
 
-#: core/post-types.php:386
+#: lib/class-ptv-taxonomies.php:74
 msgid "Popular Service classes"
 msgstr "Suosituimmat palveluluokat"
 
-#: core/post-types.php:387
+#: lib/class-ptv-taxonomies.php:75
 msgid "Search Service classes"
 msgstr "Etsi palveluluokista"
 
-#: core/post-types.php:388 core/post-types.php:424 core/post-types.php:460
-#: core/post-types.php:496 core/post-types.php:532
+#: lib/class-ptv-taxonomies.php:76 lib/class-ptv-taxonomies.php:123
+#: lib/class-ptv-taxonomies.php:171 lib/class-ptv-taxonomies.php:220
+#: lib/class-ptv-taxonomies.php:269
 msgid "Not Found"
 msgstr "Ei tuloksia"
 
-#: core/post-types.php:389 core/post-types.php:425 core/post-types.php:461
-#: core/post-types.php:497 core/post-types.php:533
+#: lib/class-ptv-taxonomies.php:77 lib/class-ptv-taxonomies.php:124
+#: lib/class-ptv-taxonomies.php:172 lib/class-ptv-taxonomies.php:221
+#: lib/class-ptv-taxonomies.php:270
 msgid "No items"
 msgstr "﻿Ei kohteita"
 
-#: core/post-types.php:390
+#: lib/class-ptv-taxonomies.php:78
 msgid "Service classes list"
 msgstr "Paveluluokkien luettelo"
 
-#: core/post-types.php:391
+#: lib/class-ptv-taxonomies.php:79
 msgid "Service classes list navigation"
 msgstr "Palveluluokkien luettelon navigaatio"
 
-#: core/post-types.php:408
+#: lib/class-ptv-taxonomies.php:107
 msgctxt "Taxonomy General Name"
 msgid "Ontology terms"
 msgstr "Asiasanat"
 
-#: core/post-types.php:409
+#: lib/class-ptv-taxonomies.php:108
 msgctxt "Taxonomy Singular Name"
 msgid "Ontology term"
 msgstr "Asiasana"
 
-#: core/post-types.php:410
+#: lib/class-ptv-taxonomies.php:109
 msgid "Ontology terms"
 msgstr "Asiasanat"
 
-#: core/post-types.php:411
+#: lib/class-ptv-taxonomies.php:110
 msgid "All Ontology terms"
 msgstr "Kaikki asiasanat"
 
-#: core/post-types.php:412
+#: lib/class-ptv-taxonomies.php:111
 msgid "Parent Ontology term"
 msgstr "Yläasiasana"
 
-#: core/post-types.php:413
+#: lib/class-ptv-taxonomies.php:112
 msgid "Parent Ontology term:"
 msgstr "Yläasiasana:"
 
-#: core/post-types.php:414
+#: lib/class-ptv-taxonomies.php:113
 msgid "New Ontology term Name"
 msgstr "Uusi asiasana"
 
-#: core/post-types.php:415
+#: lib/class-ptv-taxonomies.php:114
 msgid "Add New Ontology term"
 msgstr "Lisää uusi asiasana"
 
-#: core/post-types.php:416
+#: lib/class-ptv-taxonomies.php:115
 msgid "Edit Ontology term"
 msgstr "Muokkaa asiasanaa"
 
-#: core/post-types.php:417
+#: lib/class-ptv-taxonomies.php:116
 msgid "Update Ontology term"
 msgstr "Päivitä asiasana"
 
-#: core/post-types.php:418
+#: lib/class-ptv-taxonomies.php:117
 msgid "View Ontology term"
 msgstr "Näytä asiasana"
 
-#: core/post-types.php:422
+#: lib/class-ptv-taxonomies.php:121
 msgid "Popular Ontology terms"
 msgstr "Suosituimmat asiasanat"
 
-#: core/post-types.php:423
+#: lib/class-ptv-taxonomies.php:122
 msgid "Search Ontology terms"
 msgstr "Etsi asiasanoista"
 
-#: core/post-types.php:426
+#: lib/class-ptv-taxonomies.php:125
 msgid "Ontology terms list"
 msgstr "Asiasanaluettelo"
 
-#: core/post-types.php:427
+#: lib/class-ptv-taxonomies.php:126
 msgid "Ontology terms list navigation"
 msgstr "Asiasanaluettelon navigaatio"
 
-#: core/post-types.php:444
+#: lib/class-ptv-taxonomies.php:155
 msgctxt "Taxonomy General Name"
 msgid "Target groups"
 msgstr "Kohderyhmät"
 
-#: core/post-types.php:445
+#: lib/class-ptv-taxonomies.php:156
 msgctxt "Taxonomy Singular Name"
 msgid "Target group"
 msgstr "Kohderyhmä"
 
-#: core/post-types.php:446
+#: lib/class-ptv-taxonomies.php:157
 msgid "Target groups"
 msgstr "Kohderyhmät"
 
-#: core/post-types.php:447
+#: lib/class-ptv-taxonomies.php:158
 msgid "All Target groups"
 msgstr "Kaikki kohderyhmät"
 
-#: core/post-types.php:448
+#: lib/class-ptv-taxonomies.php:159
 msgid "Parent Target group"
 msgstr "Yläkohderyhmä"
 
-#: core/post-types.php:449
+#: lib/class-ptv-taxonomies.php:160
 msgid "Parent Target group:"
 msgstr "Yläkohderyhmä:"
 
-#: core/post-types.php:450
+#: lib/class-ptv-taxonomies.php:161
 msgid "New Target group Name"
 msgstr "Uuden kohderyhmän nimi"
 
-#: core/post-types.php:451
+#: lib/class-ptv-taxonomies.php:162
 msgid "Add New Target group"
 msgstr "Lisää uusi kohderyhmä"
 
-#: core/post-types.php:452
+#: lib/class-ptv-taxonomies.php:163
 msgid "Edit Target group"
 msgstr "Muokkaa kohderyhmää"
 
-#: core/post-types.php:453
+#: lib/class-ptv-taxonomies.php:164
 msgid "Update Target group"
 msgstr "Päivitä kohderyhmä"
 
-#: core/post-types.php:454
+#: lib/class-ptv-taxonomies.php:165
 msgid "View Target group"
 msgstr "Näytä kohderyhmä"
 
-#: core/post-types.php:458
+#: lib/class-ptv-taxonomies.php:169
 msgid "Popular Target groups"
 msgstr "Suositummat kohderyhmät"
 
-#: core/post-types.php:459
+#: lib/class-ptv-taxonomies.php:170
 msgid "Search Target groups"
 msgstr "Etsi kohderyhmistä"
 
-#: core/post-types.php:462
+#: lib/class-ptv-taxonomies.php:173
 msgid "Target groups list"
 msgstr "Kohderyhmäluettelo"
 
-#: core/post-types.php:463
+#: lib/class-ptv-taxonomies.php:174
 msgid "Target groups list navigation"
 msgstr "Kohderyhmäluettelon navigaatio"
 
-#: core/post-types.php:480
-msgctxt "Taxonomy General Name"
-msgid "Life Events"
-msgstr "Elämäntilanteet"
-
-#: core/post-types.php:481
-msgctxt "Taxonomy Singular Name"
-msgid "Life Event"
-msgstr "Elämäntilanne"
-
-#: core/post-types.php:482
-msgid "Life Events"
-msgstr "Elämäntilanteet"
-
-#: core/post-types.php:483
-msgid "All Life Events"
-msgstr "Kaikki elämäntilanteet"
-
-#: core/post-types.php:484
-msgid "Parent Life Event"
-msgstr "Yläkohde:"
-
-#: core/post-types.php:485
-msgid "Parent Life Event:"
-msgstr "Yläkohde:"
-
-#: core/post-types.php:486
-msgid "New Life Event Name"
-msgstr "Uuden elämäntilanteen nimi"
-
-#: core/post-types.php:487
-msgid "Add New Life Event"
-msgstr "Lisää uusi elämäntilanne"
-
-#: core/post-types.php:488
-msgid "Edit Life Event"
-msgstr "Muokkaa elämäntilannetta"
-
-#: core/post-types.php:489
-msgid "Update Life Event"
-msgstr "Päivitä elämäntilanne"
-
-#: core/post-types.php:490
-msgid "View Life Event"
-msgstr "Näytä elämäntilanne"
-
-#: core/post-types.php:494
-msgid "Popular Life Events"
-msgstr "Käytetyimmät elämäntilanteet"
-
-#: core/post-types.php:495
-msgid "Search Life Events"
-msgstr "Hae elämäntilanteista"
-
-#: core/post-types.php:498
-msgid "Life Events list"
-msgstr "Elämäntilanneluetteo"
-
-#: core/post-types.php:499
-msgid "Life Events list navigation"
-msgstr "Elämäntilanneluettelon navigaatio"
-
-#: core/post-types.php:516
+#: lib/class-ptv-taxonomies.php:204
 msgctxt "Taxonomy General Name"
 msgid "Industrial classes"
 msgstr "Toimialat"
 
-#: core/post-types.php:517
+#: lib/class-ptv-taxonomies.php:205
 msgctxt "Taxonomy Singular Name"
 msgid "Industrial class"
 msgstr "Toimiala"
 
-#: core/post-types.php:518
+#: lib/class-ptv-taxonomies.php:206
 msgid "Industrial classes"
 msgstr "Toimialat"
 
-#: core/post-types.php:519
+#: lib/class-ptv-taxonomies.php:207
 msgid "All Industrial classes"
 msgstr "Kaikki toimialat"
 
-#: core/post-types.php:520
+#: lib/class-ptv-taxonomies.php:208
 msgid "Parent Industrial class"
 msgstr "Päätoimiala"
 
-#: core/post-types.php:521
+#: lib/class-ptv-taxonomies.php:209
 msgid "Parent Industrial class:"
 msgstr "Päätoimiala"
 
-#: core/post-types.php:522
+#: lib/class-ptv-taxonomies.php:210
 msgid "New Industrial class Name"
 msgstr "Uuden toimialan nimi"
 
-#: core/post-types.php:523
+#: lib/class-ptv-taxonomies.php:211
 msgid "Add New Industrial class"
 msgstr "Lisää uusi toimiala"
 
-#: core/post-types.php:524
+#: lib/class-ptv-taxonomies.php:212
 msgid "Edit Industrial class"
 msgstr "Muokkaa toimialaa"
 
-#: core/post-types.php:525
+#: lib/class-ptv-taxonomies.php:213
 msgid "Update Industrial class"
 msgstr "Päivitä toimiala"
 
-#: core/post-types.php:526
+#: lib/class-ptv-taxonomies.php:214
 msgid "View Industrial class"
 msgstr "Näytä toimialat"
 
-#: core/post-types.php:530
+#: lib/class-ptv-taxonomies.php:218
 msgid "Popular Industrial classes"
 msgstr "Käytetyimmät toimialat"
 
-#: core/post-types.php:531
+#: lib/class-ptv-taxonomies.php:219
 msgid "Search Industrial classes"
 msgstr "Etsi toimialoista"
 
-#: core/post-types.php:534
+#: lib/class-ptv-taxonomies.php:222
 msgid "Industrial classes list"
 msgstr "Toimialaluettelo"
 
-#: core/post-types.php:535
+#: lib/class-ptv-taxonomies.php:223
 msgid "Industrial classes list navigation"
 msgstr "Toimialaluettelon navigaatio"
 
-#: lib/class-ptv-in-module.php:128
-msgid "Error details:"
-msgstr "Virheen yksityiskohdat:"
+#: lib/class-ptv-taxonomies.php:253
+msgctxt "Taxonomy General Name"
+msgid "Life Events"
+msgstr "Elämäntilanteet"
+
+#: lib/class-ptv-taxonomies.php:254
+msgctxt "Taxonomy Singular Name"
+msgid "Life Event"
+msgstr "Elämäntilanne"
+
+#: lib/class-ptv-taxonomies.php:255
+msgid "Life Events"
+msgstr "Elämäntilanteet"
+
+#: lib/class-ptv-taxonomies.php:256
+msgid "All Life Events"
+msgstr "Kaikki elämäntilanteet"
+
+#: lib/class-ptv-taxonomies.php:257
+msgid "Parent Life Event"
+msgstr "Yläkohde:"
+
+#: lib/class-ptv-taxonomies.php:258
+msgid "Parent Life Event:"
+msgstr "Yläkohde:"
+
+#: lib/class-ptv-taxonomies.php:259
+msgid "New Life Event Name"
+msgstr "Uuden elämäntilanteen nimi"
+
+#: lib/class-ptv-taxonomies.php:260
+msgid "Add New Life Event"
+msgstr "Lisää uusi elämäntilanne"
+
+#: lib/class-ptv-taxonomies.php:261
+msgid "Edit Life Event"
+msgstr "Muokkaa elämäntilannetta"
+
+#: lib/class-ptv-taxonomies.php:262
+msgid "Update Life Event"
+msgstr "Päivitä elämäntilanne"
+
+#: lib/class-ptv-taxonomies.php:263
+msgid "View Life Event"
+msgstr "Näytä elämäntilanne"
+
+#: lib/class-ptv-taxonomies.php:267
+msgid "Popular Life Events"
+msgstr "Käytetyimmät elämäntilanteet"
+
+#: lib/class-ptv-taxonomies.php:268
+msgid "Search Life Events"
+msgstr "Hae elämäntilanteista"
+
+#: lib/class-ptv-taxonomies.php:271
+msgid "Life Events list"
+msgstr "Elämäntilanneluetteo"
+
+#: lib/class-ptv-taxonomies.php:272
+msgid "Life Events list navigation"
+msgstr "Elämäntilanneluettelon navigaatio"
+
+#: lib/functions.php:269 lib/functions.php:308
+msgid "Select one"
+msgstr "﻿Valitse yksi"
+
+#: lib/functions.php:344
+msgid "No general description"
+msgstr "Ei pohjakuvausta"
 
 #: lib/in/class-ptv-echannel-in-controller.php:40
-#: lib/in/class-ptv-echannel-in-controller.php:78
+#: lib/in/class-ptv-organization-in-controller.php:43
+#: lib/in/class-ptv-organization-in-controller.php:82
 #: lib/in/class-ptv-phone-channel-in-controller.php:40
 #: lib/in/class-ptv-phone-channel-in-controller.php:78
 #: lib/in/class-ptv-printable-form-channel-in-controller.php:40
-#: lib/in/class-ptv-printable-form-channel-in-controller.php:82
+#: lib/in/class-ptv-printable-form-channel-in-controller.php:79
 #: lib/in/class-ptv-service-in-controller.php:40
-#: lib/in/class-ptv-service-in-controller.php:78
+#: lib/in/class-ptv-service-in-controller.php:85
 #: lib/in/class-ptv-service-location-channel-in-controller.php:40
 #: lib/in/class-ptv-service-location-channel-in-controller.php:78
 #: lib/in/class-ptv-web-page-channel-in-controller.php:40
 #: lib/in/class-ptv-web-page-channel-in-controller.php:78
 msgid "Request contains invalid properties."
-msgstr "Pyyntö sisältää "
+msgstr "Pyyntö sisältää virheellisiä arvoja."
 
 #: lib/in/class-ptv-echannel-in-controller.php:49
+#: lib/in/class-ptv-organization-in-controller.php:52
 #: lib/in/class-ptv-phone-channel-in-controller.php:49
 #: lib/in/class-ptv-printable-form-channel-in-controller.php:49
 #: lib/in/class-ptv-service-in-controller.php:49
@@ -1638,30 +1864,33 @@ msgstr "Pyyntö sisältää "
 msgid "Failed to create the item to the PTV."
 msgstr "Kohteen luonti PTV:hen epäonnistui."
 
-#: lib/in/class-ptv-echannel-in-controller.php:87
+#: lib/in/class-ptv-echannel-in-controller.php:80
+#: lib/in/class-ptv-organization-in-controller.php:90
 #: lib/in/class-ptv-phone-channel-in-controller.php:87
-#: lib/in/class-ptv-printable-form-channel-in-controller.php:91
-#: lib/in/class-ptv-service-in-controller.php:86
+#: lib/in/class-ptv-printable-form-channel-in-controller.php:88
+#: lib/in/class-ptv-service-in-controller.php:93
 #: lib/in/class-ptv-service-location-channel-in-controller.php:87
 #: lib/in/class-ptv-web-page-channel-in-controller.php:87
 msgid "Failed to update the item to the PTV."
 msgstr "Kohteen tallennus PTV:hen epäonnistui."
 
-#: lib/in/class-ptv-echannel-in-controller.php:296
-#: lib/in/class-ptv-phone-channel-in-controller.php:205
-#: lib/in/class-ptv-printable-form-channel-in-controller.php:450
-#: lib/in/class-ptv-service-in-controller.php:693
-#: lib/in/class-ptv-service-location-channel-in-controller.php:377
-#: lib/in/class-ptv-web-page-channel-in-controller.php:142
+#: lib/in/class-ptv-echannel-in-controller.php:289
+#: lib/in/class-ptv-organization-in-controller.php:318
+#: lib/in/class-ptv-phone-channel-in-controller.php:212
+#: lib/in/class-ptv-printable-form-channel-in-controller.php:549
+#: lib/in/class-ptv-service-in-controller.php:1158
+#: lib/in/class-ptv-service-location-channel-in-controller.php:393
+#: lib/in/class-ptv-web-page-channel-in-controller.php:148
 msgid "Post id or object missing."
 msgstr "Kohteen ID tai päivitettävä kohde puuttuu."
 
-#: lib/in/class-ptv-echannel-in-controller.php:305
-#: lib/in/class-ptv-phone-channel-in-controller.php:214
-#: lib/in/class-ptv-printable-form-channel-in-controller.php:460
-#: lib/in/class-ptv-service-in-controller.php:702
-#: lib/in/class-ptv-service-location-channel-in-controller.php:386
-#: lib/in/class-ptv-web-page-channel-in-controller.php:151
+#: lib/in/class-ptv-echannel-in-controller.php:298
+#: lib/in/class-ptv-organization-in-controller.php:327
+#: lib/in/class-ptv-phone-channel-in-controller.php:221
+#: lib/in/class-ptv-printable-form-channel-in-controller.php:559
+#: lib/in/class-ptv-service-in-controller.php:1167
+#: lib/in/class-ptv-service-location-channel-in-controller.php:402
+#: lib/in/class-ptv-web-page-channel-in-controller.php:157
 msgid ""
 "Item was saved to the PTV, but synchronization of unique ids to translations "
 "failed."
@@ -1669,7 +1898,7 @@ msgstr ""
 "Kohde tallennettiin PTV:hen, mutta yksiköllisten tunnisteiden synkronointi "
 "kieliversioihin epäonnistui."
 
-#: lib/in/class-ptv-echannel-in-controller.php:312
+#: lib/in/class-ptv-echannel-in-controller.php:305
 msgid ""
 "Item was saved to the PTV, but synchronization of authentication and "
 "signature fields to translations failed."
@@ -1677,9 +1906,9 @@ msgstr ""
 "Kohde tallennettiin PTV:hen, mutta todennus- ja allekirjoituskenttien "
 "synkronointi kieliversioihin epäonnistui."
 
-#: lib/in/class-ptv-echannel-in-controller.php:319
-#: lib/in/class-ptv-phone-channel-in-controller.php:221
-#: lib/in/class-ptv-service-location-channel-in-controller.php:400
+#: lib/in/class-ptv-echannel-in-controller.php:312
+#: lib/in/class-ptv-phone-channel-in-controller.php:228
+#: lib/in/class-ptv-service-location-channel-in-controller.php:416
 msgid ""
 "Item was saved to the PTV, but synchronization of service hours to "
 "translations failed."
@@ -1687,11 +1916,12 @@ msgstr ""
 "Kohde tallennettiin PTV:hen, mutta palveluaikojen synkronointi "
 "kieliversioihin epäonnistui."
 
-#: lib/in/class-ptv-echannel-in-controller.php:326
-#: lib/in/class-ptv-phone-channel-in-controller.php:235
-#: lib/in/class-ptv-printable-form-channel-in-controller.php:481
-#: lib/in/class-ptv-service-in-controller.php:737
-#: lib/in/class-ptv-service-location-channel-in-controller.php:414
+#: lib/in/class-ptv-echannel-in-controller.php:319
+#: lib/in/class-ptv-organization-in-controller.php:334
+#: lib/in/class-ptv-phone-channel-in-controller.php:242
+#: lib/in/class-ptv-printable-form-channel-in-controller.php:580
+#: lib/in/class-ptv-service-in-controller.php:1202
+#: lib/in/class-ptv-service-location-channel-in-controller.php:430
 msgid ""
 "Item was saved to the PTV, but synchronization of areas to translations "
 "failed."
@@ -1699,7 +1929,21 @@ msgstr ""
 "Kohde tallennettiin PTV:hen, mutta alueiden synkronointi kieliversioihin "
 "epäonnistui."
 
-#: lib/in/class-ptv-in-controller.php:76
+#: lib/in/class-ptv-echannel-in-controller.php:326
+#: lib/in/class-ptv-organization-in-controller.php:341
+#: lib/in/class-ptv-phone-channel-in-controller.php:249
+#: lib/in/class-ptv-printable-form-channel-in-controller.php:587
+#: lib/in/class-ptv-service-in-controller.php:1216
+#: lib/in/class-ptv-service-location-channel-in-controller.php:438
+#: lib/in/class-ptv-web-page-channel-in-controller.php:171
+msgid ""
+"Item was saved to the PTV, but synchronization of modified time to "
+"translations failed."
+msgstr ""
+"Kohde tallennettiin PTV:hen, mutta muokkausajan synkronointi kieliversioihin "
+"epäonnistui."
+
+#: lib/in/class-ptv-in-controller.php:97
 msgid ""
 "New items can only be created in the primary language. Please attach "
 "translation to an item created in the primary language."
@@ -1707,11 +1951,11 @@ msgstr ""
 "Uusia kohteita voi tehdä ainoastaan oletuskielellä. Liitä käännös "
 "oletuskielellä tehtyyn kohteeseen."
 
-#: lib/in/class-ptv-phone-channel-in-controller.php:228
-#: lib/in/class-ptv-printable-form-channel-in-controller.php:474
-#: lib/in/class-ptv-service-in-controller.php:730
-#: lib/in/class-ptv-service-location-channel-in-controller.php:407
-#: lib/in/class-ptv-web-page-channel-in-controller.php:158
+#: lib/in/class-ptv-phone-channel-in-controller.php:235
+#: lib/in/class-ptv-printable-form-channel-in-controller.php:573
+#: lib/in/class-ptv-service-in-controller.php:1195
+#: lib/in/class-ptv-service-location-channel-in-controller.php:423
+#: lib/in/class-ptv-web-page-channel-in-controller.php:164
 msgid ""
 "Item was saved to the PTV, but synchronization of languages to translations "
 "failed."
@@ -1719,7 +1963,7 @@ msgstr ""
 "Kohde tallennettiin PTV:hen, mutta kielien synkronointi kieliversioihin "
 "epäonnistui."
 
-#: lib/in/class-ptv-printable-form-channel-in-controller.php:467
+#: lib/in/class-ptv-printable-form-channel-in-controller.php:566
 msgid ""
 "Item was saved to the PTV, but synchronization of delivery address to "
 "translations failed."
@@ -1727,15 +1971,24 @@ msgstr ""
 "Kohde tallennettiin PTV:hen, mutta jakeluosoitteen synkronointi "
 "kieliversioihin epäonnistui."
 
-#: lib/in/class-ptv-service-in-controller.php:709
+#: lib/in/class-ptv-service-in-controller.php:61
+#: lib/in/class-ptv-service-in-controller.php:105
+msgid ""
+"Item was saved to the PTV, but update of service and channel connections "
+"failed."
+msgstr ""
+"Kohde tallennettiin PTV:hen, mutta palveluiden ja asiointikanavien suhteiden "
+"päivittäminen epäonnistui."
+
+#: lib/in/class-ptv-service-in-controller.php:955
 msgid ""
 "Item was saved to the PTV, but synchronization of service and channel "
-"relations to translations failed."
+"connections to translations failed."
 msgstr ""
 "Kohde tallennettiin PTV:hen, mutta palveluiden ja asiointikanavien suhteiden "
 "synkronointi epäonnistui."
 
-#: lib/in/class-ptv-service-in-controller.php:716
+#: lib/in/class-ptv-service-in-controller.php:1174
 msgid ""
 "Item was saved to the PTV, but synchronization of organizations to "
 "translations failed."
@@ -1743,7 +1996,15 @@ msgstr ""
 "Kohde tallennettiin PTV:hen, mutta organisaatioiden synkronointi "
 "kieliversioihin epäonnistui."
 
-#: lib/in/class-ptv-service-in-controller.php:723
+#: lib/in/class-ptv-service-in-controller.php:1181
+msgid ""
+"Item was saved to the PTV, but synchronization of taxonomies to translations "
+"failed."
+msgstr ""
+"Kohde tallennettiin PTV:hen, mutta luokitteluiden synkronointi "
+"kieliversioihin epäonnistui."
+
+#: lib/in/class-ptv-service-in-controller.php:1188
 msgid ""
 "Item was saved to the PTV, but synchronization of service charge type to "
 "translations failed."
@@ -1751,7 +2012,15 @@ msgstr ""
 "Kohde tallennettiin PTV:hen, mutta maksullisuuden tilan synkronointi "
 "kieliversioihin epäonnistui."
 
-#: lib/in/class-ptv-service-location-channel-in-controller.php:393
+#: lib/in/class-ptv-service-in-controller.php:1209
+msgid ""
+"Item was saved to the PTV, but synchronization of legislation to "
+"translations failed."
+msgstr ""
+"Kohde tallennettiin PTV:hen, mutta lainsäädännön synkronointi "
+"kieliversioihin epäonnistui."
+
+#: lib/in/class-ptv-service-location-channel-in-controller.php:409
 msgid ""
 "Item was saved to the PTV, but synchronization of addresses to translations "
 "failed."
@@ -1759,20 +2028,69 @@ msgstr ""
 "Kohde tallennettiin PTV:hen, mutta osoitteiden synkronointi kieliversioihin "
 "epäonnistui."
 
-#: lib/out/class-ptv-background-process.php:48
-msgid "Item type is invalid"
-msgstr "﻿Kohteen tyyppi ei kelpaa"
-
-#: lib/out/class-wp-background-process.php:425
+#: lib/libraries/class-wp-background-process.php:425
 #, php-format
 msgid "Every %d Minutes"
 msgstr "joka %d minuutti"
 
-#: ptv-for-wordpress.php:187
+#: lib/out/class-ptv-background-process.php:66
+msgid "Item type is invalid"
+msgstr "﻿Kohteen tyyppi ei kelpaa"
+
+#: ptv-for-wordpress.php:219
+msgid "Visiting address is required value."
+msgstr "Käyntiosoite on pakollinen tieto."
+
+#: ptv-for-wordpress.php:220
+msgid "Only one delivery address is allowed."
+msgstr "Vain yksi toimitusosoite on sallittu."
+
+#: ptv-for-wordpress.php:221
+msgid "Subtype of visiting address must be single."
+msgstr "Käyntiosoitteen alatyyppi tulee olla yksittäinen."
+
+#: ptv-for-wordpress.php:234
 msgid "Define API constants in the wp-config.php and enable Polylang plugin."
 msgstr ""
 "Määritä lisäosan tarvitsemat muuttujat wp-config.php -tiedostossa ja ota "
 "Polylang-lisäosa käyttöön."
+
+#~ msgid "Only subtype Single is allowed for visiting address."
+#~ msgstr "Käyntiosoitteen tyyppi pitää olla "
+
+#~ msgid "Multipoint"
+#~ msgstr "Monitoimipaikkainen"
+
+#~ msgid "- Select -"
+#~ msgstr "- Valitse -"
+
+#, fuzzy
+#~ msgid " Web page"
+#~ msgstr "Verkkosivu"
+
+#~ msgid "Service Vouchers"
+#~ msgstr "Palvelusetelipalvelut"
+
+#~ msgid "Street Address"
+#~ msgstr "Katuosoite"
+
+#~ msgid "Post Office Box"
+#~ msgstr "Postilokero-osoite"
+
+#~ msgid "Country"
+#~ msgstr "Maa"
+
+#~ msgid "Additional Informations"
+#~ msgstr "Lisätiedot"
+
+#~ msgid "Voucher Services"
+#~ msgstr "Palvelusetelipalvelut"
+
+#~ msgid "Max length 30 characters. "
+#~ msgstr "Maksimipituus 30 merkkiä. "
+
+#~ msgid "Delivery informations"
+#~ msgstr "Toimitustieto sanallisesti"
 
 #~ msgid "Settings saved."
 #~ msgstr "Asetukset tallennettu."
@@ -1936,9 +2254,6 @@ msgstr ""
 #~ msgid "Deleted"
 #~ msgstr "Poistettu"
 
-#~ msgid "Modified"
-#~ msgstr "Muokattu"
-
 #~ msgid "Service Coverage"
 #~ msgstr "Alue, jolla palvelu on saatavilla"
 
@@ -1948,12 +2263,6 @@ msgstr ""
 #~ msgid ""
 #~ "Service is available in a selected municipalities (Select municipalities)"
 #~ msgstr "Palvelu on saatavilla seuraavissa kunnissa: (Valitse kunnat)"
-
-#~ msgid "Street address"
-#~ msgstr "Katuosoite"
-
-#~ msgid "Post office box"
-#~ msgstr "Postilokero-osoite"
 
 #~ msgctxt "Post Type General Name"
 #~ msgid "General Descriptions"
@@ -1966,9 +2275,6 @@ msgstr ""
 #~ msgid "General Descriptions"
 #~ msgstr "Pohjakuvaukset"
 
-#~ msgid "General Description"
-#~ msgstr "Pohjakuvaus"
-
 #~ msgid "General Description Archives"
 #~ msgstr "Arkisto: Pohjakuvaukset"
 
@@ -1980,9 +2286,6 @@ msgstr ""
 
 #~ msgid "Add New General Description"
 #~ msgstr "Lisää uusi pohjakuvaus"
-
-#~ msgid "New General Description"
-#~ msgstr "Uutis pohjakuvaus"
 
 #~ msgid "Edit General Description"
 #~ msgstr "Muokkaa pohjakuvausta"
@@ -2025,9 +2328,6 @@ msgstr ""
 
 #~ msgid "Form Urls"
 #~ msgstr "Lo"
-
-#~ msgid "Value"
-#~ msgstr "Arvo"
 
 #~ msgid "URL"
 #~ msgstr "Verkko-osoite"
