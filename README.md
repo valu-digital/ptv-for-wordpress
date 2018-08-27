@@ -1,13 +1,13 @@
 # PTV for WordPress
 
-**Please note that version 0.9.x will be released in March 2018. The upcoming version is compatible with PTV API version 7. Currently there is no public funding for the plugin development, so contributions are highly appreciated.**
+**Current version is compatible with PTV API version 7. Currently there is no public funding for the plugin development, so contributions are highly appreciated.**
 
 The plugin is still in development and breaking changes may occur before 1.0 release.
 
 ## Installation
 
 - Clone or download this repository
-- Run `composer install` in the plugin folder. Composer installs two dependencies: PTV Client for WordPress and Carbon Fields 2 (still in beta).
+- Run `composer install` in the plugin folder. Composer installs two dependencies: PTV Client for WordPress and Carbon Fields 2.
 - Install and enable Polylang plugin
 - Create `fi`, `sv`, and `en` languages in the Polylang settings.
 - Define following constants in the wp-config.php. API urls in the example are for the PTV training environment.
